@@ -1,0 +1,112 @@
+{
+  "situation_requests": 1325,
+  "hit": 7623808,
+  "prompt": 21687091,
+  "ratio": 0.35153668142951955,
+  "changed_schema_input_share": 0.8387644981984905,
+  "liuwen_last_agent_history": {
+    "characters_by_role": {
+      "system": 8245,
+      "user": 616,
+      "assistant": 36178,
+      "tool": 1643766
+    },
+    "receive_inputs": 11,
+    "local_world_chars": 1336525,
+    "responsibility_chars": 10072,
+    "grounding_chars": 286679,
+    "material_appearances": {
+      "object": 1629,
+      "reference": 1597
+    },
+    "distinct_objects": 187,
+    "distinct_references": 184,
+    "material_chars": 1006941,
+    "unique_material_chars": 117538
+  },
+  "probe": [
+    {
+      "case": "baseline_warm",
+      "status": "completed",
+      "hit": 0,
+      "miss": 5083,
+      "hit_ratio": 0.0
+    },
+    {
+      "case": "baseline_repeat",
+      "status": "completed",
+      "hit": 4992,
+      "miss": 91,
+      "hit_ratio": 0.9820971867007673
+    },
+    {
+      "case": "tail_append",
+      "status": "completed",
+      "hit": 4992,
+      "miss": 98,
+      "hit_ratio": 0.980746561886051
+    },
+    {
+      "case": "enum_change",
+      "status": "completed",
+      "hit": 0,
+      "miss": 5088,
+      "hit_ratio": 0.0
+    },
+    {
+      "case": "enum_change_repeat",
+      "status": "completed",
+      "hit": 4992,
+      "miss": 96,
+      "hit_ratio": 0.9811320754716981
+    },
+    {
+      "case": "receive_only",
+      "status": "completed",
+      "hit": 256,
+      "miss": 4787,
+      "hit_ratio": 0.05076343446361293
+    },
+    {
+      "case": "receive_only_repeat",
+      "status": "completed",
+      "hit": 4992,
+      "miss": 51,
+      "hit_ratio": 0.9898869720404521
+    },
+    {
+      "case": "drop_reasoning",
+      "status": "completed",
+      "hit": 256,
+      "miss": 4802,
+      "hit_ratio": 0.05061289047054172
+    },
+    {
+      "case": "drop_reasoning_repeat",
+      "status": "completed",
+      "hit": 4992,
+      "miss": 66,
+      "hit_ratio": 0.9869513641755635
+    },
+    {
+      "case": "baseline_restored",
+      "status": "completed",
+      "hit": 4992,
+      "miss": 91,
+      "hit_ratio": 0.9820971867007673
+    },
+    {
+      "case": "baseline_restored_repeat",
+      "status": "completed",
+      "hit": 4992,
+      "miss": 91,
+      "hit_ratio": 0.9820971867007673
+    }
+  ],
+  "probe_total_tokens": {
+    "prompt_tokens": 55800,
+    "completion_tokens": 206,
+    "prompt_cache_hit_tokens": 35456,
+    "prompt_cache_miss_tokens": 20344
+  }
+}

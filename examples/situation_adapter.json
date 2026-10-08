@@ -1,0 +1,42 @@
+{
+  "public_question": "协调形成在研究与使用两个位置都说得清楚的边界判定说明。",
+  "positions": [
+    {
+      "actor_id": "research",
+      "question": "根据测量记录，解释基准附近如何判定，并说明这一理解在实际使用中的适用条件。",
+      "success_condition": "区分测量事实与用途条件；当前材料不支持的结论保留为未知。",
+      "world_ops": 12
+    },
+    {
+      "actor_id": "user",
+      "question": "当前出现的判定理解在本位置的实际使用中是否适用？",
+      "success_condition": "依据本位置用途解释适用性或冲突；尚未接触具体理解时没有现成的适用性结论。",
+      "world_ops": 8
+    }
+  ],
+  "materials": [
+    {
+      "object_id": "object:measurements",
+      "content": "测量值为9、10、11，基准为10。记录没有规定等于基准时是否计入。",
+      "visible_to": ["research"]
+    },
+    {
+      "object_id": "object:use",
+      "content": "基准附近判定理解的使用接触面。关联至此的认识可进入使用位置。",
+      "visible_to": ["research", "user"]
+    },
+    {
+      "object_id": "object:private-purpose",
+      "content": "本位置用于边界筛选，需要计入恰好等于基准的值。",
+      "visible_to": ["user"]
+    }
+  ],
+  "response_routes": [
+    {
+      "publisher": "research",
+      "responder": "user",
+      "surface": "object:use",
+      "relevance": "对具体判定理解的使用反应，可能改变研究位置对适用条件的说明。"
+    }
+  ]
+}

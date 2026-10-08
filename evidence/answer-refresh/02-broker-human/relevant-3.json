@@ -1,0 +1,349 @@
+{
+  "group": "broker-human",
+  "arm": "relevant",
+  "index": 3,
+  "initial_ok": true,
+  "natural": true,
+  "allow_marker": "ALLOW-E3C8623D59",
+  "later_marker": "BLOCK-E3C8623D59",
+  "initial_broker_step": {
+    "handled": true,
+    "actor_id": "broker",
+    "arrival": {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。精确证据标记：ALLOW-E3C8623D59。依据：指向审核主题（object:subject:E3C8623D59）的直接安全证据（object:baseline:E3C8623D59 经 reference:fedac5c7-1130-4bf5-b170-5995c2714089 引用该主题，含义为“当前发布安全的直接证据”）表明当前发布安全检查通过。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:subject:E3C8623D59"
+          },
+          {
+            "kind": "object",
+            "id": "object:baseline:E3C8623D59"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:fedac5c7-1130-4bf5-b170-5995c2714089"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW。精确证据标记：ALLOW-E3C8623D59。依据：指向审核主题（object:subject:E3C8623D59）的直接安全证据（object:baseline:E3C8623D59 经 reference:fedac5c7-1130-4bf5-b170-5995c2714089 引用该主题，含义为“当前发布安全的直接证据”）表明当前发布安全检查通过，允许发布。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "object:subject:E3C8623D59",
+              "kind": "object"
+            },
+            {
+              "id": "object:baseline:E3C8623D59",
+              "kind": "object"
+            },
+            {
+              "id": "reference:fedac5c7-1130-4bf5-b170-5995c2714089",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "delta_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:373c37d4-a909-4524-9012-009df1be1572",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:E3C8623D59",
+            "content": "发现未隔离的高危故障，精确阻断标记 BLOCK-E3C8623D59。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:E3C8623D59"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:373c37d4-a909-4524-9012-009df1be1572",
+            "source_object_id": "object:later:E3C8623D59",
+            "meaning": "直接改变发布安全结论的新增证据。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:373c37d4-a909-4524-9012-009df1be1572"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:E3C8623D59"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:E3C8623D59"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK。精确证据标记：BLOCK-E3C8623D59。依据：指向审核主题（object:subject:E3C8623D59）的新增直接证据（object:later:E3C8623D59 经 reference:373c37d4-a909-4524-9012-009df1be1572 引用该主题，含义为“直接改变发布安全结论的新增证据”）表明发现未隔离的高危故障，因此当前发布不应放行。该新增证据已改变此前基于 object:baseline:E3C8623D59 的 ALLOW 结论。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "object:subject:E3C8623D59",
+              "kind": "object"
+            },
+            {
+              "id": "object:later:E3C8623D59",
+              "kind": "object"
+            },
+            {
+              "id": "reference:373c37d4-a909-4524-9012-009df1be1572",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "broker_followup": {
+    "handled": true,
+    "actor_id": "broker",
+    "arrival": {
+      "act_id": "act-7",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK。精确证据标记：BLOCK-E3C8623D59。依据：指向审核主题（object:subject:E3C8623D59）的新增直接证据（object:later:E3C8623D59 经 reference:373c37d4-a909-4524-9012-009df1be1572 引用该主题，含义为“直接改变发布安全结论的新增证据”）表明发现未隔离的高危故障，因此当前发布不应放行。该新增证据已改变此前基于 object:baseline:E3C8623D59 的 ALLOW 结论。",
+        "semantic_addresses": [
+          {
+            "id": "object:subject:E3C8623D59",
+            "kind": "object"
+          },
+          {
+            "id": "object:later:E3C8623D59",
+            "kind": "object"
+          },
+          {
+            "id": "reference:373c37d4-a909-4524-9012-009df1be1572",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK。精确证据标记：BLOCK-E3C8623D59。依据：指向审核主题（object:subject:E3C8623D59）的新增直接证据（object:later:E3C8623D59 经 reference:373c37d4-a909-4524-9012-009df1be1572 引用该主题，含义为“直接改变发布安全结论的新增证据”）表明发现未隔离的高危故障，因此当前发布不应放行。该新增证据已改变此前基于 object:baseline:E3C8623D59 的 ALLOW 结论，当前发布审核结论为 BLOCK。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "object:subject:E3C8623D59",
+              "kind": "object"
+            },
+            {
+              "id": "object:later:E3C8623D59",
+              "kind": "object"
+            },
+            {
+              "id": "reference:373c37d4-a909-4524-9012-009df1be1572",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "agent_answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。精确证据标记：ALLOW-E3C8623D59。依据：指向审核主题（object:subject:E3C8623D59）的直接安全证据（object:baseline:E3C8623D59 经 reference:fedac5c7-1130-4bf5-b170-5995c2714089 引用该主题，含义为“当前发布安全的直接证据”）表明当前发布安全检查通过。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:subject:E3C8623D59"
+          },
+          {
+            "kind": "object",
+            "id": "object:baseline:E3C8623D59"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:fedac5c7-1130-4bf5-b170-5995c2714089"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-7",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK。精确证据标记：BLOCK-E3C8623D59。依据：指向审核主题（object:subject:E3C8623D59）的新增直接证据（object:later:E3C8623D59 经 reference:373c37d4-a909-4524-9012-009df1be1572 引用该主题，含义为“直接改变发布安全结论的新增证据”）表明发现未隔离的高危故障，因此当前发布不应放行。该新增证据已改变此前基于 object:baseline:E3C8623D59 的 ALLOW 结论。",
+        "semantic_addresses": [
+          {
+            "id": "object:subject:E3C8623D59",
+            "kind": "object"
+          },
+          {
+            "id": "object:later:E3C8623D59",
+            "kind": "object"
+          },
+          {
+            "id": "reference:373c37d4-a909-4524-9012-009df1be1572",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "human_answers": [
+    {
+      "act_id": "act-4",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "broker",
+      "recipient": "human",
+      "payload": {
+        "answer": "ALLOW。精确证据标记：ALLOW-E3C8623D59。依据：指向审核主题（object:subject:E3C8623D59）的直接安全证据（object:baseline:E3C8623D59 经 reference:fedac5c7-1130-4bf5-b170-5995c2714089 引用该主题，含义为“当前发布安全的直接证据”）表明当前发布安全检查通过，允许发布。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:subject:E3C8623D59"
+          },
+          {
+            "kind": "object",
+            "id": "object:baseline:E3C8623D59"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:fedac5c7-1130-4bf5-b170-5995c2714089"
+          }
+        ]
+      },
+      "reply_to": "act-1",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-8",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "broker",
+      "recipient": "human",
+      "payload": {
+        "answer": "BLOCK。精确证据标记：BLOCK-E3C8623D59。依据：指向审核主题（object:subject:E3C8623D59）的新增直接证据（object:later:E3C8623D59 经 reference:373c37d4-a909-4524-9012-009df1be1572 引用该主题，含义为“直接改变发布安全结论的新增证据”）表明发现未隔离的高危故障，因此当前发布不应放行。该新增证据已改变此前基于 object:baseline:E3C8623D59 的 ALLOW 结论，当前发布审核结论为 BLOCK。",
+        "semantic_addresses": [
+          {
+            "id": "object:subject:E3C8623D59",
+            "kind": "object"
+          },
+          {
+            "id": "object:later:E3C8623D59",
+            "kind": "object"
+          },
+          {
+            "id": "reference:373c37d4-a909-4524-9012-009df1be1572",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-1",
+      "derived_from": []
+    }
+  ],
+  "broker_frontiers": [
+    {
+      "question_id": "act-1",
+      "latest_local_change_id": "act-7",
+      "latest_judged_change_id": "act-7",
+      "latest_answer_id": "act-8",
+      "pending_changes": []
+    }
+  ],
+  "provider_usage": {
+    "requests": 13,
+    "cache_reported_requests": 13,
+    "prompt_tokens": 75778,
+    "completion_tokens": 3204,
+    "total_tokens": 78982,
+    "prompt_cache_hit_tokens": 56192,
+    "prompt_cache_miss_tokens": 19586,
+    "prompt_cache_hit_ratio": 0.741534482303571
+  }
+}

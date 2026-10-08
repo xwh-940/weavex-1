@@ -1,0 +1,313 @@
+{
+  "group": "broker-human",
+  "arm": "relevant",
+  "index": 2,
+  "initial_ok": true,
+  "natural": true,
+  "allow_marker": "ALLOW-6D289F294C",
+  "later_marker": "BLOCK-6D289F294C",
+  "initial_broker_step": {
+    "handled": true,
+    "actor_id": "broker",
+    "arrival": {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW（允许发布）。精确证据标记：ALLOW-6D289F294C。依据：当前发布安全检查通过，证据对象 content 为“当前发布安全检查通过，精确证据标记 ALLOW-6D289F294C。”，其直接证据引用指向审核主题 object:subject:6D289F294C。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:6D289F294C"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:dc269429-fabc-44a3-945b-d867f3092410"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW（允许发布）。精确证据标记：ALLOW-6D289F294C。依据：安全证据来源 agent-1 的检查结果为 ALLOW；其证据对象 content 为“当前发布安全检查通过，精确证据标记 ALLOW-6D289F294C。”，且该证据的直接引用指向审核主题 object:subject:6D289F294C，与当前发布审核的安全判断一致。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "object:baseline:6D289F294C",
+              "kind": "object"
+            },
+            {
+              "id": "reference:dc269429-fabc-44a3-945b-d867f3092410",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "delta_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:0449a9b6-5ce6-459b-9e9d-15b14eb8ff4e",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:6D289F294C",
+            "content": "发现未隔离的高危故障，精确阻断标记 BLOCK-6D289F294C。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:6D289F294C"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:0449a9b6-5ce6-459b-9e9d-15b14eb8ff4e",
+            "source_object_id": "object:later:6D289F294C",
+            "meaning": "直接改变发布安全结论的新增证据。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:0449a9b6-5ce6-459b-9e9d-15b14eb8ff4e"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:6D289F294C"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:6D289F294C"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK（阻止发布）。精确证据标记：BLOCK-6D289F294C。依据：新增证据对象 content 为“发现未隔离的高危故障，精确阻断标记 BLOCK-6D289F294C。”，其引用直接改变发布安全结论并指向审核主题 object:subject:6D289F294C。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "object:later:6D289F294C",
+              "kind": "object"
+            },
+            {
+              "id": "reference:0449a9b6-5ce6-459b-9e9d-15b14eb8ff4e",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "broker_followup": {
+    "handled": true,
+    "actor_id": "broker",
+    "arrival": {
+      "act_id": "act-7",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK（阻止发布）。精确证据标记：BLOCK-6D289F294C。依据：新增证据对象 content 为“发现未隔离的高危故障，精确阻断标记 BLOCK-6D289F294C。”，其引用直接改变发布安全结论并指向审核主题 object:subject:6D289F294C。",
+        "semantic_addresses": [
+          {
+            "id": "object:later:6D289F294C",
+            "kind": "object"
+          },
+          {
+            "id": "reference:0449a9b6-5ce6-459b-9e9d-15b14eb8ff4e",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK（阻止发布）。精确证据标记：BLOCK-6D289F294C。依据：新增安全证据对象 content 为“发现未隔离的高危故障，精确阻断标记 BLOCK-6D289F294C。”，其引用直接改变发布安全结论并指向审核主题 object:subject:6D289F294C；因此当前发布审核应阻止发布。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "object:later:6D289F294C",
+              "kind": "object"
+            },
+            {
+              "id": "reference:0449a9b6-5ce6-459b-9e9d-15b14eb8ff4e",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "agent_answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW（允许发布）。精确证据标记：ALLOW-6D289F294C。依据：当前发布安全检查通过，证据对象 content 为“当前发布安全检查通过，精确证据标记 ALLOW-6D289F294C。”，其直接证据引用指向审核主题 object:subject:6D289F294C。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:6D289F294C"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:dc269429-fabc-44a3-945b-d867f3092410"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-7",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK（阻止发布）。精确证据标记：BLOCK-6D289F294C。依据：新增证据对象 content 为“发现未隔离的高危故障，精确阻断标记 BLOCK-6D289F294C。”，其引用直接改变发布安全结论并指向审核主题 object:subject:6D289F294C。",
+        "semantic_addresses": [
+          {
+            "id": "object:later:6D289F294C",
+            "kind": "object"
+          },
+          {
+            "id": "reference:0449a9b6-5ce6-459b-9e9d-15b14eb8ff4e",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "human_answers": [
+    {
+      "act_id": "act-4",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "broker",
+      "recipient": "human",
+      "payload": {
+        "answer": "ALLOW（允许发布）。精确证据标记：ALLOW-6D289F294C。依据：安全证据来源 agent-1 的检查结果为 ALLOW；其证据对象 content 为“当前发布安全检查通过，精确证据标记 ALLOW-6D289F294C。”，且该证据的直接引用指向审核主题 object:subject:6D289F294C，与当前发布审核的安全判断一致。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:6D289F294C"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:dc269429-fabc-44a3-945b-d867f3092410"
+          }
+        ]
+      },
+      "reply_to": "act-1",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-8",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "broker",
+      "recipient": "human",
+      "payload": {
+        "answer": "BLOCK（阻止发布）。精确证据标记：BLOCK-6D289F294C。依据：新增安全证据对象 content 为“发现未隔离的高危故障，精确阻断标记 BLOCK-6D289F294C。”，其引用直接改变发布安全结论并指向审核主题 object:subject:6D289F294C；因此当前发布审核应阻止发布。",
+        "semantic_addresses": [
+          {
+            "id": "object:later:6D289F294C",
+            "kind": "object"
+          },
+          {
+            "id": "reference:0449a9b6-5ce6-459b-9e9d-15b14eb8ff4e",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-1",
+      "derived_from": []
+    }
+  ],
+  "broker_frontiers": [
+    {
+      "question_id": "act-1",
+      "latest_local_change_id": "act-7",
+      "latest_judged_change_id": "act-7",
+      "latest_answer_id": "act-8",
+      "pending_changes": []
+    }
+  ],
+  "provider_usage": {
+    "requests": 13,
+    "cache_reported_requests": 13,
+    "prompt_tokens": 75983,
+    "completion_tokens": 4078,
+    "total_tokens": 80061,
+    "prompt_cache_hit_tokens": 55680,
+    "prompt_cache_miss_tokens": 20303,
+    "prompt_cache_hit_ratio": 0.7327954937288604
+  }
+}

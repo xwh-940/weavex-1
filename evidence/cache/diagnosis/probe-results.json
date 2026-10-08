@@ -1,0 +1,343 @@
+[
+  {
+    "case": "baseline_warm",
+    "started": "2026-09-09T02:58:47.731570+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "54052bb00c9127d944c9d7d7732335bb0f38d1b43456c8e1bca8789742364818",
+    "tools_hash": "0357593b7734e47911b7157dba07ff576febba9b8519c7552d8a277c0b1c4ea4",
+    "messages_chars": 13802,
+    "tools_chars": 286,
+    "usage": {
+      "completion_tokens": 29,
+      "prompt_tokens": 5083,
+      "total_tokens": 5112,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 27,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 5083
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.0,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 1.813
+  },
+  {
+    "case": "baseline_repeat",
+    "started": "2026-09-09T02:58:55.548182+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "54052bb00c9127d944c9d7d7732335bb0f38d1b43456c8e1bca8789742364818",
+    "tools_hash": "0357593b7734e47911b7157dba07ff576febba9b8519c7552d8a277c0b1c4ea4",
+    "messages_chars": 13802,
+    "tools_chars": 286,
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 5083,
+      "total_tokens": 5101,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 16,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4992
+      },
+      "prompt_cache_hit_tokens": 4992,
+      "prompt_cache_miss_tokens": 91
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.9820971867007673,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 1.062
+  },
+  {
+    "case": "tail_append",
+    "started": "2026-09-09T02:59:02.622194+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "e83a2d1cb72dec57762642441e8633cffcab30a6388236f11f1ddc7673263711",
+    "tools_hash": "0357593b7734e47911b7157dba07ff576febba9b8519c7552d8a277c0b1c4ea4",
+    "messages_chars": 13824,
+    "tools_chars": 286,
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 5090,
+      "total_tokens": 5101,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 9,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4992
+      },
+      "prompt_cache_hit_tokens": 4992,
+      "prompt_cache_miss_tokens": 98
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.980746561886051,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 1.125
+  },
+  {
+    "case": "enum_change",
+    "started": "2026-09-09T02:59:09.758244+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "54052bb00c9127d944c9d7d7732335bb0f38d1b43456c8e1bca8789742364818",
+    "tools_hash": "c40e4544fa3e68234a4826c260911d5ae0e46f106255328d71944dbe082e2990",
+    "messages_chars": 13802,
+    "tools_chars": 299,
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 5088,
+      "total_tokens": 5100,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 10,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 5088
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.0,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 1.453
+  },
+  {
+    "case": "enum_change_repeat",
+    "started": "2026-09-09T02:59:17.206101+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "54052bb00c9127d944c9d7d7732335bb0f38d1b43456c8e1bca8789742364818",
+    "tools_hash": "c40e4544fa3e68234a4826c260911d5ae0e46f106255328d71944dbe082e2990",
+    "messages_chars": 13802,
+    "tools_chars": 299,
+    "usage": {
+      "completion_tokens": 9,
+      "prompt_tokens": 5088,
+      "total_tokens": 5097,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 7,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4992
+      },
+      "prompt_cache_hit_tokens": 4992,
+      "prompt_cache_miss_tokens": 96
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.9811320754716981,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 0.703
+  },
+  {
+    "case": "receive_only",
+    "started": "2026-09-09T02:59:23.912021+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "54052bb00c9127d944c9d7d7732335bb0f38d1b43456c8e1bca8789742364818",
+    "tools_hash": "593d913fab4554e1e2e141a7f1e8c59acf030fa084e14078447096c8da82bc5b",
+    "messages_chars": 13802,
+    "tools_chars": 171,
+    "usage": {
+      "completion_tokens": 24,
+      "prompt_tokens": 5043,
+      "total_tokens": 5067,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 22,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4787
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.05076343446361293,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 0.922
+  },
+  {
+    "case": "receive_only_repeat",
+    "started": "2026-09-09T02:59:30.843342+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "54052bb00c9127d944c9d7d7732335bb0f38d1b43456c8e1bca8789742364818",
+    "tools_hash": "593d913fab4554e1e2e141a7f1e8c59acf030fa084e14078447096c8da82bc5b",
+    "messages_chars": 13802,
+    "tools_chars": 171,
+    "usage": {
+      "completion_tokens": 47,
+      "prompt_tokens": 5043,
+      "total_tokens": 5090,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 45,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4992
+      },
+      "prompt_cache_hit_tokens": 4992,
+      "prompt_cache_miss_tokens": 51
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.9898869720404521,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 1.125
+  },
+  {
+    "case": "drop_reasoning",
+    "started": "2026-09-09T02:59:37.975684+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "c0da3c57b6302216181b09b4eaab539b514e3d69354764ad638f046b5d100c7d",
+    "tools_hash": "0357593b7734e47911b7157dba07ff576febba9b8519c7552d8a277c0b1c4ea4",
+    "messages_chars": 13736,
+    "tools_chars": 286,
+    "usage": {
+      "completion_tokens": 15,
+      "prompt_tokens": 5058,
+      "total_tokens": 5073,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 13,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4802
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.05061289047054172,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 1.204
+  },
+  {
+    "case": "drop_reasoning_repeat",
+    "started": "2026-09-09T02:59:45.180205+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "c0da3c57b6302216181b09b4eaab539b514e3d69354764ad638f046b5d100c7d",
+    "tools_hash": "0357593b7734e47911b7157dba07ff576febba9b8519c7552d8a277c0b1c4ea4",
+    "messages_chars": 13736,
+    "tools_chars": 286,
+    "usage": {
+      "completion_tokens": 17,
+      "prompt_tokens": 5058,
+      "total_tokens": 5075,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 15,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4992
+      },
+      "prompt_cache_hit_tokens": 4992,
+      "prompt_cache_miss_tokens": 66
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.9869513641755635,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 0.812
+  },
+  {
+    "case": "baseline_restored",
+    "started": "2026-09-09T02:59:52.005497+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "54052bb00c9127d944c9d7d7732335bb0f38d1b43456c8e1bca8789742364818",
+    "tools_hash": "0357593b7734e47911b7157dba07ff576febba9b8519c7552d8a277c0b1c4ea4",
+    "messages_chars": 13802,
+    "tools_chars": 286,
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 5083,
+      "total_tokens": 5094,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 9,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4992
+      },
+      "prompt_cache_hit_tokens": 4992,
+      "prompt_cache_miss_tokens": 91
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.9820971867007673,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 1.047
+  },
+  {
+    "case": "baseline_restored_repeat",
+    "started": "2026-09-09T02:59:59.065075+00:00",
+    "model": "deepseek-v4-flash",
+    "messages_hash": "54052bb00c9127d944c9d7d7732335bb0f38d1b43456c8e1bca8789742364818",
+    "tools_hash": "0357593b7734e47911b7157dba07ff576febba9b8519c7552d8a277c0b1c4ea4",
+    "messages_chars": 13802,
+    "tools_chars": 286,
+    "usage": {
+      "completion_tokens": 13,
+      "prompt_tokens": 5083,
+      "total_tokens": 5096,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 11,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4992
+      },
+      "prompt_cache_hit_tokens": 4992,
+      "prompt_cache_miss_tokens": 91
+    },
+    "response_model": "deepseek-v4-flash",
+    "hit_ratio": 0.9820971867007673,
+    "finish_reason": "stop",
+    "status": "completed",
+    "seconds": 0.891
+  }
+]

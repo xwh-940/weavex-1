@@ -1,0 +1,247 @@
+{
+  "group": "competing-gap",
+  "index": 2,
+  "initial_ok": true,
+  "both_judged": true,
+  "old_updated": true,
+  "current_answered": true,
+  "old_gap_persisted_if_unjudged": true,
+  "risk_marker": "BLOCK-7A6FD04F45",
+  "current_marker": "CURRENT-337062B8EB",
+  "writer": {
+    "source": "world_add_reference",
+    "ok": true,
+    "value": {
+      "reference_id": "reference:a2bd4af5-7132-41b1-bd7d-d31da0a48e57",
+      "source_object_id": "object:later:7A6FD04F45",
+      "meaning": "直接改变发布安全结论的新增证据。",
+      "semantic_address": {
+        "kind": "reference",
+        "id": "reference:a2bd4af5-7132-41b1-bd7d-d31da0a48e57"
+      },
+      "target": {
+        "kind": "object",
+        "id": "object:subject:7A6FD04F45"
+      }
+    },
+    "error": "",
+    "capability_boundary_change": {
+      "question_id": "act-5",
+      "semantic_world_operations": {
+        "before": 1,
+        "after": 0
+      }
+    }
+  },
+  "first_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:a2bd4af5-7132-41b1-bd7d-d31da0a48e57",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:7A6FD04F45",
+            "content": "发现未隔离的高危故障，精确阻断标记 BLOCK-7A6FD04F45。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:7A6FD04F45"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:a2bd4af5-7132-41b1-bd7d-d31da0a48e57",
+            "source_object_id": "object:later:7A6FD04F45",
+            "meaning": "直接改变发布安全结论的新增证据。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:a2bd4af5-7132-41b1-bd7d-d31da0a48e57"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:7A6FD04F45"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:7A6FD04F45"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK。新增直接证据显示发现未隔离的高危故障，发布阻断。精确证据标记：BLOCK-7A6FD04F45。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "object:later:7A6FD04F45",
+              "kind": "object"
+            },
+            {
+              "id": "reference:a2bd4af5-7132-41b1-bd7d-d31da0a48e57",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "CURRENT-337062B8EB",
+          "question_id": "act-7",
+          "semantic_addresses": [
+            {
+              "id": "object:70c2bb0e-9641-413e-91be-599d11ac800f",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "second_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "act_id": "act-7",
+      "thread_id": "thread-3",
+      "kind": "question",
+      "sender": "broker",
+      "recipient": "agent-1",
+      "payload": {
+        "raw_question": "返回给定 Object content 中的精确结果标记。",
+        "interpretation_context": {
+          "content": "",
+          "semantic_addresses": [
+            {
+              "kind": "object",
+              "id": "object:70c2bb0e-9641-413e-91be-599d11ac800f"
+            }
+          ]
+        },
+        "intent": "Answer 必须包含给定 Object content 中的精确随机标记。"
+      },
+      "reply_to": "act-6",
+      "derived_from": [
+        "act-6"
+      ]
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "old_answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。当前发布安全检查通过，发布允许。精确证据标记：ALLOW-7A6FD04F45。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:7A6FD04F45"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:7a452e2c-81a1-4f46-84e7-30f315bfca60"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-8",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK。新增直接证据显示发现未隔离的高危故障，发布阻断。精确证据标记：BLOCK-7A6FD04F45。",
+        "semantic_addresses": [
+          {
+            "id": "object:later:7A6FD04F45",
+            "kind": "object"
+          },
+          {
+            "id": "reference:a2bd4af5-7132-41b1-bd7d-d31da0a48e57",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "current_answers": [
+    {
+      "act_id": "act-9",
+      "thread_id": "thread-3",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "CURRENT-337062B8EB",
+        "semantic_addresses": [
+          {
+            "id": "object:70c2bb0e-9641-413e-91be-599d11ac800f",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-7",
+      "derived_from": []
+    }
+  ],
+  "pending_question_ids": [],
+  "provider_usage": {
+    "requests": 10,
+    "cache_reported_requests": 10,
+    "prompt_tokens": 65693,
+    "completion_tokens": 2101,
+    "total_tokens": 67794,
+    "prompt_cache_hit_tokens": 44544,
+    "prompt_cache_miss_tokens": 21149,
+    "prompt_cache_hit_ratio": 0.6780631117470659
+  }
+}

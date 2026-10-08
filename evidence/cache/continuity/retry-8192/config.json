@@ -1,0 +1,1 @@
+{"model": "deepseek-v4-flash", "max_tokens": 8192, "request_timeout": 60, "max_activations": 20, "max_seconds": 480}

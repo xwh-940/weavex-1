@@ -1,0 +1,277 @@
+{
+  "group": "broker-human",
+  "arm": "relevant",
+  "index": 1,
+  "initial_ok": true,
+  "natural": true,
+  "allow_marker": "ALLOW-A7CE084F3B",
+  "later_marker": "BLOCK-A7CE084F3B",
+  "initial_broker_step": {
+    "handled": true,
+    "actor_id": "broker",
+    "arrival": {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。直接证据表明当前发布安全检查通过，精确证据标记为 ALLOW-A7CE084F3B。",
+        "semantic_addresses": [
+          {
+            "id": "object:baseline:A7CE084F3B",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW。直接证据表明当前发布安全检查通过，允许发布。精确证据标记为 ALLOW-A7CE084F3B。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "object:baseline:A7CE084F3B",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "delta_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:b472ba78-68c2-4f90-ae3c-135b15bb5788",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:A7CE084F3B",
+            "content": "发现未隔离的高危故障，精确阻断标记 BLOCK-A7CE084F3B。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:A7CE084F3B"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:b472ba78-68c2-4f90-ae3c-135b15bb5788",
+            "source_object_id": "object:later:A7CE084F3B",
+            "meaning": "直接改变发布安全结论的新增证据。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:b472ba78-68c2-4f90-ae3c-135b15bb5788"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:A7CE084F3B"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:A7CE084F3B"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK。新增直接证据表明发现未隔离的高危故障，精确阻断标记为 BLOCK-A7CE084F3B，当前发布审核不允许发布。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "object:later:A7CE084F3B",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "broker_followup": {
+    "handled": true,
+    "actor_id": "broker",
+    "arrival": {
+      "act_id": "act-7",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK。新增直接证据表明发现未隔离的高危故障，精确阻断标记为 BLOCK-A7CE084F3B，当前发布审核不允许发布。",
+        "semantic_addresses": [
+          {
+            "id": "object:later:A7CE084F3B",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK。新增直接证据表明发现未隔离的高危故障，当前发布审核不允许发布。精确证据标记为 BLOCK-A7CE084F3B。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "object:later:A7CE084F3B",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "agent_answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。直接证据表明当前发布安全检查通过，精确证据标记为 ALLOW-A7CE084F3B。",
+        "semantic_addresses": [
+          {
+            "id": "object:baseline:A7CE084F3B",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-7",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK。新增直接证据表明发现未隔离的高危故障，精确阻断标记为 BLOCK-A7CE084F3B，当前发布审核不允许发布。",
+        "semantic_addresses": [
+          {
+            "id": "object:later:A7CE084F3B",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "human_answers": [
+    {
+      "act_id": "act-4",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "broker",
+      "recipient": "human",
+      "payload": {
+        "answer": "ALLOW。直接证据表明当前发布安全检查通过，允许发布。精确证据标记为 ALLOW-A7CE084F3B。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:A7CE084F3B"
+          }
+        ]
+      },
+      "reply_to": "act-1",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-8",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "broker",
+      "recipient": "human",
+      "payload": {
+        "answer": "BLOCK。新增直接证据表明发现未隔离的高危故障，当前发布审核不允许发布。精确证据标记为 BLOCK-A7CE084F3B。",
+        "semantic_addresses": [
+          {
+            "id": "object:later:A7CE084F3B",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-1",
+      "derived_from": []
+    }
+  ],
+  "broker_frontiers": [
+    {
+      "question_id": "act-1",
+      "latest_local_change_id": "act-7",
+      "latest_judged_change_id": "act-7",
+      "latest_answer_id": "act-8",
+      "pending_changes": []
+    }
+  ],
+  "provider_usage": {
+    "requests": 13,
+    "cache_reported_requests": 13,
+    "prompt_tokens": 73095,
+    "completion_tokens": 2755,
+    "total_tokens": 75850,
+    "prompt_cache_hit_tokens": 54528,
+    "prompt_cache_miss_tokens": 18567,
+    "prompt_cache_hit_ratio": 0.7459880976811
+  }
+}

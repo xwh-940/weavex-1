@@ -1,0 +1,199 @@
+{
+  "group": "agent-frontier",
+  "arm": "irrelevant",
+  "index": 3,
+  "initial_ok": true,
+  "natural": true,
+  "allow_marker": "ALLOW-1C192CC57C",
+  "later_marker": "DOC-1C192CC57C",
+  "initial_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "act_id": "act-2",
+      "thread_id": "thread-1",
+      "kind": "question",
+      "sender": "broker",
+      "recipient": "agent-1",
+      "payload": {
+        "raw_question": "判断当前发布审核是否允许发布，并返回精确证据标记。",
+        "interpretation_context": {
+          "content": "安全证据直接指向给定审核主题。",
+          "semantic_addresses": [
+            {
+              "kind": "object",
+              "id": "object:subject:1C192CC57C"
+            }
+          ]
+        },
+        "intent": "只判断发布安全；Answer 必须包含 ALLOW/BLOCK 与实际证据中的精确随机标记。"
+      },
+      "reply_to": "act-1",
+      "derived_from": [
+        "act-1"
+      ]
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "world_references_to",
+        "arguments": {
+          "address": {
+            "id": "object:subject:1C192CC57C",
+            "kind": "object"
+          },
+          "question_id": "act-2"
+        },
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW。当前发布审核允许发布。直接证据：对象 object:baseline:1C192CC57C 的内容为“当前发布安全检查通过，精确证据标记 ALLOW-1C192CC57C。”，并经引用 reference:3329120e-ac47-4d2b-b89f-01e2b0e1a84d（meaning：当前发布安全的直接证据）指向审核主题 object:subject:1C192CC57C。精确证据标记：ALLOW-1C192CC57C。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "object:baseline:1C192CC57C",
+              "kind": "object"
+            },
+            {
+              "id": "reference:3329120e-ac47-4d2b-b89f-01e2b0e1a84d",
+              "kind": "reference"
+            },
+            {
+              "id": "object:subject:1C192CC57C",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "delta_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:ffe71f81-6f78-439f-8ddb-fe529380f384",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:1C192CC57C",
+            "content": "行政归档批次更新为 DOC-1C192CC57C，不改变发布安全。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:1C192CC57C"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:ffe71f81-6f78-439f-8ddb-fe529380f384",
+            "source_object_id": "object:later:1C192CC57C",
+            "meaning": "只影响行政归档、不影响发布安全的事实。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:ffe71f81-6f78-439f-8ddb-fe529380f384"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:1C192CC57C"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:1C192CC57C"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "retain_answer",
+        "arguments": {
+          "question_id": "act-2"
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。当前发布审核允许发布。直接证据：对象 object:baseline:1C192CC57C 的内容为“当前发布安全检查通过，精确证据标记 ALLOW-1C192CC57C。”，并经引用 reference:3329120e-ac47-4d2b-b89f-01e2b0e1a84d（meaning：当前发布安全的直接证据）指向审核主题 object:subject:1C192CC57C。精确证据标记：ALLOW-1C192CC57C。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:1C192CC57C"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:3329120e-ac47-4d2b-b89f-01e2b0e1a84d"
+          },
+          {
+            "kind": "object",
+            "id": "object:subject:1C192CC57C"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "pending_question_ids": [],
+  "frontiers": [
+    {
+      "question_id": "act-2",
+      "latest_local_change_id": "local-world-delta-1",
+      "latest_judged_change_id": "local-world-delta-1",
+      "latest_answer_id": "act-3",
+      "pending_changes": []
+    }
+  ],
+  "provider_usage": {
+    "requests": 7,
+    "cache_reported_requests": 7,
+    "prompt_tokens": 40192,
+    "completion_tokens": 949,
+    "total_tokens": 41141,
+    "prompt_cache_hit_tokens": 30336,
+    "prompt_cache_miss_tokens": 9856,
+    "prompt_cache_hit_ratio": 0.7547770700636943
+  }
+}

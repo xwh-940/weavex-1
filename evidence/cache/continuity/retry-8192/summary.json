@@ -1,0 +1,57 @@
+{
+  "error": "",
+  "handled": 8,
+  "actors": 3,
+  "requests": 29,
+  "provider_usage": {
+    "requests": 29,
+    "cache_reported_requests": 29,
+    "prompt_tokens": 332914,
+    "completion_tokens": 10475,
+    "total_tokens": 343389,
+    "prompt_cache_hit_tokens": 325248,
+    "prompt_cache_miss_tokens": 7666,
+    "prompt_cache_hit_ratio": 0.9769730320743495
+  },
+  "schema_variants_by_actor": {
+    "broker": 1,
+    "agent-1": 1,
+    "agent-2": 1
+  },
+  "changed_history_prefixes": 0,
+  "human_answers": [
+    [
+      {
+        "answer": "两个起点登记的完整编号如下：\\n- entry-1（起点 1）：ALPHA-417\\n- entry-2（起点 2）：BETA-926",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "record-1"
+          },
+          {
+            "kind": "object",
+            "id": "record-2"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "answer": "不相同。两个起点登记的完整编号分别为：\\n- entry-1（起点 1）：ALPHA-417\\n- entry-2（起点 2）：BETA-926\\n两个编号并不相同。",
+        "semantic_addresses": []
+      }
+    ],
+    [
+      {
+        "answer": "第一个起点 entry-1 的完整编号为：ALPHA-417。",
+        "semantic_addresses": []
+      }
+    ]
+  ],
+  "open_responsibilities": {
+    "broker": 0,
+    "agent-1": 0,
+    "agent-2": 0
+  },
+  "tool_failures": 1
+}

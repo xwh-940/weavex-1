@@ -1,0 +1,4681 @@
+[
+  {
+    "source": "output\\initialization_v0\\run-real\\snapshot.json",
+    "total": {
+      "requests": 62,
+      "hit": 279680,
+      "miss": 596322,
+      "hit_ratio": 0.31927,
+      "zero_hit_requests": 2,
+      "mean_hit": 4511,
+      "mean_prompt": 14129
+    },
+    "actors": 5,
+    "activations": 13,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 5,
+        "hit": 16384,
+        "miss": 4244,
+        "hit_ratio": 0.79426,
+        "zero_hit_requests": 1,
+        "mean_hit": 3277,
+        "mean_prompt": 4126
+      },
+      "new_activation": {
+        "requests": 8,
+        "hit": 40192,
+        "miss": 34797,
+        "hit_ratio": 0.53597,
+        "zero_hit_requests": 0,
+        "mean_hit": 5024,
+        "mean_prompt": 9374
+      },
+      "within_activation_changed_tools": {
+        "requests": 46,
+        "hit": 183808,
+        "miss": 547372,
+        "hit_ratio": 0.25139,
+        "zero_hit_requests": 1,
+        "mean_hit": 3996,
+        "mean_prompt": 15895
+      },
+      "within_activation_same_tools": {
+        "requests": 3,
+        "hit": 39296,
+        "miss": 9909,
+        "hit_ratio": 0.79862,
+        "zero_hit_requests": 0,
+        "mean_hit": 13099,
+        "mean_prompt": 16402
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 13,
+        "hit": 56576,
+        "miss": 39041,
+        "hit_ratio": 0.59169,
+        "zero_hit_requests": 1,
+        "mean_hit": 4352,
+        "mean_prompt": 7355
+      },
+      "answer_question": {
+        "requests": 1,
+        "hit": 23808,
+        "miss": 6297,
+        "hit_ratio": 0.79083,
+        "zero_hit_requests": 0,
+        "mean_hit": 23808,
+        "mean_prompt": 30105
+      },
+      "inspect_inquiry_topology": {
+        "requests": 2,
+        "hit": 15488,
+        "miss": 3612,
+        "hit_ratio": 0.81089,
+        "zero_hit_requests": 0,
+        "mean_hit": 7744,
+        "mean_prompt": 9550
+      },
+      "receive_input": {
+        "requests": 13,
+        "hit": 48768,
+        "miss": 116565,
+        "hit_ratio": 0.29497,
+        "zero_hit_requests": 1,
+        "mean_hit": 3751,
+        "mean_prompt": 12718
+      },
+      "reply_act": {
+        "requests": 9,
+        "hit": 34816,
+        "miss": 133534,
+        "hit_ratio": 0.20681,
+        "zero_hit_requests": 0,
+        "mean_hit": 3868,
+        "mean_prompt": 18706
+      },
+      "retain_answer": {
+        "requests": 2,
+        "hit": 8704,
+        "miss": 18841,
+        "hit_ratio": 0.31599,
+        "zero_hit_requests": 0,
+        "mean_hit": 4352,
+        "mean_prompt": 13772
+      },
+      "send_act": {
+        "requests": 4,
+        "hit": 18048,
+        "miss": 40728,
+        "hit_ratio": 0.30706,
+        "zero_hit_requests": 0,
+        "mean_hit": 4512,
+        "mean_prompt": 14694
+      },
+      "world_references_from": {
+        "requests": 18,
+        "hit": 73472,
+        "miss": 237704,
+        "hit_ratio": 0.23611,
+        "zero_hit_requests": 0,
+        "mean_hit": 4082,
+        "mean_prompt": 17288
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 42,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-1",
+        {
+          "requests": 15,
+          "hit": 74368,
+          "miss": 193413,
+          "hit_ratio": 0.27772,
+          "zero_hit_requests": 1,
+          "mean_hit": 4958,
+          "mean_prompt": 17852
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 15,
+          "hit": 61824,
+          "miss": 169807,
+          "hit_ratio": 0.26691,
+          "zero_hit_requests": 0,
+          "mean_hit": 4122,
+          "mean_prompt": 15442
+        }
+      ],
+      [
+        "agent-3",
+        {
+          "requests": 10,
+          "hit": 39296,
+          "miss": 93909,
+          "hit_ratio": 0.295,
+          "zero_hit_requests": 0,
+          "mean_hit": 3930,
+          "mean_prompt": 13320
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 11,
+          "hit": 54784,
+          "miss": 69770,
+          "hit_ratio": 0.43984,
+          "zero_hit_requests": 0,
+          "mean_hit": 4980,
+          "mean_prompt": 11323
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 11,
+          "hit": 49408,
+          "miss": 69423,
+          "hit_ratio": 0.41578,
+          "zero_hit_requests": 1,
+          "mean_hit": 4492,
+          "mean_prompt": 10803
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        3840,
+        10
+      ],
+      [
+        4096,
+        9
+      ],
+      [
+        4352,
+        8
+      ],
+      [
+        4224,
+        7
+      ],
+      [
+        3712,
+        6
+      ],
+      [
+        4608,
+        6
+      ],
+      [
+        4480,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        3584,
+        2
+      ],
+      [
+        3968,
+        2
+      ],
+      [
+        6400,
+        2
+      ],
+      [
+        2688,
+        1
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 47,
+      "ask_external_question": 13,
+      "ask_in_existing_context": 13,
+      "receive_input": 21,
+      "world_add_object": 13,
+      "world_add_reference": 13,
+      "world_references_from": 13,
+      "world_references_to": 13,
+      "yield_turn": 21,
+      "create_actor": 12,
+      "inspect_inquiry_topology": 16,
+      "send_question": 16,
+      "send_incremental_act": 21,
+      "retain_answer": 4
+    }
+  },
+  {
+    "source": "output\\liuwen_20260904_first\\main-1\\traces.jsonl",
+    "total": {
+      "requests": 140,
+      "hit": 3927552,
+      "miss": 18635627,
+      "hit_ratio": 0.17407,
+      "zero_hit_requests": 0,
+      "mean_hit": 28054,
+      "mean_prompt": 161166
+    },
+    "actors": 2,
+    "activations": 34,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 2,
+        "hit": 8192,
+        "miss": 130,
+        "hit_ratio": 0.98438,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 4161
+      },
+      "new_activation": {
+        "requests": 32,
+        "hit": 3436032,
+        "miss": 732545,
+        "hit_ratio": 0.82427,
+        "zero_hit_requests": 0,
+        "mean_hit": 107376,
+        "mean_prompt": 130268
+      },
+      "within_activation_changed_tools": {
+        "requests": 105,
+        "hit": 452736,
+        "miss": 17902775,
+        "hit_ratio": 0.02466,
+        "zero_hit_requests": 0,
+        "mean_hit": 4312,
+        "mean_prompt": 174814
+      },
+      "within_activation_same_tools": {
+        "requests": 1,
+        "hit": 30592,
+        "miss": 177,
+        "hit_ratio": 0.99425,
+        "zero_hit_requests": 0,
+        "mean_hit": 30592,
+        "mean_prompt": 30769
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 34,
+        "hit": 3444224,
+        "miss": 732675,
+        "hit_ratio": 0.82459,
+        "zero_hit_requests": 0,
+        "mean_hit": 101301,
+        "mean_prompt": 122850
+      },
+      "create_actor": {
+        "requests": 1,
+        "hit": 4736,
+        "miss": 8274,
+        "hit_ratio": 0.36403,
+        "zero_hit_requests": 0,
+        "mean_hit": 4736,
+        "mean_prompt": 13010
+      },
+      "receive_input": {
+        "requests": 34,
+        "hit": 147328,
+        "miss": 4942142,
+        "hit_ratio": 0.02895,
+        "zero_hit_requests": 0,
+        "mean_hit": 4333,
+        "mean_prompt": 149690
+      },
+      "reply_act": {
+        "requests": 24,
+        "hit": 127232,
+        "miss": 4680448,
+        "hit_ratio": 0.02646,
+        "zero_hit_requests": 0,
+        "mean_hit": 5301,
+        "mean_prompt": 200320
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 11520,
+        "miss": 1604488,
+        "hit_ratio": 0.00713,
+        "zero_hit_requests": 0,
+        "mean_hit": 3840,
+        "mean_prompt": 538669
+      },
+      "send_act": {
+        "requests": 11,
+        "hit": 49280,
+        "miss": 348164,
+        "hit_ratio": 0.12399,
+        "zero_hit_requests": 0,
+        "mean_hit": 4480,
+        "mean_prompt": 36131
+      },
+      "world_add_object": {
+        "requests": 4,
+        "hit": 16128,
+        "miss": 1764386,
+        "hit_ratio": 0.00906,
+        "zero_hit_requests": 0,
+        "mean_hit": 4032,
+        "mean_prompt": 445128
+      },
+      "world_add_reference": {
+        "requests": 4,
+        "hit": 25344,
+        "miss": 1777524,
+        "hit_ratio": 0.01406,
+        "zero_hit_requests": 0,
+        "mean_hit": 6336,
+        "mean_prompt": 450717
+      },
+      "world_references_from": {
+        "requests": 24,
+        "hit": 97664,
+        "miss": 2740614,
+        "hit_ratio": 0.03441,
+        "zero_hit_requests": 0,
+        "mean_hit": 4069,
+        "mean_prompt": 118262
+      },
+      "world_references_to": {
+        "requests": 1,
+        "hit": 4096,
+        "miss": 36912,
+        "hit_ratio": 0.09988,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 41008
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 106,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-1",
+        {
+          "requests": 69,
+          "hit": 3031808,
+          "miss": 17144495,
+          "hit_ratio": 0.15027,
+          "zero_hit_requests": 0,
+          "mean_hit": 43939,
+          "mean_prompt": 292410
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 71,
+          "hit": 895744,
+          "miss": 1491132,
+          "hit_ratio": 0.37528,
+          "zero_hit_requests": 0,
+          "mean_hit": 12616,
+          "mean_prompt": 33618
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        29
+      ],
+      [
+        3840,
+        25
+      ],
+      [
+        4352,
+        23
+      ],
+      [
+        4480,
+        10
+      ],
+      [
+        4608,
+        9
+      ],
+      [
+        4736,
+        6
+      ],
+      [
+        3968,
+        3
+      ],
+      [
+        8832,
+        2
+      ],
+      [
+        6016,
+        1
+      ],
+      [
+        5888,
+        1
+      ],
+      [
+        8448,
+        1
+      ],
+      [
+        10496,
+        1
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 117,
+      "create_actor": 46,
+      "form_group": 2,
+      "inspect_inquiry_topology": 55,
+      "receive_input": 66,
+      "send_incremental_act": 100,
+      "yield_turn": 66,
+      "send_question": 55,
+      "ask_external_question": 30,
+      "ask_in_existing_context": 30,
+      "world_add_object": 25,
+      "world_add_reference": 25,
+      "world_references_from": 25,
+      "world_references_to": 25,
+      "retain_answer": 34
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_full\\local-r1-none\\snapshot.json.gz",
+    "total": {
+      "requests": 74,
+      "hit": 344576,
+      "miss": 698354,
+      "hit_ratio": 0.33039,
+      "zero_hit_requests": 0,
+      "mean_hit": 4656,
+      "mean_prompt": 14094
+    },
+    "actors": 7,
+    "activations": 19,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 12,
+        "hit": 64384,
+        "miss": 52133,
+        "hit_ratio": 0.55257,
+        "zero_hit_requests": 0,
+        "mean_hit": 5365,
+        "mean_prompt": 9710
+      },
+      "within_activation_changed_tools": {
+        "requests": 53,
+        "hit": 235904,
+        "miss": 642100,
+        "hit_ratio": 0.26868,
+        "zero_hit_requests": 0,
+        "mean_hit": 4451,
+        "mean_prompt": 16566
+      },
+      "within_activation_same_tools": {
+        "requests": 2,
+        "hit": 15872,
+        "miss": 3558,
+        "hit_ratio": 0.81688,
+        "zero_hit_requests": 0,
+        "mean_hit": 7936,
+        "mean_prompt": 9715
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 19,
+        "hit": 92800,
+        "miss": 52696,
+        "hit_ratio": 0.63782,
+        "zero_hit_requests": 0,
+        "mean_hit": 4884,
+        "mean_prompt": 7658
+      },
+      "inspect_inquiry_topology": {
+        "requests": 2,
+        "hit": 15872,
+        "miss": 3558,
+        "hit_ratio": 0.81688,
+        "zero_hit_requests": 0,
+        "mean_hit": 7936,
+        "mean_prompt": 9715
+      },
+      "receive_input": {
+        "requests": 19,
+        "hit": 92800,
+        "miss": 154262,
+        "hit_ratio": 0.37561,
+        "zero_hit_requests": 0,
+        "mean_hit": 4884,
+        "mean_prompt": 13003
+      },
+      "reply_act": {
+        "requests": 13,
+        "hit": 53248,
+        "miss": 212412,
+        "hit_ratio": 0.20044,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 20435
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 13056,
+        "miss": 29634,
+        "hit_ratio": 0.30583,
+        "zero_hit_requests": 0,
+        "mean_hit": 4352,
+        "mean_prompt": 14230
+      },
+      "send_act": {
+        "requests": 6,
+        "hit": 27648,
+        "miss": 38087,
+        "hit_ratio": 0.4206,
+        "zero_hit_requests": 0,
+        "mean_hit": 4608,
+        "mean_prompt": 10956
+      },
+      "world_references_from": {
+        "requests": 9,
+        "hit": 36864,
+        "miss": 157948,
+        "hit_ratio": 0.18923,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 21646
+      },
+      "world_references_to": {
+        "requests": 3,
+        "hit": 12288,
+        "miss": 49757,
+        "hit_ratio": 0.19805,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 20682
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 46,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-3",
+        {
+          "requests": 15,
+          "hit": 67072,
+          "miss": 216707,
+          "hit_ratio": 0.23635,
+          "zero_hit_requests": 0,
+          "mean_hit": 4471,
+          "mean_prompt": 18919
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 13,
+          "hit": 61824,
+          "miss": 195142,
+          "hit_ratio": 0.24059,
+          "zero_hit_requests": 0,
+          "mean_hit": 4756,
+          "mean_prompt": 19767
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 11,
+          "hit": 55040,
+          "miss": 64523,
+          "hit_ratio": 0.46034,
+          "zero_hit_requests": 0,
+          "mean_hit": 5004,
+          "mean_prompt": 10869
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 11,
+          "hit": 55168,
+          "miss": 59475,
+          "hit_ratio": 0.48122,
+          "zero_hit_requests": 0,
+          "mean_hit": 5015,
+          "mean_prompt": 10422
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 10,
+          "hit": 46336,
+          "miss": 62488,
+          "hit_ratio": 0.42579,
+          "zero_hit_requests": 0,
+          "mean_hit": 4634,
+          "mean_prompt": 10882
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 8,
+          "hit": 31488,
+          "miss": 62518,
+          "hit_ratio": 0.33496,
+          "zero_hit_requests": 0,
+          "mean_hit": 3936,
+          "mean_prompt": 11751
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        16
+      ],
+      [
+        4608,
+        11
+      ],
+      [
+        3840,
+        10
+      ],
+      [
+        4352,
+        9
+      ],
+      [
+        4480,
+        7
+      ],
+      [
+        7040,
+        3
+      ],
+      [
+        3712,
+        3
+      ],
+      [
+        3968,
+        3
+      ],
+      [
+        4736,
+        2
+      ],
+      [
+        6016,
+        2
+      ],
+      [
+        5120,
+        1
+      ],
+      [
+        7296,
+        1
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 54,
+      "ask_external_question": 18,
+      "ask_in_existing_context": 18,
+      "receive_input": 31,
+      "world_add_object": 18,
+      "world_add_reference": 18,
+      "world_references_from": 18,
+      "world_references_to": 18,
+      "yield_turn": 31,
+      "create_actor": 18,
+      "inspect_inquiry_topology": 24,
+      "send_question": 24,
+      "send_incremental_act": 32,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_full\\local-r2-none\\snapshot.json.gz",
+    "total": {
+      "requests": 83,
+      "hit": 390784,
+      "miss": 1087204,
+      "hit_ratio": 0.2644,
+      "zero_hit_requests": 0,
+      "mean_hit": 4708,
+      "mean_prompt": 17807
+    },
+    "actors": 7,
+    "activations": 19,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 12,
+        "hit": 64256,
+        "miss": 53038,
+        "hit_ratio": 0.54782,
+        "zero_hit_requests": 0,
+        "mean_hit": 5355,
+        "mean_prompt": 9774
+      },
+      "within_activation_changed_tools": {
+        "requests": 64,
+        "hit": 298112,
+        "miss": 1033603,
+        "hit_ratio": 0.22386,
+        "zero_hit_requests": 0,
+        "mean_hit": 4658,
+        "mean_prompt": 20808
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 19,
+        "hit": 92672,
+        "miss": 53601,
+        "hit_ratio": 0.63356,
+        "zero_hit_requests": 0,
+        "mean_hit": 4877,
+        "mean_prompt": 7699
+      },
+      "receive_input": {
+        "requests": 19,
+        "hit": 104704,
+        "miss": 146101,
+        "hit_ratio": 0.41747,
+        "zero_hit_requests": 0,
+        "mean_hit": 5511,
+        "mean_prompt": 13200
+      },
+      "reply_act": {
+        "requests": 13,
+        "hit": 55424,
+        "miss": 302329,
+        "hit_ratio": 0.15492,
+        "zero_hit_requests": 0,
+        "mean_hit": 4263,
+        "mean_prompt": 27519
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 15360,
+        "miss": 27979,
+        "hit_ratio": 0.35442,
+        "zero_hit_requests": 0,
+        "mean_hit": 5120,
+        "mean_prompt": 14446
+      },
+      "send_act": {
+        "requests": 6,
+        "hit": 28416,
+        "miss": 42365,
+        "hit_ratio": 0.40146,
+        "zero_hit_requests": 0,
+        "mean_hit": 4736,
+        "mean_prompt": 11797
+      },
+      "world_references_from": {
+        "requests": 19,
+        "hit": 77824,
+        "miss": 411593,
+        "hit_ratio": 0.15901,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 25759
+      },
+      "world_references_to": {
+        "requests": 4,
+        "hit": 16384,
+        "miss": 103236,
+        "hit_ratio": 0.13697,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 29905
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 57,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-3",
+        {
+          "requests": 16,
+          "hit": 73472,
+          "miss": 459196,
+          "hit_ratio": 0.13793,
+          "zero_hit_requests": 0,
+          "mean_hit": 4592,
+          "mean_prompt": 33292
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 17,
+          "hit": 78208,
+          "miss": 290088,
+          "hit_ratio": 0.21235,
+          "zero_hit_requests": 0,
+          "mean_hit": 4600,
+          "mean_prompt": 21664
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 10,
+          "hit": 41216,
+          "miss": 87951,
+          "hit_ratio": 0.31909,
+          "zero_hit_requests": 0,
+          "mean_hit": 4122,
+          "mean_prompt": 12917
+        }
+      ],
+      [
+        "agent-1",
+        {
+          "requests": 10,
+          "hit": 42880,
+          "miss": 77661,
+          "hit_ratio": 0.35573,
+          "zero_hit_requests": 0,
+          "mean_hit": 4288,
+          "mean_prompt": 12054
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 10,
+          "hit": 51712,
+          "miss": 63127,
+          "hit_ratio": 0.4503,
+          "zero_hit_requests": 0,
+          "mean_hit": 5171,
+          "mean_prompt": 11484
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 10,
+          "hit": 51584,
+          "miss": 59029,
+          "hit_ratio": 0.46635,
+          "zero_hit_requests": 0,
+          "mean_hit": 5158,
+          "mean_prompt": 11061
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        27
+      ],
+      [
+        3840,
+        12
+      ],
+      [
+        5120,
+        7
+      ],
+      [
+        4608,
+        6
+      ],
+      [
+        4736,
+        6
+      ],
+      [
+        7552,
+        4
+      ],
+      [
+        3968,
+        3
+      ],
+      [
+        4352,
+        3
+      ],
+      [
+        4480,
+        3
+      ],
+      [
+        7040,
+        2
+      ],
+      [
+        5760,
+        2
+      ],
+      [
+        6016,
+        2
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 65,
+      "ask_external_question": 18,
+      "ask_in_existing_context": 18,
+      "receive_input": 31,
+      "world_add_object": 18,
+      "world_add_reference": 18,
+      "world_references_from": 18,
+      "world_references_to": 18,
+      "yield_turn": 31,
+      "create_actor": 18,
+      "inspect_inquiry_topology": 24,
+      "send_question": 24,
+      "send_incremental_act": 32,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_full\\remote-r1-none\\snapshot.json.gz",
+    "total": {
+      "requests": 83,
+      "hit": 395392,
+      "miss": 873122,
+      "hit_ratio": 0.3117,
+      "zero_hit_requests": 0,
+      "mean_hit": 4764,
+      "mean_prompt": 15283
+    },
+    "actors": 7,
+    "activations": 19,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 12,
+        "hit": 62720,
+        "miss": 56106,
+        "hit_ratio": 0.52783,
+        "zero_hit_requests": 0,
+        "mean_hit": 5227,
+        "mean_prompt": 9902
+      },
+      "within_activation_changed_tools": {
+        "requests": 64,
+        "hit": 304256,
+        "miss": 816453,
+        "hit_ratio": 0.27149,
+        "zero_hit_requests": 0,
+        "mean_hit": 4754,
+        "mean_prompt": 17511
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 19,
+        "hit": 91136,
+        "miss": 56669,
+        "hit_ratio": 0.6166,
+        "zero_hit_requests": 0,
+        "mean_hit": 4797,
+        "mean_prompt": 7779
+      },
+      "receive_input": {
+        "requests": 19,
+        "hit": 104064,
+        "miss": 149568,
+        "hit_ratio": 0.4103,
+        "zero_hit_requests": 0,
+        "mean_hit": 5477,
+        "mean_prompt": 13349
+      },
+      "reply_act": {
+        "requests": 13,
+        "hit": 51456,
+        "miss": 236534,
+        "hit_ratio": 0.17867,
+        "zero_hit_requests": 0,
+        "mean_hit": 3958,
+        "mean_prompt": 22153
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 13824,
+        "miss": 37352,
+        "hit_ratio": 0.27013,
+        "zero_hit_requests": 0,
+        "mean_hit": 4608,
+        "mean_prompt": 17059
+      },
+      "send_act": {
+        "requests": 6,
+        "hit": 40704,
+        "miss": 23360,
+        "hit_ratio": 0.63536,
+        "zero_hit_requests": 0,
+        "mean_hit": 6784,
+        "mean_prompt": 10677
+      },
+      "world_references_from": {
+        "requests": 22,
+        "hit": 90112,
+        "miss": 344564,
+        "hit_ratio": 0.20731,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 19758
+      },
+      "world_references_to": {
+        "requests": 1,
+        "hit": 4096,
+        "miss": 25075,
+        "hit_ratio": 0.14041,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 29171
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 57,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-2",
+        {
+          "requests": 17,
+          "hit": 77696,
+          "miss": 281144,
+          "hit_ratio": 0.21652,
+          "zero_hit_requests": 0,
+          "mean_hit": 4570,
+          "mean_prompt": 21108
+        }
+      ],
+      [
+        "agent-3",
+        {
+          "requests": 16,
+          "hit": 71296,
+          "miss": 237971,
+          "hit_ratio": 0.23053,
+          "zero_hit_requests": 0,
+          "mean_hit": 4456,
+          "mean_prompt": 19329
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 10,
+          "hit": 42752,
+          "miss": 93143,
+          "hit_ratio": 0.3146,
+          "zero_hit_requests": 0,
+          "mean_hit": 4275,
+          "mean_prompt": 13590
+        }
+      ],
+      [
+        "agent-1",
+        {
+          "requests": 10,
+          "hit": 43008,
+          "miss": 79717,
+          "hit_ratio": 0.35044,
+          "zero_hit_requests": 0,
+          "mean_hit": 4301,
+          "mean_prompt": 12272
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 10,
+          "hit": 53760,
+          "miss": 66438,
+          "hit_ratio": 0.44726,
+          "zero_hit_requests": 0,
+          "mean_hit": 5376,
+          "mean_prompt": 12020
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 10,
+          "hit": 53376,
+          "miss": 61550,
+          "hit_ratio": 0.46444,
+          "zero_hit_requests": 0,
+          "mean_hit": 5338,
+          "mean_prompt": 11493
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        24
+      ],
+      [
+        3840,
+        17
+      ],
+      [
+        4352,
+        8
+      ],
+      [
+        6784,
+        6
+      ],
+      [
+        4608,
+        6
+      ],
+      [
+        7040,
+        4
+      ],
+      [
+        4480,
+        4
+      ],
+      [
+        7296,
+        3
+      ],
+      [
+        3968,
+        3
+      ],
+      [
+        5120,
+        2
+      ],
+      [
+        6656,
+        1
+      ],
+      [
+        7936,
+        1
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 65,
+      "ask_external_question": 18,
+      "ask_in_existing_context": 18,
+      "receive_input": 31,
+      "world_add_object": 18,
+      "world_add_reference": 18,
+      "world_references_from": 18,
+      "world_references_to": 18,
+      "yield_turn": 31,
+      "create_actor": 18,
+      "inspect_inquiry_topology": 24,
+      "send_question": 24,
+      "send_incremental_act": 32,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_full\\remote-r2-none\\snapshot.json.gz",
+    "total": {
+      "requests": 73,
+      "hit": 392320,
+      "miss": 742676,
+      "hit_ratio": 0.34566,
+      "zero_hit_requests": 0,
+      "mean_hit": 5374,
+      "mean_prompt": 15548
+    },
+    "actors": 7,
+    "activations": 19,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 12,
+        "hit": 65920,
+        "miss": 49047,
+        "hit_ratio": 0.57338,
+        "zero_hit_requests": 0,
+        "mean_hit": 5493,
+        "mean_prompt": 9581
+      },
+      "within_activation_changed_tools": {
+        "requests": 54,
+        "hit": 297984,
+        "miss": 693066,
+        "hit_ratio": 0.30068,
+        "zero_hit_requests": 0,
+        "mean_hit": 5518,
+        "mean_prompt": 18353
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 19,
+        "hit": 94336,
+        "miss": 49610,
+        "hit_ratio": 0.65536,
+        "zero_hit_requests": 0,
+        "mean_hit": 4965,
+        "mean_prompt": 7576
+      },
+      "receive_input": {
+        "requests": 19,
+        "hit": 115968,
+        "miss": 131170,
+        "hit_ratio": 0.46924,
+        "zero_hit_requests": 0,
+        "mean_hit": 6104,
+        "mean_prompt": 13007
+      },
+      "reply_act": {
+        "requests": 13,
+        "hit": 55424,
+        "miss": 248679,
+        "hit_ratio": 0.18225,
+        "zero_hit_requests": 0,
+        "mean_hit": 4263,
+        "mean_prompt": 23393
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 15360,
+        "miss": 26488,
+        "hit_ratio": 0.36704,
+        "zero_hit_requests": 0,
+        "mean_hit": 5120,
+        "mean_prompt": 13949
+      },
+      "send_act": {
+        "requests": 6,
+        "hit": 42112,
+        "miss": 28011,
+        "hit_ratio": 0.60054,
+        "zero_hit_requests": 0,
+        "mean_hit": 7019,
+        "mean_prompt": 11687
+      },
+      "world_references_from": {
+        "requests": 10,
+        "hit": 56832,
+        "miss": 179630,
+        "hit_ratio": 0.24034,
+        "zero_hit_requests": 0,
+        "mean_hit": 5683,
+        "mean_prompt": 23646
+      },
+      "world_references_to": {
+        "requests": 3,
+        "hit": 12288,
+        "miss": 79088,
+        "hit_ratio": 0.13448,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 30459
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 47,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-3",
+        {
+          "requests": 13,
+          "hit": 65792,
+          "miss": 269517,
+          "hit_ratio": 0.19621,
+          "zero_hit_requests": 0,
+          "mean_hit": 5061,
+          "mean_prompt": 25793
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 14,
+          "hit": 66304,
+          "miss": 182903,
+          "hit_ratio": 0.26606,
+          "zero_hit_requests": 0,
+          "mean_hit": 4736,
+          "mean_prompt": 17800
+        }
+      ],
+      [
+        "agent-1",
+        {
+          "requests": 10,
+          "hit": 64512,
+          "miss": 97017,
+          "hit_ratio": 0.39938,
+          "zero_hit_requests": 0,
+          "mean_hit": 6451,
+          "mean_prompt": 16153
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 10,
+          "hit": 57856,
+          "miss": 62780,
+          "hit_ratio": 0.47959,
+          "zero_hit_requests": 0,
+          "mean_hit": 5786,
+          "mean_prompt": 12064
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 10,
+          "hit": 53760,
+          "miss": 49041,
+          "hit_ratio": 0.52295,
+          "zero_hit_requests": 0,
+          "mean_hit": 5376,
+          "mean_prompt": 10280
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 10,
+          "hit": 56320,
+          "miss": 45998,
+          "hit_ratio": 0.55044,
+          "zero_hit_requests": 0,
+          "mean_hit": 5632,
+          "mean_prompt": 10232
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4608,
+        9
+      ],
+      [
+        4096,
+        9
+      ],
+      [
+        3840,
+        5
+      ],
+      [
+        4352,
+        5
+      ],
+      [
+        7040,
+        4
+      ],
+      [
+        3712,
+        4
+      ],
+      [
+        6784,
+        4
+      ],
+      [
+        5120,
+        4
+      ],
+      [
+        8320,
+        3
+      ],
+      [
+        4992,
+        3
+      ],
+      [
+        4224,
+        3
+      ],
+      [
+        6016,
+        3
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 55,
+      "ask_external_question": 18,
+      "ask_in_existing_context": 18,
+      "receive_input": 31,
+      "world_add_object": 18,
+      "world_add_reference": 18,
+      "world_references_from": 18,
+      "world_references_to": 18,
+      "yield_turn": 31,
+      "create_actor": 18,
+      "inspect_inquiry_topology": 24,
+      "send_question": 24,
+      "send_incremental_act": 32,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\change_neutral-r1-none\\snapshot.json.gz",
+    "total": {
+      "requests": 101,
+      "hit": 655488,
+      "miss": 1018291,
+      "hit_ratio": 0.39162,
+      "zero_hit_requests": 0,
+      "mean_hit": 6490,
+      "mean_prompt": 16572
+    },
+    "actors": 7,
+    "activations": 28,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 21,
+        "hit": 197248,
+        "miss": 71966,
+        "hit_ratio": 0.73268,
+        "zero_hit_requests": 0,
+        "mean_hit": 9393,
+        "mean_prompt": 12820
+      },
+      "within_activation_changed_tools": {
+        "requests": 70,
+        "hit": 397568,
+        "miss": 944405,
+        "hit_ratio": 0.29626,
+        "zero_hit_requests": 0,
+        "mean_hit": 5680,
+        "mean_prompt": 19171
+      },
+      "within_activation_same_tools": {
+        "requests": 3,
+        "hit": 32256,
+        "miss": 1357,
+        "hit_ratio": 0.95963,
+        "zero_hit_requests": 0,
+        "mean_hit": 10752,
+        "mean_prompt": 11204
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 28,
+        "hit": 225664,
+        "miss": 72529,
+        "hit_ratio": 0.75677,
+        "zero_hit_requests": 0,
+        "mean_hit": 8059,
+        "mean_prompt": 10650
+      },
+      "inspect_inquiry_topology": {
+        "requests": 3,
+        "hit": 32256,
+        "miss": 1357,
+        "hit_ratio": 0.95963,
+        "zero_hit_requests": 0,
+        "mean_hit": 10752,
+        "mean_prompt": 11204
+      },
+      "receive_input": {
+        "requests": 28,
+        "hit": 166016,
+        "miss": 284577,
+        "hit_ratio": 0.36844,
+        "zero_hit_requests": 0,
+        "mean_hit": 5929,
+        "mean_prompt": 16093
+      },
+      "reply_act": {
+        "requests": 18,
+        "hit": 81152,
+        "miss": 297185,
+        "hit_ratio": 0.2145,
+        "zero_hit_requests": 0,
+        "mean_hit": 4508,
+        "mean_prompt": 21019
+      },
+      "retain_answer": {
+        "requests": 6,
+        "hit": 53376,
+        "miss": 86023,
+        "hit_ratio": 0.3829,
+        "zero_hit_requests": 0,
+        "mean_hit": 8896,
+        "mean_prompt": 23233
+      },
+      "send_act": {
+        "requests": 9,
+        "hit": 54400,
+        "miss": 93357,
+        "hit_ratio": 0.36817,
+        "zero_hit_requests": 0,
+        "mean_hit": 6044,
+        "mean_prompt": 16417
+      },
+      "world_add_object": {
+        "requests": 1,
+        "hit": 4096,
+        "miss": 23943,
+        "hit_ratio": 0.14608,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 28039
+      },
+      "world_add_reference": {
+        "requests": 1,
+        "hit": 4224,
+        "miss": 23323,
+        "hit_ratio": 0.15334,
+        "zero_hit_requests": 0,
+        "mean_hit": 4224,
+        "mean_prompt": 27547
+      },
+      "world_references_from": {
+        "requests": 7,
+        "hit": 34304,
+        "miss": 135997,
+        "hit_ratio": 0.20143,
+        "zero_hit_requests": 0,
+        "mean_hit": 4901,
+        "mean_prompt": 24329
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 61,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-2",
+        {
+          "requests": 21,
+          "hit": 153728,
+          "miss": 357353,
+          "hit_ratio": 0.30079,
+          "zero_hit_requests": 0,
+          "mean_hit": 7320,
+          "mean_prompt": 24337
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 21,
+          "hit": 146944,
+          "miss": 166237,
+          "hit_ratio": 0.4692,
+          "zero_hit_requests": 0,
+          "mean_hit": 6997,
+          "mean_prompt": 14913
+        }
+      ],
+      [
+        "agent-3",
+        {
+          "requests": 16,
+          "hit": 86656,
+          "miss": 215289,
+          "hit_ratio": 0.28699,
+          "zero_hit_requests": 0,
+          "mean_hit": 5416,
+          "mean_prompt": 18872
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 17,
+          "hit": 113024,
+          "miss": 127757,
+          "hit_ratio": 0.46941,
+          "zero_hit_requests": 0,
+          "mean_hit": 6648,
+          "mean_prompt": 14164
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 11,
+          "hit": 71680,
+          "miss": 53514,
+          "hit_ratio": 0.57255,
+          "zero_hit_requests": 0,
+          "mean_hit": 6516,
+          "mean_prompt": 11381
+        }
+      ],
+      [
+        "agent-1",
+        {
+          "requests": 9,
+          "hit": 49152,
+          "miss": 69746,
+          "hit_ratio": 0.4134,
+          "zero_hit_requests": 0,
+          "mean_hit": 5461,
+          "mean_prompt": 13211
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        3840,
+        15
+      ],
+      [
+        4352,
+        7
+      ],
+      [
+        4096,
+        7
+      ],
+      [
+        6784,
+        6
+      ],
+      [
+        5888,
+        5
+      ],
+      [
+        4224,
+        5
+      ],
+      [
+        5120,
+        5
+      ],
+      [
+        4608,
+        5
+      ],
+      [
+        7040,
+        4
+      ],
+      [
+        6016,
+        4
+      ],
+      [
+        7552,
+        4
+      ],
+      [
+        4736,
+        3
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 73,
+      "ask_external_question": 27,
+      "ask_in_existing_context": 27,
+      "receive_input": 49,
+      "world_add_object": 26,
+      "world_add_reference": 26,
+      "world_references_from": 26,
+      "world_references_to": 26,
+      "yield_turn": 49,
+      "create_actor": 28,
+      "inspect_inquiry_topology": 37,
+      "send_question": 37,
+      "send_incremental_act": 58,
+      "retain_answer": 11
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\change_neutral-r2-none\\snapshot.json.gz",
+    "total": {
+      "requests": 130,
+      "hit": 878464,
+      "miss": 1783685,
+      "hit_ratio": 0.32998,
+      "zero_hit_requests": 0,
+      "mean_hit": 6757,
+      "mean_prompt": 20478
+    },
+    "actors": 7,
+    "activations": 31,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 24,
+        "hit": 275456,
+        "miss": 109588,
+        "hit_ratio": 0.71539,
+        "zero_hit_requests": 0,
+        "mean_hit": 11477,
+        "mean_prompt": 16044
+      },
+      "within_activation_changed_tools": {
+        "requests": 95,
+        "hit": 523520,
+        "miss": 1667288,
+        "hit_ratio": 0.23896,
+        "zero_hit_requests": 0,
+        "mean_hit": 5511,
+        "mean_prompt": 23061
+      },
+      "within_activation_same_tools": {
+        "requests": 4,
+        "hit": 51072,
+        "miss": 6246,
+        "hit_ratio": 0.89103,
+        "zero_hit_requests": 0,
+        "mean_hit": 12768,
+        "mean_prompt": 14330
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 31,
+        "hit": 303872,
+        "miss": 110151,
+        "hit_ratio": 0.73395,
+        "zero_hit_requests": 0,
+        "mean_hit": 9802,
+        "mean_prompt": 13356
+      },
+      "inspect_inquiry_topology": {
+        "requests": 3,
+        "hit": 38016,
+        "miss": 1318,
+        "hit_ratio": 0.96649,
+        "zero_hit_requests": 0,
+        "mean_hit": 12672,
+        "mean_prompt": 13111
+      },
+      "receive_input": {
+        "requests": 31,
+        "hit": 185600,
+        "miss": 419755,
+        "hit_ratio": 0.3066,
+        "zero_hit_requests": 0,
+        "mean_hit": 5987,
+        "mean_prompt": 19528
+      },
+      "reply_act": {
+        "requests": 22,
+        "hit": 114816,
+        "miss": 478104,
+        "hit_ratio": 0.19365,
+        "zero_hit_requests": 0,
+        "mean_hit": 5219,
+        "mean_prompt": 26951
+      },
+      "retain_answer": {
+        "requests": 7,
+        "hit": 69248,
+        "miss": 116315,
+        "hit_ratio": 0.37318,
+        "zero_hit_requests": 0,
+        "mean_hit": 9893,
+        "mean_prompt": 26509
+      },
+      "send_act": {
+        "requests": 9,
+        "hit": 56192,
+        "miss": 76178,
+        "hit_ratio": 0.42451,
+        "zero_hit_requests": 0,
+        "mean_hit": 6244,
+        "mean_prompt": 14708
+      },
+      "world_add_object": {
+        "requests": 1,
+        "hit": 4096,
+        "miss": 32268,
+        "hit_ratio": 0.11264,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 36364
+      },
+      "world_add_reference": {
+        "requests": 1,
+        "hit": 4224,
+        "miss": 32619,
+        "hit_ratio": 0.11465,
+        "zero_hit_requests": 0,
+        "mean_hit": 4224,
+        "mean_prompt": 36843
+      },
+      "world_references_from": {
+        "requests": 17,
+        "hit": 69632,
+        "miss": 373117,
+        "hit_ratio": 0.15727,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 26044
+      },
+      "world_references_to": {
+        "requests": 8,
+        "hit": 32768,
+        "miss": 143860,
+        "hit_ratio": 0.18552,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 22078
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 86,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-2",
+        {
+          "requests": 24,
+          "hit": 153344,
+          "miss": 531683,
+          "hit_ratio": 0.22385,
+          "zero_hit_requests": 0,
+          "mean_hit": 6389,
+          "mean_prompt": 28543
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 28,
+          "hit": 265088,
+          "miss": 293385,
+          "hit_ratio": 0.47467,
+          "zero_hit_requests": 0,
+          "mean_hit": 9467,
+          "mean_prompt": 19945
+        }
+      ],
+      [
+        "agent-3",
+        {
+          "requests": 22,
+          "hit": 122368,
+          "miss": 433245,
+          "hit_ratio": 0.22024,
+          "zero_hit_requests": 0,
+          "mean_hit": 5562,
+          "mean_prompt": 25255
+        }
+      ],
+      [
+        "agent-1",
+        {
+          "requests": 18,
+          "hit": 91648,
+          "miss": 271791,
+          "hit_ratio": 0.25217,
+          "zero_hit_requests": 0,
+          "mean_hit": 5092,
+          "mean_prompt": 20191
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 18,
+          "hit": 135808,
+          "miss": 114158,
+          "hit_ratio": 0.54331,
+          "zero_hit_requests": 0,
+          "mean_hit": 7545,
+          "mean_prompt": 13887
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 10,
+          "hit": 51968,
+          "miss": 83186,
+          "hit_ratio": 0.38451,
+          "zero_hit_requests": 0,
+          "mean_hit": 5197,
+          "mean_prompt": 13515
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        34
+      ],
+      [
+        3840,
+        11
+      ],
+      [
+        4608,
+        7
+      ],
+      [
+        6016,
+        5
+      ],
+      [
+        4736,
+        5
+      ],
+      [
+        4352,
+        4
+      ],
+      [
+        6784,
+        4
+      ],
+      [
+        7552,
+        4
+      ],
+      [
+        5888,
+        4
+      ],
+      [
+        5120,
+        4
+      ],
+      [
+        7040,
+        3
+      ],
+      [
+        4480,
+        2
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 98,
+      "ask_external_question": 30,
+      "ask_in_existing_context": 30,
+      "receive_input": 55,
+      "world_add_object": 29,
+      "world_add_reference": 29,
+      "world_references_from": 29,
+      "world_references_to": 29,
+      "yield_turn": 55,
+      "create_actor": 32,
+      "inspect_inquiry_topology": 41,
+      "send_question": 41,
+      "send_incremental_act": 66,
+      "retain_answer": 18
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\change_relevant-r1-none\\snapshot.json.gz",
+    "total": {
+      "requests": 8,
+      "hit": 40192,
+      "miss": 18931,
+      "hit_ratio": 0.6798,
+      "zero_hit_requests": 0,
+      "mean_hit": 5024,
+      "mean_prompt": 7390
+    },
+    "actors": 3,
+    "activations": 3,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 3,
+        "hit": 11520,
+        "miss": 258,
+        "hit_ratio": 0.97809,
+        "zero_hit_requests": 0,
+        "mean_hit": 3840,
+        "mean_prompt": 3926
+      },
+      "within_activation_changed_tools": {
+        "requests": 5,
+        "hit": 28672,
+        "miss": 18673,
+        "hit_ratio": 0.6056,
+        "zero_hit_requests": 0,
+        "mean_hit": 5734,
+        "mean_prompt": 9469
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 3,
+        "hit": 11520,
+        "miss": 258,
+        "hit_ratio": 0.97809,
+        "zero_hit_requests": 0,
+        "mean_hit": 3840,
+        "mean_prompt": 3926
+      },
+      "receive_input": {
+        "requests": 3,
+        "hit": 21120,
+        "miss": 6091,
+        "hit_ratio": 0.77616,
+        "zero_hit_requests": 0,
+        "mean_hit": 7040,
+        "mean_prompt": 9070
+      },
+      "reply_act": {
+        "requests": 2,
+        "hit": 7552,
+        "miss": 12582,
+        "hit_ratio": 0.37509,
+        "zero_hit_requests": 0,
+        "mean_hit": 3776,
+        "mean_prompt": 10067
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 5,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-1",
+        {
+          "requests": 3,
+          "hit": 14720,
+          "miss": 9295,
+          "hit_ratio": 0.61295,
+          "zero_hit_requests": 0,
+          "mean_hit": 4907,
+          "mean_prompt": 8005
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 3,
+          "hit": 14592,
+          "miss": 7527,
+          "hit_ratio": 0.6597,
+          "zero_hit_requests": 0,
+          "mean_hit": 4864,
+          "mean_prompt": 7373
+        }
+      ],
+      [
+        "agent-3",
+        {
+          "requests": 2,
+          "hit": 10880,
+          "miss": 2109,
+          "hit_ratio": 0.83763,
+          "zero_hit_requests": 0,
+          "mean_hit": 5440,
+          "mean_prompt": 6494
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        3840,
+        4
+      ],
+      [
+        7040,
+        3
+      ],
+      [
+        3712,
+        1
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 5,
+      "ask_external_question": 5,
+      "ask_in_existing_context": 5,
+      "receive_input": 3,
+      "world_add_object": 5,
+      "world_add_reference": 5,
+      "world_references_from": 5,
+      "world_references_to": 5,
+      "yield_turn": 3
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\change_relevant-r2-none\\snapshot.json.gz",
+    "total": {
+      "requests": 103,
+      "hit": 610048,
+      "miss": 1212902,
+      "hit_ratio": 0.33465,
+      "zero_hit_requests": 0,
+      "mean_hit": 5923,
+      "mean_prompt": 17699
+    },
+    "actors": 7,
+    "activations": 25,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 18,
+        "hit": 158464,
+        "miss": 73470,
+        "hit_ratio": 0.68323,
+        "zero_hit_requests": 0,
+        "mean_hit": 8804,
+        "mean_prompt": 12885
+      },
+      "within_activation_changed_tools": {
+        "requests": 76,
+        "hit": 400128,
+        "miss": 1134679,
+        "hit_ratio": 0.2607,
+        "zero_hit_requests": 0,
+        "mean_hit": 5265,
+        "mean_prompt": 20195
+      },
+      "within_activation_same_tools": {
+        "requests": 2,
+        "hit": 23040,
+        "miss": 4190,
+        "hit_ratio": 0.84613,
+        "zero_hit_requests": 0,
+        "mean_hit": 11520,
+        "mean_prompt": 13615
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 25,
+        "hit": 186880,
+        "miss": 74033,
+        "hit_ratio": 0.71625,
+        "zero_hit_requests": 0,
+        "mean_hit": 7475,
+        "mean_prompt": 10437
+      },
+      "inspect_inquiry_topology": {
+        "requests": 1,
+        "hit": 10880,
+        "miss": 369,
+        "hit_ratio": 0.9672,
+        "zero_hit_requests": 0,
+        "mean_hit": 10880,
+        "mean_prompt": 11249
+      },
+      "receive_input": {
+        "requests": 25,
+        "hit": 155392,
+        "miss": 246326,
+        "hit_ratio": 0.38682,
+        "zero_hit_requests": 0,
+        "mean_hit": 6216,
+        "mean_prompt": 16069
+      },
+      "reply_act": {
+        "requests": 19,
+        "hit": 96000,
+        "miss": 347201,
+        "hit_ratio": 0.21661,
+        "zero_hit_requests": 0,
+        "mean_hit": 5053,
+        "mean_prompt": 23326
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 15744,
+        "miss": 29814,
+        "hit_ratio": 0.34558,
+        "zero_hit_requests": 0,
+        "mean_hit": 5248,
+        "mean_prompt": 15186
+      },
+      "send_act": {
+        "requests": 8,
+        "hit": 50816,
+        "miss": 70275,
+        "hit_ratio": 0.41965,
+        "zero_hit_requests": 0,
+        "mean_hit": 6352,
+        "mean_prompt": 15136
+      },
+      "world_add_object": {
+        "requests": 1,
+        "hit": 3840,
+        "miss": 28852,
+        "hit_ratio": 0.11746,
+        "zero_hit_requests": 0,
+        "mean_hit": 3840,
+        "mean_prompt": 32692
+      },
+      "world_add_reference": {
+        "requests": 1,
+        "hit": 4224,
+        "miss": 28937,
+        "hit_ratio": 0.12738,
+        "zero_hit_requests": 0,
+        "mean_hit": 4224,
+        "mean_prompt": 33161
+      },
+      "world_references_from": {
+        "requests": 20,
+        "hit": 86272,
+        "miss": 387095,
+        "hit_ratio": 0.18225,
+        "zero_hit_requests": 0,
+        "mean_hit": 4314,
+        "mean_prompt": 23668
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 69,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-3",
+        {
+          "requests": 22,
+          "hit": 112128,
+          "miss": 401308,
+          "hit_ratio": 0.21839,
+          "zero_hit_requests": 0,
+          "mean_hit": 5097,
+          "mean_prompt": 23338
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 20,
+          "hit": 117504,
+          "miss": 390810,
+          "hit_ratio": 0.23116,
+          "zero_hit_requests": 0,
+          "mean_hit": 5875,
+          "mean_prompt": 25416
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 17,
+          "hit": 106496,
+          "miss": 141885,
+          "hit_ratio": 0.42876,
+          "zero_hit_requests": 0,
+          "mean_hit": 6264,
+          "mean_prompt": 14611
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 17,
+          "hit": 113536,
+          "miss": 116046,
+          "hit_ratio": 0.49453,
+          "zero_hit_requests": 0,
+          "mean_hit": 6679,
+          "mean_prompt": 13505
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 11,
+          "hit": 72192,
+          "miss": 59942,
+          "hit_ratio": 0.54635,
+          "zero_hit_requests": 0,
+          "mean_hit": 6563,
+          "mean_prompt": 12012
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 10,
+          "hit": 52352,
+          "miss": 78299,
+          "hit_ratio": 0.4007,
+          "zero_hit_requests": 0,
+          "mean_hit": 5235,
+          "mean_prompt": 13065
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        21
+      ],
+      [
+        3840,
+        13
+      ],
+      [
+        4352,
+        9
+      ],
+      [
+        5888,
+        7
+      ],
+      [
+        4608,
+        6
+      ],
+      [
+        5120,
+        5
+      ],
+      [
+        7040,
+        4
+      ],
+      [
+        6784,
+        4
+      ],
+      [
+        7552,
+        3
+      ],
+      [
+        6016,
+        3
+      ],
+      [
+        6656,
+        2
+      ],
+      [
+        7296,
+        2
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 77,
+      "ask_external_question": 22,
+      "ask_in_existing_context": 22,
+      "receive_input": 43,
+      "world_add_object": 20,
+      "world_add_reference": 20,
+      "world_references_from": 20,
+      "world_references_to": 20,
+      "yield_turn": 43,
+      "create_actor": 26,
+      "inspect_inquiry_topology": 33,
+      "send_question": 33,
+      "send_incremental_act": 50,
+      "retain_answer": 10
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\coord_gap-r1-none\\snapshot.json.gz",
+    "total": {
+      "requests": 106,
+      "hit": 769280,
+      "miss": 1061252,
+      "hit_ratio": 0.42025,
+      "zero_hit_requests": 0,
+      "mean_hit": 7257,
+      "mean_prompt": 17269
+    },
+    "actors": 7,
+    "activations": 29,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 22,
+        "hit": 236032,
+        "miss": 79246,
+        "hit_ratio": 0.74865,
+        "zero_hit_requests": 0,
+        "mean_hit": 10729,
+        "mean_prompt": 14331
+      },
+      "within_activation_changed_tools": {
+        "requests": 71,
+        "hit": 412288,
+        "miss": 975050,
+        "hit_ratio": 0.29718,
+        "zero_hit_requests": 0,
+        "mean_hit": 5807,
+        "mean_prompt": 19540
+      },
+      "within_activation_same_tools": {
+        "requests": 6,
+        "hit": 92544,
+        "miss": 6393,
+        "hit_ratio": 0.93538,
+        "zero_hit_requests": 0,
+        "mean_hit": 15424,
+        "mean_prompt": 16490
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 29,
+        "hit": 264448,
+        "miss": 79809,
+        "hit_ratio": 0.76817,
+        "zero_hit_requests": 0,
+        "mean_hit": 9119,
+        "mean_prompt": 11871
+      },
+      "inspect_inquiry_topology": {
+        "requests": 3,
+        "hit": 63104,
+        "miss": 1641,
+        "hit_ratio": 0.97465,
+        "zero_hit_requests": 0,
+        "mean_hit": 21035,
+        "mean_prompt": 21582
+      },
+      "receive_input": {
+        "requests": 29,
+        "hit": 177536,
+        "miss": 325515,
+        "hit_ratio": 0.35292,
+        "zero_hit_requests": 0,
+        "mean_hit": 6122,
+        "mean_prompt": 17347
+      },
+      "reply_act": {
+        "requests": 19,
+        "hit": 84864,
+        "miss": 368956,
+        "hit_ratio": 0.187,
+        "zero_hit_requests": 0,
+        "mean_hit": 4467,
+        "mean_prompt": 23885
+      },
+      "retain_answer": {
+        "requests": 5,
+        "hit": 57728,
+        "miss": 41009,
+        "hit_ratio": 0.58466,
+        "zero_hit_requests": 0,
+        "mean_hit": 11546,
+        "mean_prompt": 19747
+      },
+      "send_act": {
+        "requests": 12,
+        "hit": 81536,
+        "miss": 102244,
+        "hit_ratio": 0.44366,
+        "zero_hit_requests": 0,
+        "mean_hit": 6795,
+        "mean_prompt": 15315
+      },
+      "send_question": {
+        "requests": 1,
+        "hit": 7296,
+        "miss": 2770,
+        "hit_ratio": 0.72482,
+        "zero_hit_requests": 0,
+        "mean_hit": 7296,
+        "mean_prompt": 10066
+      },
+      "world_references_from": {
+        "requests": 4,
+        "hit": 16384,
+        "miss": 62045,
+        "hit_ratio": 0.2089,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 19607
+      },
+      "world_references_to": {
+        "requests": 4,
+        "hit": 16384,
+        "miss": 77263,
+        "hit_ratio": 0.17495,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 23412
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 62,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "broker",
+        {
+          "requests": 33,
+          "hit": 326272,
+          "miss": 320293,
+          "hit_ratio": 0.50462,
+          "zero_hit_requests": 0,
+          "mean_hit": 9887,
+          "mean_prompt": 19593
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 19,
+          "hit": 122240,
+          "miss": 324755,
+          "hit_ratio": 0.27347,
+          "zero_hit_requests": 0,
+          "mean_hit": 6434,
+          "mean_prompt": 23526
+        }
+      ],
+      [
+        "agent-1",
+        {
+          "requests": 12,
+          "hit": 69248,
+          "miss": 112060,
+          "hit_ratio": 0.38194,
+          "zero_hit_requests": 0,
+          "mean_hit": 5771,
+          "mean_prompt": 15109
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 10,
+          "hit": 51840,
+          "miss": 98581,
+          "hit_ratio": 0.34463,
+          "zero_hit_requests": 0,
+          "mean_hit": 5184,
+          "mean_prompt": 15042
+        }
+      ],
+      [
+        "agent-3",
+        {
+          "requests": 9,
+          "hit": 53376,
+          "miss": 93632,
+          "hit_ratio": 0.36308,
+          "zero_hit_requests": 0,
+          "mean_hit": 5931,
+          "mean_prompt": 16334
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 13,
+          "hit": 88448,
+          "miss": 57392,
+          "hit_ratio": 0.60647,
+          "zero_hit_requests": 0,
+          "mean_hit": 6804,
+          "mean_prompt": 11218
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        3840,
+        14
+      ],
+      [
+        4096,
+        11
+      ],
+      [
+        4608,
+        8
+      ],
+      [
+        6784,
+        6
+      ],
+      [
+        5888,
+        6
+      ],
+      [
+        5120,
+        6
+      ],
+      [
+        7040,
+        5
+      ],
+      [
+        4352,
+        5
+      ],
+      [
+        6016,
+        4
+      ],
+      [
+        4736,
+        4
+      ],
+      [
+        6656,
+        3
+      ],
+      [
+        4992,
+        3
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 74,
+      "ask_external_question": 26,
+      "ask_in_existing_context": 26,
+      "receive_input": 51,
+      "world_add_object": 26,
+      "world_add_reference": 26,
+      "world_references_from": 26,
+      "world_references_to": 26,
+      "yield_turn": 51,
+      "create_actor": 30,
+      "inspect_inquiry_topology": 40,
+      "send_question": 40,
+      "send_incremental_act": 62,
+      "retain_answer": 10
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\coord_gap-r2-none\\snapshot.json.gz",
+    "total": {
+      "requests": 91,
+      "hit": 589184,
+      "miss": 893281,
+      "hit_ratio": 0.39744,
+      "zero_hit_requests": 0,
+      "mean_hit": 6475,
+      "mean_prompt": 16291
+    },
+    "actors": 7,
+    "activations": 25,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 18,
+        "hit": 171008,
+        "miss": 62021,
+        "hit_ratio": 0.73385,
+        "zero_hit_requests": 0,
+        "mean_hit": 9500,
+        "mean_prompt": 12946
+      },
+      "within_activation_changed_tools": {
+        "requests": 63,
+        "hit": 359424,
+        "miss": 827030,
+        "hit_ratio": 0.30294,
+        "zero_hit_requests": 0,
+        "mean_hit": 5705,
+        "mean_prompt": 18833
+      },
+      "within_activation_same_tools": {
+        "requests": 3,
+        "hit": 30336,
+        "miss": 3667,
+        "hit_ratio": 0.89216,
+        "zero_hit_requests": 0,
+        "mean_hit": 10112,
+        "mean_prompt": 11334
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 25,
+        "hit": 199424,
+        "miss": 62584,
+        "hit_ratio": 0.76114,
+        "zero_hit_requests": 0,
+        "mean_hit": 7977,
+        "mean_prompt": 10480
+      },
+      "inspect_inquiry_topology": {
+        "requests": 3,
+        "hit": 30336,
+        "miss": 3667,
+        "hit_ratio": 0.89216,
+        "zero_hit_requests": 0,
+        "mean_hit": 10112,
+        "mean_prompt": 11334
+      },
+      "receive_input": {
+        "requests": 25,
+        "hit": 163840,
+        "miss": 232407,
+        "hit_ratio": 0.41348,
+        "zero_hit_requests": 0,
+        "mean_hit": 6554,
+        "mean_prompt": 15850
+      },
+      "reply_act": {
+        "requests": 17,
+        "hit": 80000,
+        "miss": 314652,
+        "hit_ratio": 0.20271,
+        "zero_hit_requests": 0,
+        "mean_hit": 4706,
+        "mean_prompt": 23215
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 16128,
+        "miss": 26011,
+        "hit_ratio": 0.38273,
+        "zero_hit_requests": 0,
+        "mean_hit": 5376,
+        "mean_prompt": 14046
+      },
+      "send_act": {
+        "requests": 8,
+        "hit": 52864,
+        "miss": 63851,
+        "hit_ratio": 0.45293,
+        "zero_hit_requests": 0,
+        "mean_hit": 6608,
+        "mean_prompt": 14589
+      },
+      "world_references_from": {
+        "requests": 8,
+        "hit": 38272,
+        "miss": 145586,
+        "hit_ratio": 0.20816,
+        "zero_hit_requests": 0,
+        "mean_hit": 4784,
+        "mean_prompt": 22982
+      },
+      "world_references_to": {
+        "requests": 2,
+        "hit": 8320,
+        "miss": 44523,
+        "hit_ratio": 0.15745,
+        "zero_hit_requests": 0,
+        "mean_hit": 4160,
+        "mean_prompt": 26422
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 56,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-2",
+        {
+          "requests": 21,
+          "hit": 140288,
+          "miss": 388239,
+          "hit_ratio": 0.26543,
+          "zero_hit_requests": 0,
+          "mean_hit": 6680,
+          "mean_prompt": 25168
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 23,
+          "hit": 162688,
+          "miss": 190958,
+          "hit_ratio": 0.46003,
+          "zero_hit_requests": 0,
+          "mean_hit": 7073,
+          "mean_prompt": 15376
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 10,
+          "hit": 51968,
+          "miss": 98744,
+          "hit_ratio": 0.34482,
+          "zero_hit_requests": 0,
+          "mean_hit": 5197,
+          "mean_prompt": 15071
+        }
+      ],
+      [
+        "agent-3",
+        {
+          "requests": 9,
+          "hit": 53120,
+          "miss": 80955,
+          "hit_ratio": 0.3962,
+          "zero_hit_requests": 0,
+          "mean_hit": 5902,
+          "mean_prompt": 14897
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 11,
+          "hit": 75392,
+          "miss": 57432,
+          "hit_ratio": 0.56761,
+          "zero_hit_requests": 0,
+          "mean_hit": 6854,
+          "mean_prompt": 12075
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 11,
+          "hit": 67968,
+          "miss": 49068,
+          "hit_ratio": 0.58074,
+          "zero_hit_requests": 0,
+          "mean_hit": 6179,
+          "mean_prompt": 10640
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        3840,
+        10
+      ],
+      [
+        4096,
+        9
+      ],
+      [
+        4608,
+        6
+      ],
+      [
+        6016,
+        5
+      ],
+      [
+        4352,
+        4
+      ],
+      [
+        7552,
+        4
+      ],
+      [
+        5888,
+        4
+      ],
+      [
+        5504,
+        4
+      ],
+      [
+        7040,
+        3
+      ],
+      [
+        7296,
+        3
+      ],
+      [
+        3712,
+        2
+      ],
+      [
+        7424,
+        2
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 66,
+      "ask_external_question": 22,
+      "ask_in_existing_context": 22,
+      "receive_input": 43,
+      "world_add_object": 22,
+      "world_add_reference": 22,
+      "world_references_from": 22,
+      "world_references_to": 22,
+      "yield_turn": 43,
+      "create_actor": 26,
+      "inspect_inquiry_topology": 34,
+      "send_question": 34,
+      "send_incremental_act": 50,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\coord_public-r1-none\\snapshot.json.gz",
+    "total": {
+      "requests": 86,
+      "hit": 478720,
+      "miss": 951701,
+      "hit_ratio": 0.33467,
+      "zero_hit_requests": 0,
+      "mean_hit": 5567,
+      "mean_prompt": 16633
+    },
+    "actors": 7,
+    "activations": 21,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 14,
+        "hit": 98176,
+        "miss": 56143,
+        "hit_ratio": 0.63619,
+        "zero_hit_requests": 0,
+        "mean_hit": 7013,
+        "mean_prompt": 11023
+      },
+      "within_activation_changed_tools": {
+        "requests": 64,
+        "hit": 344064,
+        "miss": 894594,
+        "hit_ratio": 0.27777,
+        "zero_hit_requests": 0,
+        "mean_hit": 5376,
+        "mean_prompt": 19354
+      },
+      "within_activation_same_tools": {
+        "requests": 1,
+        "hit": 8064,
+        "miss": 401,
+        "hit_ratio": 0.95263,
+        "zero_hit_requests": 0,
+        "mean_hit": 8064,
+        "mean_prompt": 8465
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 21,
+        "hit": 126592,
+        "miss": 56706,
+        "hit_ratio": 0.69063,
+        "zero_hit_requests": 0,
+        "mean_hit": 6028,
+        "mean_prompt": 8728
+      },
+      "inspect_inquiry_topology": {
+        "requests": 1,
+        "hit": 8064,
+        "miss": 401,
+        "hit_ratio": 0.95263,
+        "zero_hit_requests": 0,
+        "mean_hit": 8064,
+        "mean_prompt": 8465
+      },
+      "receive_input": {
+        "requests": 21,
+        "hit": 137344,
+        "miss": 161371,
+        "hit_ratio": 0.45978,
+        "zero_hit_requests": 0,
+        "mean_hit": 6540,
+        "mean_prompt": 14225
+      },
+      "reply_act": {
+        "requests": 15,
+        "hit": 70656,
+        "miss": 292119,
+        "hit_ratio": 0.19477,
+        "zero_hit_requests": 0,
+        "mean_hit": 4710,
+        "mean_prompt": 24185
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 15744,
+        "miss": 30963,
+        "hit_ratio": 0.33708,
+        "zero_hit_requests": 0,
+        "mean_hit": 5248,
+        "mean_prompt": 15569
+      },
+      "send_act": {
+        "requests": 6,
+        "hit": 42112,
+        "miss": 26699,
+        "hit_ratio": 0.612,
+        "zero_hit_requests": 0,
+        "mean_hit": 7019,
+        "mean_prompt": 11468
+      },
+      "world_references_from": {
+        "requests": 18,
+        "hit": 74112,
+        "miss": 358851,
+        "hit_ratio": 0.17117,
+        "zero_hit_requests": 0,
+        "mean_hit": 4117,
+        "mean_prompt": 24054
+      },
+      "world_references_to": {
+        "requests": 1,
+        "hit": 4096,
+        "miss": 24591,
+        "hit_ratio": 0.14278,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 28687
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 57,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-3",
+        {
+          "requests": 16,
+          "hit": 81152,
+          "miss": 298337,
+          "hit_ratio": 0.21385,
+          "zero_hit_requests": 0,
+          "mean_hit": 5072,
+          "mean_prompt": 23718
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 17,
+          "hit": 83456,
+          "miss": 275473,
+          "hit_ratio": 0.23251,
+          "zero_hit_requests": 0,
+          "mean_hit": 4909,
+          "mean_prompt": 21113
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 17,
+          "hit": 115712,
+          "miss": 126345,
+          "hit_ratio": 0.47804,
+          "zero_hit_requests": 0,
+          "mean_hit": 6807,
+          "mean_prompt": 14239
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 10,
+          "hit": 51968,
+          "miss": 106782,
+          "hit_ratio": 0.32736,
+          "zero_hit_requests": 0,
+          "mean_hit": 5197,
+          "mean_prompt": 15875
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 10,
+          "hit": 57984,
+          "miss": 58057,
+          "hit_ratio": 0.49969,
+          "zero_hit_requests": 0,
+          "mean_hit": 5798,
+          "mean_prompt": 11604
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 10,
+          "hit": 57856,
+          "miss": 52196,
+          "hit_ratio": 0.52572,
+          "zero_hit_requests": 0,
+          "mean_hit": 5786,
+          "mean_prompt": 11005
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        20
+      ],
+      [
+        3840,
+        7
+      ],
+      [
+        4352,
+        5
+      ],
+      [
+        5120,
+        5
+      ],
+      [
+        7552,
+        4
+      ],
+      [
+        6784,
+        4
+      ],
+      [
+        5888,
+        4
+      ],
+      [
+        6016,
+        4
+      ],
+      [
+        4608,
+        4
+      ],
+      [
+        7040,
+        3
+      ],
+      [
+        4224,
+        3
+      ],
+      [
+        7296,
+        2
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 65,
+      "ask_external_question": 18,
+      "ask_in_existing_context": 18,
+      "receive_input": 35,
+      "world_add_object": 18,
+      "world_add_reference": 18,
+      "world_references_from": 18,
+      "world_references_to": 18,
+      "yield_turn": 35,
+      "create_actor": 22,
+      "inspect_inquiry_topology": 28,
+      "send_question": 28,
+      "send_incremental_act": 38,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\coord_public-r2-none\\snapshot.json.gz",
+    "total": {
+      "requests": 86,
+      "hit": 517120,
+      "miss": 698748,
+      "hit_ratio": 0.42531,
+      "zero_hit_requests": 0,
+      "mean_hit": 6013,
+      "mean_prompt": 14138
+    },
+    "actors": 7,
+    "activations": 25,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 18,
+        "hit": 147456,
+        "miss": 57215,
+        "hit_ratio": 0.72045,
+        "zero_hit_requests": 0,
+        "mean_hit": 8192,
+        "mean_prompt": 11371
+      },
+      "within_activation_changed_tools": {
+        "requests": 59,
+        "hit": 317184,
+        "miss": 639870,
+        "hit_ratio": 0.33142,
+        "zero_hit_requests": 0,
+        "mean_hit": 5376,
+        "mean_prompt": 16221
+      },
+      "within_activation_same_tools": {
+        "requests": 2,
+        "hit": 24064,
+        "miss": 1100,
+        "hit_ratio": 0.95629,
+        "zero_hit_requests": 0,
+        "mean_hit": 12032,
+        "mean_prompt": 12582
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 25,
+        "hit": 175872,
+        "miss": 57778,
+        "hit_ratio": 0.75272,
+        "zero_hit_requests": 0,
+        "mean_hit": 7035,
+        "mean_prompt": 9346
+      },
+      "inspect_inquiry_topology": {
+        "requests": 2,
+        "hit": 24064,
+        "miss": 1100,
+        "hit_ratio": 0.95629,
+        "zero_hit_requests": 0,
+        "mean_hit": 12032,
+        "mean_prompt": 12582
+      },
+      "receive_input": {
+        "requests": 25,
+        "hit": 148352,
+        "miss": 213926,
+        "hit_ratio": 0.4095,
+        "zero_hit_requests": 0,
+        "mean_hit": 5934,
+        "mean_prompt": 14491
+      },
+      "reply_act": {
+        "requests": 17,
+        "hit": 77696,
+        "miss": 266513,
+        "hit_ratio": 0.22572,
+        "zero_hit_requests": 0,
+        "mean_hit": 4570,
+        "mean_prompt": 20248
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 15360,
+        "miss": 26228,
+        "hit_ratio": 0.36934,
+        "zero_hit_requests": 0,
+        "mean_hit": 5120,
+        "mean_prompt": 13863
+      },
+      "send_act": {
+        "requests": 8,
+        "hit": 51072,
+        "miss": 53820,
+        "hit_ratio": 0.4869,
+        "zero_hit_requests": 0,
+        "mean_hit": 6384,
+        "mean_prompt": 13112
+      },
+      "world_references_from": {
+        "requests": 6,
+        "hit": 24704,
+        "miss": 79383,
+        "hit_ratio": 0.23734,
+        "zero_hit_requests": 0,
+        "mean_hit": 4117,
+        "mean_prompt": 17348
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 52,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "broker",
+        {
+          "requests": 23,
+          "hit": 164480,
+          "miss": 182638,
+          "hit_ratio": 0.47384,
+          "zero_hit_requests": 0,
+          "mean_hit": 7151,
+          "mean_prompt": 15092
+        }
+      ],
+      [
+        "agent-3",
+        {
+          "requests": 13,
+          "hit": 65664,
+          "miss": 197095,
+          "hit_ratio": 0.2499,
+          "zero_hit_requests": 0,
+          "mean_hit": 5051,
+          "mean_prompt": 20212
+        }
+      ],
+      [
+        "agent-1",
+        {
+          "requests": 12,
+          "hit": 70272,
+          "miss": 97575,
+          "hit_ratio": 0.41867,
+          "zero_hit_requests": 0,
+          "mean_hit": 5856,
+          "mean_prompt": 13987
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 9,
+          "hit": 52096,
+          "miss": 62938,
+          "hit_ratio": 0.45287,
+          "zero_hit_requests": 0,
+          "mean_hit": 5788,
+          "mean_prompt": 12782
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 11,
+          "hit": 66304,
+          "miss": 46589,
+          "hit_ratio": 0.58732,
+          "zero_hit_requests": 0,
+          "mean_hit": 6028,
+          "mean_prompt": 10263
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 8,
+          "hit": 38528,
+          "miss": 66862,
+          "hit_ratio": 0.36558,
+          "zero_hit_requests": 0,
+          "mean_hit": 4816,
+          "mean_prompt": 13174
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        3840,
+        11
+      ],
+      [
+        4352,
+        8
+      ],
+      [
+        4096,
+        7
+      ],
+      [
+        5888,
+        6
+      ],
+      [
+        5120,
+        6
+      ],
+      [
+        4608,
+        5
+      ],
+      [
+        7040,
+        4
+      ],
+      [
+        6784,
+        4
+      ],
+      [
+        7552,
+        4
+      ],
+      [
+        6016,
+        3
+      ],
+      [
+        4992,
+        3
+      ],
+      [
+        4224,
+        2
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 62,
+      "ask_external_question": 22,
+      "ask_in_existing_context": 22,
+      "receive_input": 43,
+      "world_add_object": 22,
+      "world_add_reference": 22,
+      "world_references_from": 22,
+      "world_references_to": 22,
+      "yield_turn": 43,
+      "create_actor": 26,
+      "inspect_inquiry_topology": 34,
+      "send_question": 34,
+      "send_incremental_act": 50,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\local-r1-chunks\\snapshot.json.gz",
+    "total": {
+      "requests": 75,
+      "hit": 401792,
+      "miss": 734004,
+      "hit_ratio": 0.35375,
+      "zero_hit_requests": 0,
+      "mean_hit": 5357,
+      "mean_prompt": 15144
+    },
+    "actors": 7,
+    "activations": 19,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 12,
+        "hit": 65920,
+        "miss": 50625,
+        "hit_ratio": 0.56562,
+        "zero_hit_requests": 0,
+        "mean_hit": 5493,
+        "mean_prompt": 9712
+      },
+      "within_activation_changed_tools": {
+        "requests": 56,
+        "hit": 307456,
+        "miss": 682816,
+        "hit_ratio": 0.31048,
+        "zero_hit_requests": 0,
+        "mean_hit": 5490,
+        "mean_prompt": 17683
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 19,
+        "hit": 94336,
+        "miss": 51188,
+        "hit_ratio": 0.64825,
+        "zero_hit_requests": 0,
+        "mean_hit": 4965,
+        "mean_prompt": 7659
+      },
+      "receive_input": {
+        "requests": 19,
+        "hit": 129024,
+        "miss": 120278,
+        "hit_ratio": 0.51754,
+        "zero_hit_requests": 0,
+        "mean_hit": 6791,
+        "mean_prompt": 13121
+      },
+      "reply_act": {
+        "requests": 13,
+        "hit": 56832,
+        "miss": 226863,
+        "hit_ratio": 0.20033,
+        "zero_hit_requests": 0,
+        "mean_hit": 4372,
+        "mean_prompt": 21823
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 15360,
+        "miss": 29367,
+        "hit_ratio": 0.34342,
+        "zero_hit_requests": 0,
+        "mean_hit": 5120,
+        "mean_prompt": 14909
+      },
+      "send_act": {
+        "requests": 6,
+        "hit": 40704,
+        "miss": 27693,
+        "hit_ratio": 0.59511,
+        "zero_hit_requests": 0,
+        "mean_hit": 6784,
+        "mean_prompt": 11400
+      },
+      "world_references_from": {
+        "requests": 11,
+        "hit": 49024,
+        "miss": 201237,
+        "hit_ratio": 0.19589,
+        "zero_hit_requests": 0,
+        "mean_hit": 4457,
+        "mean_prompt": 22751
+      },
+      "world_references_to": {
+        "requests": 4,
+        "hit": 16512,
+        "miss": 77378,
+        "hit_ratio": 0.17587,
+        "zero_hit_requests": 0,
+        "mean_hit": 4128,
+        "mean_prompt": 23472
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 49,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-2",
+        {
+          "requests": 16,
+          "hit": 82176,
+          "miss": 298113,
+          "hit_ratio": 0.21609,
+          "zero_hit_requests": 0,
+          "mean_hit": 5136,
+          "mean_prompt": 23768
+        }
+      ],
+      [
+        "agent-3",
+        {
+          "requests": 13,
+          "hit": 66560,
+          "miss": 173396,
+          "hit_ratio": 0.27738,
+          "zero_hit_requests": 0,
+          "mean_hit": 5120,
+          "mean_prompt": 18458
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 10,
+          "hit": 48128,
+          "miss": 82396,
+          "hit_ratio": 0.36873,
+          "zero_hit_requests": 0,
+          "mean_hit": 4813,
+          "mean_prompt": 13052
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 10,
+          "hit": 57984,
+          "miss": 56312,
+          "hit_ratio": 0.50731,
+          "zero_hit_requests": 0,
+          "mean_hit": 5798,
+          "mean_prompt": 11430
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 10,
+          "hit": 57984,
+          "miss": 49874,
+          "hit_ratio": 0.5376,
+          "zero_hit_requests": 0,
+          "mean_hit": 5798,
+          "mean_prompt": 10786
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 10,
+          "hit": 57856,
+          "miss": 47923,
+          "hit_ratio": 0.54695,
+          "zero_hit_requests": 0,
+          "mean_hit": 5786,
+          "mean_prompt": 10578
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        16
+      ],
+      [
+        3840,
+        8
+      ],
+      [
+        4608,
+        8
+      ],
+      [
+        6784,
+        6
+      ],
+      [
+        5120,
+        6
+      ],
+      [
+        7552,
+        4
+      ],
+      [
+        7040,
+        3
+      ],
+      [
+        4352,
+        3
+      ],
+      [
+        6656,
+        3
+      ],
+      [
+        8064,
+        3
+      ],
+      [
+        4992,
+        3
+      ],
+      [
+        6016,
+        2
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 57,
+      "ask_external_question": 18,
+      "ask_in_existing_context": 18,
+      "receive_input": 31,
+      "world_add_object": 18,
+      "world_add_reference": 18,
+      "world_references_from": 18,
+      "world_references_to": 18,
+      "yield_turn": 31,
+      "create_actor": 18,
+      "inspect_inquiry_topology": 24,
+      "send_question": 24,
+      "send_incremental_act": 32,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\local-r1-identity\\snapshot.json.gz",
+    "total": {
+      "requests": 81,
+      "hit": 366464,
+      "miss": 942986,
+      "hit_ratio": 0.27986,
+      "zero_hit_requests": 0,
+      "mean_hit": 4524,
+      "mean_prompt": 16166
+    },
+    "actors": 7,
+    "activations": 19,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 12,
+        "hit": 64768,
+        "miss": 52619,
+        "hit_ratio": 0.55175,
+        "zero_hit_requests": 0,
+        "mean_hit": 5397,
+        "mean_prompt": 9782
+      },
+      "within_activation_changed_tools": {
+        "requests": 61,
+        "hit": 265600,
+        "miss": 889454,
+        "hit_ratio": 0.22995,
+        "zero_hit_requests": 0,
+        "mean_hit": 4354,
+        "mean_prompt": 18935
+      },
+      "within_activation_same_tools": {
+        "requests": 1,
+        "hit": 7680,
+        "miss": 350,
+        "hit_ratio": 0.95641,
+        "zero_hit_requests": 0,
+        "mean_hit": 7680,
+        "mean_prompt": 8030
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 19,
+        "hit": 93184,
+        "miss": 53182,
+        "hit_ratio": 0.63665,
+        "zero_hit_requests": 0,
+        "mean_hit": 4904,
+        "mean_prompt": 7703
+      },
+      "inspect_inquiry_topology": {
+        "requests": 1,
+        "hit": 7680,
+        "miss": 350,
+        "hit_ratio": 0.95641,
+        "zero_hit_requests": 0,
+        "mean_hit": 7680,
+        "mean_prompt": 8030
+      },
+      "receive_input": {
+        "requests": 19,
+        "hit": 90240,
+        "miss": 157859,
+        "hit_ratio": 0.36373,
+        "zero_hit_requests": 0,
+        "mean_hit": 4749,
+        "mean_prompt": 13058
+      },
+      "reply_act": {
+        "requests": 13,
+        "hit": 51328,
+        "miss": 246310,
+        "hit_ratio": 0.17245,
+        "zero_hit_requests": 0,
+        "mean_hit": 3948,
+        "mean_prompt": 22895
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 13184,
+        "miss": 27373,
+        "hit_ratio": 0.32507,
+        "zero_hit_requests": 0,
+        "mean_hit": 4395,
+        "mean_prompt": 13519
+      },
+      "send_act": {
+        "requests": 6,
+        "hit": 28416,
+        "miss": 32783,
+        "hit_ratio": 0.46432,
+        "zero_hit_requests": 0,
+        "mean_hit": 4736,
+        "mean_prompt": 10200
+      },
+      "world_references_from": {
+        "requests": 11,
+        "hit": 45312,
+        "miss": 242665,
+        "hit_ratio": 0.15735,
+        "zero_hit_requests": 0,
+        "mean_hit": 4119,
+        "mean_prompt": 26180
+      },
+      "world_references_to": {
+        "requests": 9,
+        "hit": 37120,
+        "miss": 182464,
+        "hit_ratio": 0.16905,
+        "zero_hit_requests": 0,
+        "mean_hit": 4124,
+        "mean_prompt": 24398
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 54,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "position-42",
+        {
+          "requests": 15,
+          "hit": 65152,
+          "miss": 329339,
+          "hit_ratio": 0.16515,
+          "zero_hit_requests": 0,
+          "mean_hit": 4343,
+          "mean_prompt": 26299
+        }
+      ],
+      [
+        "position-55",
+        {
+          "requests": 18,
+          "hit": 84736,
+          "miss": 305538,
+          "hit_ratio": 0.21712,
+          "zero_hit_requests": 0,
+          "mean_hit": 4708,
+          "mean_prompt": 21682
+        }
+      ],
+      [
+        "position-68",
+        {
+          "requests": 9,
+          "hit": 35968,
+          "miss": 91056,
+          "hit_ratio": 0.28316,
+          "zero_hit_requests": 0,
+          "mean_hit": 3996,
+          "mean_prompt": 14114
+        }
+      ],
+      [
+        "position-94",
+        {
+          "requests": 11,
+          "hit": 54912,
+          "miss": 59998,
+          "hit_ratio": 0.47787,
+          "zero_hit_requests": 0,
+          "mean_hit": 4992,
+          "mean_prompt": 10446
+        }
+      ],
+      [
+        "position-107",
+        {
+          "requests": 10,
+          "hit": 46848,
+          "miss": 54134,
+          "hit_ratio": 0.46392,
+          "zero_hit_requests": 0,
+          "mean_hit": 4685,
+          "mean_prompt": 10098
+        }
+      ],
+      [
+        "position-81",
+        {
+          "requests": 10,
+          "hit": 47104,
+          "miss": 50754,
+          "hit_ratio": 0.48135,
+          "zero_hit_requests": 0,
+          "mean_hit": 4710,
+          "mean_prompt": 9786
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        21
+      ],
+      [
+        3840,
+        10
+      ],
+      [
+        4352,
+        9
+      ],
+      [
+        4608,
+        8
+      ],
+      [
+        3968,
+        6
+      ],
+      [
+        4736,
+        6
+      ],
+      [
+        4224,
+        5
+      ],
+      [
+        4480,
+        4
+      ],
+      [
+        3712,
+        3
+      ],
+      [
+        5760,
+        2
+      ],
+      [
+        5120,
+        1
+      ],
+      [
+        7680,
+        1
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 62,
+      "ask_external_question": 18,
+      "ask_in_existing_context": 18,
+      "receive_input": 31,
+      "world_add_object": 18,
+      "world_add_reference": 18,
+      "world_references_from": 18,
+      "world_references_to": 18,
+      "yield_turn": 31,
+      "create_actor": 18,
+      "inspect_inquiry_topology": 24,
+      "send_question": 24,
+      "send_incremental_act": 32,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\missing-r1-none\\snapshot.json.gz",
+    "total": {
+      "requests": 70,
+      "hit": 374272,
+      "miss": 617931,
+      "hit_ratio": 0.37721,
+      "zero_hit_requests": 0,
+      "mean_hit": 5347,
+      "mean_prompt": 14174
+    },
+    "actors": 7,
+    "activations": 19,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 12,
+        "hit": 66560,
+        "miss": 44451,
+        "hit_ratio": 0.59958,
+        "zero_hit_requests": 0,
+        "mean_hit": 5547,
+        "mean_prompt": 9251
+      },
+      "within_activation_changed_tools": {
+        "requests": 50,
+        "hit": 271232,
+        "miss": 572511,
+        "hit_ratio": 0.32146,
+        "zero_hit_requests": 0,
+        "mean_hit": 5425,
+        "mean_prompt": 16875
+      },
+      "within_activation_same_tools": {
+        "requests": 1,
+        "hit": 8064,
+        "miss": 406,
+        "hit_ratio": 0.95207,
+        "zero_hit_requests": 0,
+        "mean_hit": 8064,
+        "mean_prompt": 8470
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 19,
+        "hit": 94976,
+        "miss": 45014,
+        "hit_ratio": 0.67845,
+        "zero_hit_requests": 0,
+        "mean_hit": 4999,
+        "mean_prompt": 7368
+      },
+      "inspect_inquiry_topology": {
+        "requests": 1,
+        "hit": 8064,
+        "miss": 406,
+        "hit_ratio": 0.95207,
+        "zero_hit_requests": 0,
+        "mean_hit": 8064,
+        "mean_prompt": 8470
+      },
+      "receive_input": {
+        "requests": 19,
+        "hit": 120704,
+        "miss": 118648,
+        "hit_ratio": 0.50429,
+        "zero_hit_requests": 0,
+        "mean_hit": 6353,
+        "mean_prompt": 12597
+      },
+      "reply_act": {
+        "requests": 13,
+        "hit": 57600,
+        "miss": 221261,
+        "hit_ratio": 0.20655,
+        "zero_hit_requests": 0,
+        "mean_hit": 4431,
+        "mean_prompt": 21451
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 15360,
+        "miss": 25795,
+        "hit_ratio": 0.37322,
+        "zero_hit_requests": 0,
+        "mean_hit": 5120,
+        "mean_prompt": 13718
+      },
+      "send_act": {
+        "requests": 6,
+        "hit": 40704,
+        "miss": 23898,
+        "hit_ratio": 0.63007,
+        "zero_hit_requests": 0,
+        "mean_hit": 6784,
+        "mean_prompt": 10767
+      },
+      "world_references_from": {
+        "requests": 7,
+        "hit": 28672,
+        "miss": 145405,
+        "hit_ratio": 0.16471,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 24868
+      },
+      "world_references_to": {
+        "requests": 2,
+        "hit": 8192,
+        "miss": 37504,
+        "hit_ratio": 0.17927,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 22848
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 43,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-3",
+        {
+          "requests": 15,
+          "hit": 72448,
+          "miss": 246578,
+          "hit_ratio": 0.22709,
+          "zero_hit_requests": 0,
+          "mean_hit": 4830,
+          "mean_prompt": 21268
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 11,
+          "hit": 53504,
+          "miss": 168090,
+          "hit_ratio": 0.24145,
+          "zero_hit_requests": 0,
+          "mean_hit": 4864,
+          "mean_prompt": 20145
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 11,
+          "hit": 66432,
+          "miss": 44532,
+          "hit_ratio": 0.59868,
+          "zero_hit_requests": 0,
+          "mean_hit": 6039,
+          "mean_prompt": 10088
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 10,
+          "hit": 58624,
+          "miss": 49335,
+          "hit_ratio": 0.54302,
+          "zero_hit_requests": 0,
+          "mean_hit": 5862,
+          "mean_prompt": 10796
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 10,
+          "hit": 58496,
+          "miss": 43856,
+          "hit_ratio": 0.57152,
+          "zero_hit_requests": 0,
+          "mean_hit": 5850,
+          "mean_prompt": 10235
+        }
+      ],
+      [
+        "agent-4",
+        {
+          "requests": 7,
+          "hit": 32000,
+          "miss": 44962,
+          "hit_ratio": 0.41579,
+          "zero_hit_requests": 0,
+          "mean_hit": 4571,
+          "mean_prompt": 10995
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        4096,
+        13
+      ],
+      [
+        4608,
+        9
+      ],
+      [
+        3840,
+        7
+      ],
+      [
+        5120,
+        7
+      ],
+      [
+        6784,
+        6
+      ],
+      [
+        7040,
+        4
+      ],
+      [
+        7552,
+        4
+      ],
+      [
+        4352,
+        3
+      ],
+      [
+        4992,
+        3
+      ],
+      [
+        7296,
+        2
+      ],
+      [
+        8064,
+        2
+      ],
+      [
+        5888,
+        2
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 51,
+      "ask_external_question": 18,
+      "ask_in_existing_context": 18,
+      "receive_input": 31,
+      "world_add_object": 18,
+      "world_add_reference": 18,
+      "world_references_from": 18,
+      "world_references_to": 18,
+      "yield_turn": 31,
+      "create_actor": 18,
+      "inspect_inquiry_topology": 24,
+      "send_question": 24,
+      "send_incremental_act": 32,
+      "retain_answer": 6
+    }
+  },
+  {
+    "source": "output\\situation_v1\\real_tail\\missing-r2-none\\snapshot.json.gz",
+    "total": {
+      "requests": 75,
+      "hit": 419712,
+      "miss": 728215,
+      "hit_ratio": 0.36563,
+      "zero_hit_requests": 0,
+      "mean_hit": 5596,
+      "mean_prompt": 15306
+    },
+    "actors": 7,
+    "activations": 19,
+    "models": [
+      "deepseek-v4-flash"
+    ],
+    "by_category": {
+      "first_actor_request": {
+        "requests": 7,
+        "hit": 28416,
+        "miss": 563,
+        "hit_ratio": 0.98057,
+        "zero_hit_requests": 0,
+        "mean_hit": 4059,
+        "mean_prompt": 4140
+      },
+      "new_activation": {
+        "requests": 12,
+        "hit": 65920,
+        "miss": 46928,
+        "hit_ratio": 0.58415,
+        "zero_hit_requests": 0,
+        "mean_hit": 5493,
+        "mean_prompt": 9404
+      },
+      "within_activation_changed_tools": {
+        "requests": 55,
+        "hit": 318080,
+        "miss": 677298,
+        "hit_ratio": 0.31956,
+        "zero_hit_requests": 0,
+        "mean_hit": 5783,
+        "mean_prompt": 18098
+      },
+      "within_activation_same_tools": {
+        "requests": 1,
+        "hit": 7296,
+        "miss": 3426,
+        "hit_ratio": 0.68047,
+        "zero_hit_requests": 0,
+        "mean_hit": 7296,
+        "mean_prompt": 10722
+      }
+    },
+    "by_prior_tool": {
+      "": {
+        "requests": 19,
+        "hit": 94336,
+        "miss": 47491,
+        "hit_ratio": 0.66515,
+        "zero_hit_requests": 0,
+        "mean_hit": 4965,
+        "mean_prompt": 7465
+      },
+      "inspect_inquiry_topology": {
+        "requests": 1,
+        "hit": 7296,
+        "miss": 3426,
+        "hit_ratio": 0.68047,
+        "zero_hit_requests": 0,
+        "mean_hit": 7296,
+        "mean_prompt": 10722
+      },
+      "receive_input": {
+        "requests": 19,
+        "hit": 130176,
+        "miss": 113659,
+        "hit_ratio": 0.53387,
+        "zero_hit_requests": 0,
+        "mean_hit": 6851,
+        "mean_prompt": 12833
+      },
+      "reply_act": {
+        "requests": 13,
+        "hit": 57728,
+        "miss": 247096,
+        "hit_ratio": 0.18938,
+        "zero_hit_requests": 0,
+        "mean_hit": 4441,
+        "mean_prompt": 23448
+      },
+      "retain_answer": {
+        "requests": 3,
+        "hit": 15744,
+        "miss": 27743,
+        "hit_ratio": 0.36204,
+        "zero_hit_requests": 0,
+        "mean_hit": 5248,
+        "mean_prompt": 14496
+      },
+      "send_act": {
+        "requests": 6,
+        "hit": 43648,
+        "miss": 31706,
+        "hit_ratio": 0.57924,
+        "zero_hit_requests": 0,
+        "mean_hit": 7275,
+        "mean_prompt": 12559
+      },
+      "world_references_from": {
+        "requests": 13,
+        "hit": 66688,
+        "miss": 217898,
+        "hit_ratio": 0.23433,
+        "zero_hit_requests": 0,
+        "mean_hit": 5130,
+        "mean_prompt": 21891
+      },
+      "world_references_to": {
+        "requests": 1,
+        "hit": 4096,
+        "miss": 39196,
+        "hit_ratio": 0.09461,
+        "zero_hit_requests": 0,
+        "mean_hit": 4096,
+        "mean_prompt": 43292
+      }
+    },
+    "non_append_only_visible_messages_after_first": 0,
+    "unique_tool_schemas": 48,
+    "usage_mismatch_requests": 0,
+    "top_actors_by_input": [
+      [
+        "agent-3",
+        {
+          "requests": 13,
+          "hit": 65792,
+          "miss": 296405,
+          "hit_ratio": 0.18165,
+          "zero_hit_requests": 0,
+          "mean_hit": 5061,
+          "mean_prompt": 27861
+        }
+      ],
+      [
+        "agent-2",
+        {
+          "requests": 15,
+          "hit": 74368,
+          "miss": 174190,
+          "hit_ratio": 0.2992,
+          "zero_hit_requests": 0,
+          "mean_hit": 4958,
+          "mean_prompt": 16571
+        }
+      ],
+      [
+        "agent-1",
+        {
+          "requests": 10,
+          "hit": 61824,
+          "miss": 66601,
+          "hit_ratio": 0.4814,
+          "zero_hit_requests": 0,
+          "mean_hit": 6182,
+          "mean_prompt": 12842
+        }
+      ],
+      [
+        "broker-1",
+        {
+          "requests": 11,
+          "hit": 68096,
+          "miss": 57736,
+          "hit_ratio": 0.54117,
+          "zero_hit_requests": 0,
+          "mean_hit": 6191,
+          "mean_prompt": 11439
+        }
+      ],
+      [
+        "broker-2",
+        {
+          "requests": 10,
+          "hit": 60032,
+          "miss": 55318,
+          "hit_ratio": 0.52043,
+          "zero_hit_requests": 0,
+          "mean_hit": 6003,
+          "mean_prompt": 11535
+        }
+      ],
+      [
+        "broker",
+        {
+          "requests": 10,
+          "hit": 57856,
+          "miss": 46976,
+          "hit_ratio": 0.55189,
+          "zero_hit_requests": 0,
+          "mean_hit": 5786,
+          "mean_prompt": 10483
+        }
+      ]
+    ],
+    "common_hit_counts": [
+      [
+        3840,
+        8
+      ],
+      [
+        4608,
+        8
+      ],
+      [
+        4096,
+        7
+      ],
+      [
+        7552,
+        6
+      ],
+      [
+        4224,
+        6
+      ],
+      [
+        5120,
+        5
+      ],
+      [
+        7040,
+        4
+      ],
+      [
+        7296,
+        4
+      ],
+      [
+        4992,
+        4
+      ],
+      [
+        4352,
+        3
+      ],
+      [
+        8320,
+        3
+      ],
+      [
+        6784,
+        2
+      ]
+    ],
+    "tool_change_counts": {
+      "answer_question": 56,
+      "ask_external_question": 18,
+      "ask_in_existing_context": 18,
+      "receive_input": 31,
+      "world_add_object": 18,
+      "world_add_reference": 18,
+      "world_references_from": 18,
+      "world_references_to": 18,
+      "yield_turn": 31,
+      "create_actor": 18,
+      "inspect_inquiry_topology": 24,
+      "send_question": 24,
+      "send_incremental_act": 32,
+      "retain_answer": 6
+    }
+  }
+]

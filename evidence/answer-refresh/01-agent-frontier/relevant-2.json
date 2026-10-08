@@ -1,0 +1,224 @@
+{
+  "group": "agent-frontier",
+  "arm": "relevant",
+  "index": 2,
+  "initial_ok": true,
+  "natural": true,
+  "allow_marker": "ALLOW-CAAED7B9D3",
+  "later_marker": "BLOCK-CAAED7B9D3",
+  "initial_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "act_id": "act-2",
+      "thread_id": "thread-1",
+      "kind": "question",
+      "sender": "broker",
+      "recipient": "agent-1",
+      "payload": {
+        "raw_question": "判断当前发布审核是否允许发布，并返回精确证据标记。",
+        "interpretation_context": {
+          "content": "安全证据直接指向给定审核主题。",
+          "semantic_addresses": [
+            {
+              "kind": "object",
+              "id": "object:subject:CAAED7B9D3"
+            }
+          ]
+        },
+        "intent": "只判断发布安全；Answer 必须包含 ALLOW/BLOCK 与实际证据中的精确随机标记。"
+      },
+      "reply_to": "act-1",
+      "derived_from": [
+        "act-1"
+      ]
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "world_references_to",
+        "arguments": {
+          "address": {
+            "id": "object:subject:CAAED7B9D3",
+            "kind": "object"
+          },
+          "question_id": "act-2"
+        },
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW。当前发布审核允许发布。精确证据标记：ALLOW-CAAED7B9D3。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "reference:580a642c-2fea-4dfc-adfd-87cbe5248036",
+              "kind": "reference"
+            },
+            {
+              "id": "object:baseline:CAAED7B9D3",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "delta_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:ea9956ab-932c-4814-81e6-d89618a80480",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:CAAED7B9D3",
+            "content": "发现未隔离的高危故障，精确阻断标记 BLOCK-CAAED7B9D3。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:CAAED7B9D3"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:ea9956ab-932c-4814-81e6-d89618a80480",
+            "source_object_id": "object:later:CAAED7B9D3",
+            "meaning": "直接改变发布安全结论的新增证据。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:ea9956ab-932c-4814-81e6-d89618a80480"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:CAAED7B9D3"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:CAAED7B9D3"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK。当前发布审核不允许发布。精确证据标记：BLOCK-CAAED7B9D3。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "reference:ea9956ab-932c-4814-81e6-d89618a80480",
+              "kind": "reference"
+            },
+            {
+              "id": "object:later:CAAED7B9D3",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。当前发布审核允许发布。精确证据标记：ALLOW-CAAED7B9D3。",
+        "semantic_addresses": [
+          {
+            "id": "reference:580a642c-2fea-4dfc-adfd-87cbe5248036",
+            "kind": "reference"
+          },
+          {
+            "id": "object:baseline:CAAED7B9D3",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-6",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK。当前发布审核不允许发布。精确证据标记：BLOCK-CAAED7B9D3。",
+        "semantic_addresses": [
+          {
+            "id": "reference:ea9956ab-932c-4814-81e6-d89618a80480",
+            "kind": "reference"
+          },
+          {
+            "id": "object:later:CAAED7B9D3",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "pending_question_ids": [],
+  "frontiers": [
+    {
+      "question_id": "act-2",
+      "latest_local_change_id": "local-world-delta-1",
+      "latest_judged_change_id": "local-world-delta-1",
+      "latest_answer_id": "act-6",
+      "pending_changes": []
+    }
+  ],
+  "provider_usage": {
+    "requests": 7,
+    "cache_reported_requests": 7,
+    "prompt_tokens": 40770,
+    "completion_tokens": 1728,
+    "total_tokens": 42498,
+    "prompt_cache_hit_tokens": 29952,
+    "prompt_cache_miss_tokens": 10818,
+    "prompt_cache_hit_ratio": 0.7346578366445916
+  }
+}

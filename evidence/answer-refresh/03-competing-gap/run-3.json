@@ -1,0 +1,247 @@
+{
+  "group": "competing-gap",
+  "index": 3,
+  "initial_ok": true,
+  "both_judged": true,
+  "old_updated": true,
+  "current_answered": true,
+  "old_gap_persisted_if_unjudged": true,
+  "risk_marker": "BLOCK-CBD05D804D",
+  "current_marker": "CURRENT-E291F954C5",
+  "writer": {
+    "source": "world_add_reference",
+    "ok": true,
+    "value": {
+      "reference_id": "reference:695b295d-b747-486b-bc12-48270272137b",
+      "source_object_id": "object:later:CBD05D804D",
+      "meaning": "直接改变发布安全结论的新增证据。",
+      "semantic_address": {
+        "kind": "reference",
+        "id": "reference:695b295d-b747-486b-bc12-48270272137b"
+      },
+      "target": {
+        "kind": "object",
+        "id": "object:subject:CBD05D804D"
+      }
+    },
+    "error": "",
+    "capability_boundary_change": {
+      "question_id": "act-5",
+      "semantic_world_operations": {
+        "before": 1,
+        "after": 0
+      }
+    }
+  },
+  "first_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:695b295d-b747-486b-bc12-48270272137b",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:CBD05D804D",
+            "content": "发现未隔离的高危故障，精确阻断标记 BLOCK-CBD05D804D。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:CBD05D804D"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:695b295d-b747-486b-bc12-48270272137b",
+            "source_object_id": "object:later:CBD05D804D",
+            "meaning": "直接改变发布安全结论的新增证据。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:695b295d-b747-486b-bc12-48270272137b"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:CBD05D804D"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:CBD05D804D"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK。发现未隔离的高危故障，当前发布审核不允许发布，精确阻断标记：BLOCK-CBD05D804D。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "object:later:CBD05D804D",
+              "kind": "object"
+            },
+            {
+              "id": "reference:695b295d-b747-486b-bc12-48270272137b",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "CURRENT-E291F954C5",
+          "question_id": "act-7",
+          "semantic_addresses": [
+            {
+              "id": "object:544d4b55-1f26-4c41-a740-4d05075e6489",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "second_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "act_id": "act-7",
+      "thread_id": "thread-3",
+      "kind": "question",
+      "sender": "broker",
+      "recipient": "agent-1",
+      "payload": {
+        "raw_question": "返回给定 Object content 中的精确结果标记。",
+        "interpretation_context": {
+          "content": "",
+          "semantic_addresses": [
+            {
+              "kind": "object",
+              "id": "object:544d4b55-1f26-4c41-a740-4d05075e6489"
+            }
+          ]
+        },
+        "intent": "Answer 必须包含给定 Object content 中的精确随机标记。"
+      },
+      "reply_to": "act-6",
+      "derived_from": [
+        "act-6"
+      ]
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "old_answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。当前发布安全检查通过，精确证据标记：ALLOW-CBD05D804D。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:CBD05D804D"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:441891f5-c91f-4bf7-8b0a-f3e1a3d95702"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-8",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK。发现未隔离的高危故障，当前发布审核不允许发布，精确阻断标记：BLOCK-CBD05D804D。",
+        "semantic_addresses": [
+          {
+            "id": "object:later:CBD05D804D",
+            "kind": "object"
+          },
+          {
+            "id": "reference:695b295d-b747-486b-bc12-48270272137b",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "current_answers": [
+    {
+      "act_id": "act-9",
+      "thread_id": "thread-3",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "CURRENT-E291F954C5",
+        "semantic_addresses": [
+          {
+            "id": "object:544d4b55-1f26-4c41-a740-4d05075e6489",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-7",
+      "derived_from": []
+    }
+  ],
+  "pending_question_ids": [],
+  "provider_usage": {
+    "requests": 10,
+    "cache_reported_requests": 10,
+    "prompt_tokens": 65459,
+    "completion_tokens": 2346,
+    "total_tokens": 67805,
+    "prompt_cache_hit_tokens": 44544,
+    "prompt_cache_miss_tokens": 20915,
+    "prompt_cache_hit_ratio": 0.6804870224109748
+  }
+}

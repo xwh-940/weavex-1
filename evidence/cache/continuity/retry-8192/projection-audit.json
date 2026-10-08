@@ -1,0 +1,25 @@
+{
+  "broker": {
+    "receive_inputs": 5,
+    "delivered": {
+      "actors": 2,
+      "groundings": 3
+    },
+    "repeated_material_ids": []
+  },
+  "agent-1": {
+    "receive_inputs": 2,
+    "delivered": {
+      "objects": 2,
+      "groundings": 2
+    },
+    "repeated_material_ids": []
+  },
+  "agent-2": {
+    "receive_inputs": 1,
+    "delivered": {
+      "objects": 1
+    },
+    "repeated_material_ids": []
+  }
+}

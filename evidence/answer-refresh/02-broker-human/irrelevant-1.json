@@ -1,0 +1,224 @@
+{
+  "group": "broker-human",
+  "arm": "irrelevant",
+  "index": 1,
+  "initial_ok": true,
+  "natural": true,
+  "allow_marker": "ALLOW-6F365D1709",
+  "later_marker": "DOC-6F365D1709",
+  "initial_broker_step": {
+    "handled": true,
+    "actor_id": "broker",
+    "arrival": {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。当前发布审核通过：精确证据标记为 ALLOW-6F365D1709。",
+        "semantic_addresses": [
+          {
+            "id": "reference:3831cfe3-198f-4181-a968-443edd2de08f",
+            "kind": "reference"
+          },
+          {
+            "id": "object:baseline:6F365D1709",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW。当前发布审核允许发布。精确证据标记为 ALLOW-6F365D1709。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "3831cfe3-198f-4181-a968-443edd2de08f",
+              "kind": "reference"
+            },
+            {
+              "id": "baseline:6F365D1709",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW。当前发布审核允许发布。精确证据标记为 ALLOW-6F365D1709。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "reference:3831cfe3-198f-4181-a968-443edd2de08f",
+              "kind": "reference"
+            },
+            {
+              "id": "object:baseline:6F365D1709",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "delta_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:33c13a93-17fb-4f56-a315-47c7952f6bc1",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:6F365D1709",
+            "content": "行政归档批次更新为 DOC-6F365D1709，不改变发布安全。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:6F365D1709"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:33c13a93-17fb-4f56-a315-47c7952f6bc1",
+            "source_object_id": "object:later:6F365D1709",
+            "meaning": "只影响行政归档、不影响发布安全的事实。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:33c13a93-17fb-4f56-a315-47c7952f6bc1"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:6F365D1709"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:6F365D1709"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "retain_answer",
+        "arguments": {
+          "question_id": "act-2"
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": "The new change (administrative archive batch update to DOC-6F365D1709) explicitly does not affect publishing safety, so the prior ALLOW-6F365D1709 conclusion remains valid. I've retained the answer judgment."
+      }
+    ],
+    "error": ""
+  },
+  "broker_followup": {
+    "handled": false,
+    "error": "",
+    "calls": []
+  },
+  "agent_answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。当前发布审核通过：精确证据标记为 ALLOW-6F365D1709。",
+        "semantic_addresses": [
+          {
+            "id": "reference:3831cfe3-198f-4181-a968-443edd2de08f",
+            "kind": "reference"
+          },
+          {
+            "id": "object:baseline:6F365D1709",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "human_answers": [
+    {
+      "act_id": "act-4",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "broker",
+      "recipient": "human",
+      "payload": {
+        "answer": "ALLOW。当前发布审核允许发布。精确证据标记为 ALLOW-6F365D1709。",
+        "semantic_addresses": [
+          {
+            "id": "reference:3831cfe3-198f-4181-a968-443edd2de08f",
+            "kind": "reference"
+          },
+          {
+            "id": "object:baseline:6F365D1709",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-1",
+      "derived_from": []
+    }
+  ],
+  "broker_frontiers": [
+    {
+      "question_id": "act-1",
+      "latest_local_change_id": "act-3",
+      "latest_judged_change_id": "act-3",
+      "latest_answer_id": "act-4",
+      "pending_changes": []
+    }
+  ],
+  "provider_usage": {
+    "requests": 11,
+    "cache_reported_requests": 11,
+    "prompt_tokens": 62952,
+    "completion_tokens": 2759,
+    "total_tokens": 65711,
+    "prompt_cache_hit_tokens": 49408,
+    "prompt_cache_miss_tokens": 13544,
+    "prompt_cache_hit_ratio": 0.7848519506925912
+  }
+}

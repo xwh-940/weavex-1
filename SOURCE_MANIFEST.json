@@ -1,0 +1,867 @@
+{
+  "schema_version": 1,
+  "prepared_on": "2026-10-08",
+  "source_repository": "https://github.com/xwh-940/WeaveX",
+  "source_checkout_commit": "17feb73c87116e18e578906d9f8a21dac0585f74",
+  "note": "Hashes describe copied bytes. Historical experiment runtime revisions were not embedded in the run records; the checkout commit is NOT the historical run revision.",
+  "copied_files": [
+    {
+      "path": "src/weavex/__init__.py",
+      "source_path": "src/weavex/__init__.py",
+      "sha256": "25953649a1472cf9575faddb034032c6c28b4909d3f7582269da64adb6df5198",
+      "bytes": 1061
+    },
+    {
+      "path": "src/weavex/actor.py",
+      "source_path": "src/weavex/actor.py",
+      "sha256": "43ea95eab58cf28580fbb38a69880c84db91a16d61a410e4273b1969f69d9c32",
+      "bytes": 8961
+    },
+    {
+      "path": "src/weavex/arrival.py",
+      "source_path": "src/weavex/arrival.py",
+      "sha256": "13f8268cf1a6520950c7da53e37a7730b8323716c1c6bb935d82377fb338d9a0",
+      "bytes": 4086
+    },
+    {
+      "path": "src/weavex/capabilities.py",
+      "source_path": "src/weavex/capabilities.py",
+      "sha256": "3d149ee1052d284ba7a0a96bf1d0d02f09ae9b6f856446913e2018971d4e9ddc",
+      "bytes": 27306
+    },
+    {
+      "path": "src/weavex/communication.py",
+      "source_path": "src/weavex/communication.py",
+      "sha256": "b3fadbdea3d852bb21ec6747229afe7c3c04a261262ff39c5d2ab7c5845416cc",
+      "bytes": 12469
+    },
+    {
+      "path": "src/weavex/coordination.py",
+      "source_path": "src/weavex/coordination.py",
+      "sha256": "fe2c37886c3a5369159039f480215b0a3b8e63206892736b75c83ef312013e5a",
+      "bytes": 9084
+    },
+    {
+      "path": "src/weavex/cost_accounting.py",
+      "source_path": "src/weavex/cost_accounting.py",
+      "sha256": "025fb100e4cd64f13287e18e9c2228533b12c3e2f761853f51c01c5aa7ffb925",
+      "bytes": 7432
+    },
+    {
+      "path": "src/weavex/debug/api.js",
+      "source_path": "src/weavex/debug/api.js",
+      "sha256": "5640281b2c187fbf612afe79980d5679e4edb8811d86fbf769eb589f8cd89b8c",
+      "bytes": 1608
+    },
+    {
+      "path": "src/weavex/debug/app.js",
+      "source_path": "src/weavex/debug/app.js",
+      "sha256": "3d55c10ae673d4acab86acdda6869d80cf4198abe2c7fbd9edd96bd3c2c81bc7",
+      "bytes": 59113
+    },
+    {
+      "path": "src/weavex/debug/demo.css",
+      "source_path": "src/weavex/debug/demo.css",
+      "sha256": "4c8f20fb2f0edfca527007444a0aee13306b35ce28590e0b20a69644efbbb6af",
+      "bytes": 11150
+    },
+    {
+      "path": "src/weavex/debug/demo.html",
+      "source_path": "src/weavex/debug/demo.html",
+      "sha256": "878547c268ee2758ec7057c419a2393b57f7108ec7121f4928a98e6bb1594122",
+      "bytes": 518
+    },
+    {
+      "path": "src/weavex/debug/demo.js",
+      "source_path": "src/weavex/debug/demo.js",
+      "sha256": "358542750a36358d8e88d717a3476a6d2039a539a00ab98d0907ea1c34da0bb1",
+      "bytes": 13014
+    },
+    {
+      "path": "src/weavex/debug/index.html",
+      "source_path": "src/weavex/debug/index.html",
+      "sha256": "8a1e4246ea7639df471e842d3ffd4fd60a4da98f26a40820b9f416ad15a0452f",
+      "bytes": 901
+    },
+    {
+      "path": "src/weavex/debug/layout.js",
+      "source_path": "src/weavex/debug/layout.js",
+      "sha256": "e127a69de9291a36b13680fc07751e7d5e35193e5c71cd2d78aba3219c6d882b",
+      "bytes": 4828
+    },
+    {
+      "path": "src/weavex/debug/model.js",
+      "source_path": "src/weavex/debug/model.js",
+      "sha256": "bc8e682ed1448adb880427ed04c904cb8aeb50462c88c59bd7314dd6f5cc8bbf",
+      "bytes": 6923
+    },
+    {
+      "path": "src/weavex/debug/workbench.css",
+      "source_path": "src/weavex/debug/workbench.css",
+      "sha256": "a10d67aeb56d00b4d14dcea1cf2bdecb4eee00ca0a0de0480a8631ab92807daa",
+      "bytes": 34785
+    },
+    {
+      "path": "src/weavex/debug_query.py",
+      "source_path": "src/weavex/debug_query.py",
+      "sha256": "3410de6b199764303ee9d016314c4fead6d331e9dd48bde2edc51a5832c74309",
+      "bytes": 10193
+    },
+    {
+      "path": "src/weavex/debug_server.py",
+      "source_path": "src/weavex/debug_server.py",
+      "sha256": "f0c262df9c3be12c34e186c92936c608996b16fbaa42a424f915c8dc59d2ac44",
+      "bytes": 10234
+    },
+    {
+      "path": "src/weavex/defaults.py",
+      "source_path": "src/weavex/defaults.py",
+      "sha256": "63643b49bda712bc38eb0ba2df46bf4c32ac862a6f6da4272c0120ba974e021c",
+      "bytes": 1941
+    },
+    {
+      "path": "src/weavex/demo.py",
+      "source_path": "src/weavex/demo.py",
+      "sha256": "3eb866a23d93279f2ed3ab0461da4c52e1be0560a89c07f0f9126f452769bb80",
+      "bytes": 6249
+    },
+    {
+      "path": "src/weavex/dialogue.py",
+      "source_path": "src/weavex/dialogue.py",
+      "sha256": "cd3ced3b11624a3d632a2eb7e74a9901ea73240325e60b48202ee62f8d9fcfc4",
+      "bytes": 6662
+    },
+    {
+      "path": "src/weavex/execution.py",
+      "source_path": "src/weavex/execution.py",
+      "sha256": "ed83ff61ce75540eb260f4908ccf2b20e6127f997a08dd147c6cb65d25b0992d",
+      "bytes": 1361
+    },
+    {
+      "path": "src/weavex/grounding.py",
+      "source_path": "src/weavex/grounding.py",
+      "sha256": "ad8a14ecfd0f2417ca6c4d53580f751e50283b0dff67654c5405d70c4cc5d159",
+      "bytes": 10100
+    },
+    {
+      "path": "src/weavex/initialization.py",
+      "source_path": "src/weavex/initialization.py",
+      "sha256": "7d94efce21f05b7ff0049981d7c37dfc58c1130c53ee6b8fa06dda71d155980d",
+      "bytes": 4413
+    },
+    {
+      "path": "src/weavex/inquiry.py",
+      "source_path": "src/weavex/inquiry.py",
+      "sha256": "72859b7afa943505114fa2b8340b4ad504a72cba1a83081dff05702c34e6e3de",
+      "bytes": 8869
+    },
+    {
+      "path": "src/weavex/inspection.py",
+      "source_path": "src/weavex/inspection.py",
+      "sha256": "8e9299679ba8be924e0109871b67600ceffae569dbc9d98648b2adf1acc6d45c",
+      "bytes": 5358
+    },
+    {
+      "path": "src/weavex/local_world.py",
+      "source_path": "src/weavex/local_world.py",
+      "sha256": "d2c2bccf60945fe8e572ea12a7bdd33aaf49a1b7069f8f04be8e6f77cc6cb117",
+      "bytes": 11447
+    },
+    {
+      "path": "src/weavex/native_session.py",
+      "source_path": "src/weavex/native_session.py",
+      "sha256": "0703edf8b96184d8b971b7f4584ba258518933e57f4efeec74abe9568825f420",
+      "bytes": 5960
+    },
+    {
+      "path": "src/weavex/neighborhood.py",
+      "source_path": "src/weavex/neighborhood.py",
+      "sha256": "562282c7a5e61707be2660ea3832973f59e09e016ea5d1e4e8318d33d10a8be4",
+      "bytes": 3862
+    },
+    {
+      "path": "src/weavex/prompts/__init__.py",
+      "source_path": "src/weavex/prompts/__init__.py",
+      "sha256": "47141acaf58f719313d04a2af230df09bd092202e071974657162b61320a5b8c",
+      "bytes": 459
+    },
+    {
+      "path": "src/weavex/prompts/agent.md",
+      "source_path": "src/weavex/prompts/agent.md",
+      "sha256": "f45006886ff0fd09efcb2692cf2310d3bee6b7b81e48df7388e396d96982d004",
+      "bytes": 7166
+    },
+    {
+      "path": "src/weavex/prompts/broker.md",
+      "source_path": "src/weavex/prompts/broker.md",
+      "sha256": "6e85e198a6297d83b84ecb3e1e37456f90b9254def9831f9b26443eff4f0999c",
+      "bytes": 8770
+    },
+    {
+      "path": "src/weavex/prompts/common.md",
+      "source_path": "src/weavex/prompts/common.md",
+      "sha256": "424d4047af4a1015386aa365ae576b1b65993e9ce9797ee751c3df42951a2fb7",
+      "bytes": 11197
+    },
+    {
+      "path": "src/weavex/prompts/situation_actor_probe.md",
+      "source_path": "src/weavex/prompts/situation_actor_probe.md",
+      "sha256": "fac07042a2cb951ad76bda87be2399078de1ca5ab7d292b4837eb5228e64f9a5",
+      "bytes": 1522
+    },
+    {
+      "path": "src/weavex/prompts/situation_adapter.md",
+      "source_path": "src/weavex/prompts/situation_adapter.md",
+      "sha256": "880702efe100b02911dde2bbfd31a944982b9da17485dac4100cdc9df7dab718",
+      "bytes": 1794
+    },
+    {
+      "path": "src/weavex/prompts/situation_construction.md",
+      "source_path": "src/weavex/prompts/situation_construction.md",
+      "sha256": "210e5f18746c5eb0c6ec2b466f0cf070dfc2d037e9020a6738d62f483dcdc11d",
+      "bytes": 6935
+    },
+    {
+      "path": "src/weavex/prompts/situation_repair.md",
+      "source_path": "src/weavex/prompts/situation_repair.md",
+      "sha256": "3ccfadadd9af1777ee03c6c260caf716657a4e45af472bc93e65e1bc2b4ab4c6",
+      "bytes": 1421
+    },
+    {
+      "path": "src/weavex/prompts/situation_review.md",
+      "source_path": "src/weavex/prompts/situation_review.md",
+      "sha256": "25e12d7cf8b42e81d7317a5a90058cdaea08dfde2de65118126398893a77645e",
+      "bytes": 4909
+    },
+    {
+      "path": "src/weavex/prompts/situation_scenarios.md",
+      "source_path": "src/weavex/prompts/situation_scenarios.md",
+      "sha256": "75c73e661c4da67ec7615e42e006cdee87c55bf726aeeb17e47ecfebc1a03e08",
+      "bytes": 1647
+    },
+    {
+      "path": "src/weavex/protocol.py",
+      "source_path": "src/weavex/protocol.py",
+      "sha256": "133df5c72cdc16c439455a83a174d426483259d2154358b073dafd9ae4f532fb",
+      "bytes": 10243
+    },
+    {
+      "path": "src/weavex/provider.py",
+      "source_path": "src/weavex/provider.py",
+      "sha256": "73eccc6c5b90d9fa88788373f1456dabbe4b174767b32a4c38927f8eed813253",
+      "bytes": 12068
+    },
+    {
+      "path": "src/weavex/provider_usage.py",
+      "source_path": "src/weavex/provider_usage.py",
+      "sha256": "15613b6a7389bfa34876f5f1cd36f7976f3f14fd69a1deeb04bf35bfd8124236",
+      "bytes": 2551
+    },
+    {
+      "path": "src/weavex/question_frontier.py",
+      "source_path": "src/weavex/question_frontier.py",
+      "sha256": "8268871627472780e433ec2231abba137b829e5cd88ccec83bc147a5a6788dda",
+      "bytes": 7439
+    },
+    {
+      "path": "src/weavex/runner.py",
+      "source_path": "src/weavex/runner.py",
+      "sha256": "74ed69b560c8c8bda3061ece290445151920ef2b6e5e74d43090b09396d41cf2",
+      "bytes": 8803
+    },
+    {
+      "path": "src/weavex/runtime.py",
+      "source_path": "src/weavex/runtime.py",
+      "sha256": "493890627b20c48e86c43cab1761b3bc117685c00cf6b98c25a2a05114e36116",
+      "bytes": 26117
+    },
+    {
+      "path": "src/weavex/situation.py",
+      "source_path": "src/weavex/situation.py",
+      "sha256": "f8e39ec44f64f41d60f7dd2021e31dc551d3c4e45356b02d73b6f51be3c9e7f6",
+      "bytes": 6323
+    },
+    {
+      "path": "src/weavex/situation_adapter.py",
+      "source_path": "src/weavex/situation_adapter.py",
+      "sha256": "1b72a542e38f3e12e82adf42345b37fc47aaf4a3271c9d986fe4095ad74a703f",
+      "bytes": 37163
+    },
+    {
+      "path": "src/weavex/situation_rehearsal.py",
+      "source_path": "src/weavex/situation_rehearsal.py",
+      "sha256": "184c02fbe838d7c923e3e993106203a01e15acdecf7b2f89464372a52f69f569",
+      "bytes": 3600
+    },
+    {
+      "path": "src/weavex/tool_schema.py",
+      "source_path": "src/weavex/tool_schema.py",
+      "sha256": "93d46d295d2f1462b1ea8ed642d9f5f41921775699b0eff16294548256a75f6d",
+      "bytes": 14412
+    },
+    {
+      "path": "src/weavex/tool_surface.py",
+      "source_path": "src/weavex/tool_surface.py",
+      "sha256": "b75a9bac12809a72a8aa0d816cae4ab0607d2df90aca8d8d0670eed594cdb694",
+      "bytes": 13052
+    },
+    {
+      "path": "src/weavex/turn_host.py",
+      "source_path": "src/weavex/turn_host.py",
+      "sha256": "60e082215f65833339065a6a97b5dac56a54c77f06f7cba882d5c88caa473f1e",
+      "bytes": 8777
+    },
+    {
+      "path": "src/weavex/world.py",
+      "source_path": "src/weavex/world.py",
+      "sha256": "8131c85cdf2f20af95b4b0654c89988d62a72872aeb09b66e5fdd26601afb9c5",
+      "bytes": 8489
+    },
+    {
+      "path": "tests/__init__.py",
+      "source_path": "tests/__init__.py",
+      "sha256": "d397520c2322f84a1a02a7bdb80a06050f6973eb778b92ea40433bee28fdd090",
+      "bytes": 41
+    },
+    {
+      "path": "tests/native_model_inputs.py",
+      "source_path": "tests/native_model_inputs.py",
+      "sha256": "fdf438bc20e60924487742e0d9bcdf6e421c8eba4875d77ce3a0b63ff94f0692",
+      "bytes": 3154
+    },
+    {
+      "path": "tests/test_boundaries.py",
+      "source_path": "tests/test_boundaries.py",
+      "sha256": "f6cd6cbb6f03ea30e39ec2d64a70dc2f107339b25d70f4b7d4b22831bf7594b3",
+      "bytes": 4013
+    },
+    {
+      "path": "tests/test_closed_loop.py",
+      "source_path": "tests/test_closed_loop.py",
+      "sha256": "375839ca9b3ec59634e2e76b10051680b93e0dd4ca32eb2ac18da064b4e457cf",
+      "bytes": 47695
+    },
+    {
+      "path": "tests/test_coordination.py",
+      "source_path": "tests/test_coordination.py",
+      "sha256": "1ac05ff08caf1e566262a559c7f9120e0ae7c37714c968e753c5d0ebaad6a0db",
+      "bytes": 19283
+    },
+    {
+      "path": "tests/test_cost_accounting.py",
+      "source_path": "tests/test_cost_accounting.py",
+      "sha256": "39ddadfd51653178b32fabe69e4ccde97f1e46c56c4c27d3058d77fc1c6f5770",
+      "bytes": 5771
+    },
+    {
+      "path": "tests/test_debug_query.py",
+      "source_path": "tests/test_debug_query.py",
+      "sha256": "0b4b5e844f07b994763be4dff7921c84d9c251e60fdf9eac2442d9da1d293062",
+      "bytes": 2606
+    },
+    {
+      "path": "tests/test_demo.py",
+      "source_path": "tests/test_demo.py",
+      "sha256": "b757bf512a5c8e4d52671c23fbd47cb6432864e8d320c5fcccbf2948c0704099",
+      "bytes": 3631
+    },
+    {
+      "path": "tests/test_grounding.py",
+      "source_path": "tests/test_grounding.py",
+      "sha256": "e9c0d1f10b7020321a87867da59da014b6bb537cab5ae0253b5e167345c89bbb",
+      "bytes": 8706
+    },
+    {
+      "path": "tests/test_host_tools.py",
+      "source_path": "tests/test_host_tools.py",
+      "sha256": "9bdce28f8b7f49ef995c68c2726781724b1ad24bc2652b192c0632b136cb8682",
+      "bytes": 36046
+    },
+    {
+      "path": "tests/test_initialization.py",
+      "source_path": "tests/test_initialization.py",
+      "sha256": "b7a94e4c9f6fbdaa01beba36e8857102582e85d5bfaa3224c5f6db40e828cac0",
+      "bytes": 17990
+    },
+    {
+      "path": "tests/test_native_projection.py",
+      "source_path": "tests/test_native_projection.py",
+      "sha256": "57395259036b59c1d62de008735a96235ffddecc92c122889d19bf2924f1b4f1",
+      "bytes": 6831
+    },
+    {
+      "path": "tests/test_native_turn.py",
+      "source_path": "tests/test_native_turn.py",
+      "sha256": "bb25eae8abf27741baf885c6b2ddb9ab370762452d8fdd8bc03066b3a01ed639",
+      "bytes": 23868
+    },
+    {
+      "path": "tests/test_neighborhood_observation.py",
+      "source_path": "tests/test_neighborhood_observation.py",
+      "sha256": "9698b6770c84b75a437dd9c67f572cde61d689ec2972877682ac8c917e1fa01e",
+      "bytes": 17778
+    },
+    {
+      "path": "tests/test_provider.py",
+      "source_path": "tests/test_provider.py",
+      "sha256": "802a5190b1a37f0f68d248c4e9bfc4491d139d693a21b2127de9a22652099ba4",
+      "bytes": 41199
+    },
+    {
+      "path": "tests/test_question_frontier.py",
+      "source_path": "tests/test_question_frontier.py",
+      "sha256": "512f1237ad373afe490cbf5089cd7bb99a19081939988ffeb8ed8c8cb3cd6e08",
+      "bytes": 15885
+    },
+    {
+      "path": "tests/test_reasoning_continuity.py",
+      "source_path": "tests/test_reasoning_continuity.py",
+      "sha256": "3b142c2a7cfd248eddd584fb2ad5862d7ed4bf13d8b6ad63918fb7d408faa74d",
+      "bytes": 5597
+    },
+    {
+      "path": "tests/test_runtime_protocol.py",
+      "source_path": "tests/test_runtime_protocol.py",
+      "sha256": "7f256fbdfed3ffed9e93a74ad790d0b9d263a01a8ee5b1d07692fed3f5cea994",
+      "bytes": 22286
+    },
+    {
+      "path": "tests/test_self_neighborhood_change.py",
+      "source_path": "tests/test_self_neighborhood_change.py",
+      "sha256": "7a2f258ac6c9c33de23da57b690db0344fffe82214e3493d9ba04b88edf397e2",
+      "bytes": 7562
+    },
+    {
+      "path": "tests/test_situation.py",
+      "source_path": "tests/test_situation.py",
+      "sha256": "f6751a98ecd235d76b3c0befe2bd8d0af2e8a894ce980a9fe5b9f11d924a8792",
+      "bytes": 37888
+    },
+    {
+      "path": "tests/test_situation_adapter.py",
+      "source_path": "tests/test_situation_adapter.py",
+      "sha256": "384ef4fa409ac1f830dc1f266947aefb4b116bafa213b05b0e76247d952a1dbb",
+      "bytes": 24018
+    },
+    {
+      "path": "tests/test_stable_tools.py",
+      "source_path": "tests/test_stable_tools.py",
+      "sha256": "019af05cb3e2054f1412ed01ac28f1341a358f6155f7c77cdadfeda4a7abc535",
+      "bytes": 8237
+    },
+    {
+      "path": "tests/test_turn_driver.py",
+      "source_path": "tests/test_turn_driver.py",
+      "sha256": "fadd4c6163f9d3c6b14b368c659ffab40d54a157175427309591a0185763fd66",
+      "bytes": 5887
+    },
+    {
+      "path": "tests/test_world.py",
+      "source_path": "tests/test_world.py",
+      "sha256": "ab203ddf3cc2de27ded7d3ef139e6934979085b82b47f109fa7e2495bd171a8f",
+      "bytes": 3946
+    },
+    {
+      "path": "examples/situation_adapter.json",
+      "source_path": "examples/situation_adapter.json",
+      "sha256": "d23321e3bed5da1213172e19d2f45d849dff32b05f1ac65f9b73669accb56ec1",
+      "bytes": 1570
+    },
+    {
+      "path": "examples/situation_brief.txt",
+      "source_path": "examples/situation_brief.txt",
+      "sha256": "6b5df2f195b633155603131d7449f149fec6808e104a038118dbb722687574a5",
+      "bytes": 1163
+    },
+    {
+      "path": "pyproject.toml",
+      "source_path": "pyproject.toml",
+      "sha256": "ea69495588ee6d0dce06f48013ebae55145404466344969b53893e35ac6beb85",
+      "bytes": 587
+    },
+    {
+      "path": "docs/assets/architecture.png",
+      "source_path": "output/presentation-20260920/weavex-agent-framework.png",
+      "sha256": "c2bc5c82326ee14f2c39d4b47cf4d67830e67677b00c11acff498e7a3335e4eb",
+      "bytes": 388800
+    },
+    {
+      "path": "docs/assets/architecture.svg",
+      "source_path": "output/presentation-20260920/weavex-agent-framework.svg",
+      "sha256": "c6e00d0b698271307b48951d76760451da420e838bb2c90c9e394ac26aa2f629",
+      "bytes": 23954
+    },
+    {
+      "path": "evidence/answer-refresh/01-agent-frontier/irrelevant-1.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/01-agent-frontier/irrelevant-1.json",
+      "sha256": "09966945867770cf26ebf5610246c257843e4299f483f695266db4e20baf70c3",
+      "bytes": 5428
+    },
+    {
+      "path": "evidence/answer-refresh/01-agent-frontier/irrelevant-2.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/01-agent-frontier/irrelevant-2.json",
+      "sha256": "467f2a21ab050d53b9ddf14b63e3460c7e20a41e66dc91621da6d6c289a8c394",
+      "bytes": 5759
+    },
+    {
+      "path": "evidence/answer-refresh/01-agent-frontier/irrelevant-3.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/01-agent-frontier/irrelevant-3.json",
+      "sha256": "b8ad0c8eb9e8333c185d0cb13a973478a5ae749fc6766816a7600be48396430c",
+      "bytes": 6096
+    },
+    {
+      "path": "evidence/answer-refresh/01-agent-frontier/relevant-1.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/01-agent-frontier/relevant-1.json",
+      "sha256": "daa586509e91719b4d938c27dcc706cb96741743d9b1c58dc44a47815fb7934b",
+      "bytes": 7434
+    },
+    {
+      "path": "evidence/answer-refresh/01-agent-frontier/relevant-2.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/01-agent-frontier/relevant-2.json",
+      "sha256": "3fd317cbfeb882e232e87a2e3bb9929988627229e1c9045573ec7bb7f9899f2d",
+      "bytes": 6310
+    },
+    {
+      "path": "evidence/answer-refresh/01-agent-frontier/relevant-3.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/01-agent-frontier/relevant-3.json",
+      "sha256": "61e282d4b71befcf9bf85dbf59c9bb424f584399e9c7710117ef38fe9f9dd694",
+      "bytes": 6579
+    },
+    {
+      "path": "evidence/answer-refresh/02-broker-human/irrelevant-1.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/02-broker-human/irrelevant-1.json",
+      "sha256": "3018b7f7bca503d1e6ee7af5e9a51089f3cbfc276873ad4d89390a6696d77b53",
+      "bytes": 6302
+    },
+    {
+      "path": "evidence/answer-refresh/02-broker-human/irrelevant-2.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/02-broker-human/irrelevant-2.json",
+      "sha256": "0f44afeb432e10375185817cd567784bceaf3f65b48958c7ea5a0543f888c6b1",
+      "bytes": 7644
+    },
+    {
+      "path": "evidence/answer-refresh/02-broker-human/irrelevant-3.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/02-broker-human/irrelevant-3.json",
+      "sha256": "076d4a1a9ecdcfe39abc9b0184483c2af745e071a6be957eb9a8c66127876016",
+      "bytes": 7646
+    },
+    {
+      "path": "evidence/answer-refresh/02-broker-human/relevant-1.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/02-broker-human/relevant-1.json",
+      "sha256": "a1c6af6203d42bdf7d11b1dd7c790d31fe78dfb1c1f9b44d8ec9a0b225a1e323",
+      "bytes": 7834
+    },
+    {
+      "path": "evidence/answer-refresh/02-broker-human/relevant-2.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/02-broker-human/relevant-2.json",
+      "sha256": "039b67de987fa3d568fff91eeb3a6b180bb5be9dc2ae92523f86312571211692",
+      "bytes": 10618
+    },
+    {
+      "path": "evidence/answer-refresh/02-broker-human/relevant-3.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/02-broker-human/relevant-3.json",
+      "sha256": "cc718f1977651e012ab749e7b14c16d3bdf7a5dff02dd463b8f58e02e7f0a71c",
+      "bytes": 12421
+    },
+    {
+      "path": "evidence/answer-refresh/03-competing-gap/run-1.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/03-competing-gap/run-1.json",
+      "sha256": "2c4e85c496ad5c9d948d46dbb9f8ad6f5975dd9cccc3087f6b092e70e39db84a",
+      "bytes": 7889
+    },
+    {
+      "path": "evidence/answer-refresh/03-competing-gap/run-2.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/03-competing-gap/run-2.json",
+      "sha256": "7a601b1fb70256c741215b3d26683a86d34dac1c7b5704571079e790c9415de1",
+      "bytes": 6892
+    },
+    {
+      "path": "evidence/answer-refresh/03-competing-gap/run-3.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/03-competing-gap/run-3.json",
+      "sha256": "b2e5ed1158adfdb3b1fd25308c37bd6e2c5a27d330583228e4e6f35d04ebb35f",
+      "bytes": 6871
+    },
+    {
+      "path": "evidence/answer-refresh/04-exhausted-gap/run-1.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/04-exhausted-gap/run-1.json",
+      "sha256": "82c6f1ffafceb06ae8e562e39db72a75320c5baa1e4653876c27bfb5db6d82ab",
+      "bytes": 9106
+    },
+    {
+      "path": "evidence/answer-refresh/04-exhausted-gap/run-2.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/04-exhausted-gap/run-2.json",
+      "sha256": "0b150435cb72b052706235a46facd9f6e612438c7700d91cfcce036415272cd8",
+      "bytes": 8882
+    },
+    {
+      "path": "evidence/answer-refresh/04-exhausted-gap/run-3.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/04-exhausted-gap/run-3.json",
+      "sha256": "54bda5d802a162a9e6354c11e957b399bc4e9076bb26e9183d95b6ccf3db4eb5",
+      "bytes": 8227
+    },
+    {
+      "path": "evidence/answer-refresh/summary.json",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/summary.json",
+      "sha256": "6588306e58e9226cee24303793e8a96b99153885c454965f42d66e659b0870ce",
+      "bytes": 520
+    },
+    {
+      "path": "evidence/answer-refresh/original/run.py",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/run.py",
+      "sha256": "b7e8dec25d9878ecf7b148c15ec8f740124c0aa1bdfbd2894db0430ab044f0f0",
+      "bytes": 23566
+    },
+    {
+      "path": "evidence/answer-refresh/original/charter.md",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/charter.md",
+      "sha256": "b113615c4362f8ff36c6250a415129386b164c8654a6781f0d2f654faa0ac3de",
+      "bytes": 1522
+    },
+    {
+      "path": "evidence/answer-refresh/original/report.md",
+      "source_path": "output/answer-frontier-natural-emergence-20260828/report.md",
+      "sha256": "722a017f371808e76a888b1661fa996807e467f127b4ed0154d8aeb8114a5341",
+      "bytes": 2029
+    },
+    {
+      "path": "evidence/cache/diagnosis/CHARTER.md",
+      "source_path": "output/cache-diagnosis-20260909/CHARTER.md",
+      "sha256": "95bfb23c8596bb482b5eebcc7ae079d7266088e6d9e765ec4f3ab93b7fdb4d62",
+      "bytes": 1856
+    },
+    {
+      "path": "evidence/cache/diagnosis/REPORT.md",
+      "source_path": "output/cache-diagnosis-20260909/REPORT.md",
+      "sha256": "63cc326d756d6634ac79cd64b536bff2701df12edd4b45fe63821e7187b62cb3",
+      "bytes": 9572
+    },
+    {
+      "path": "evidence/cache/diagnosis/probe.py",
+      "source_path": "output/cache-diagnosis-20260909/probe.py",
+      "sha256": "250e3db5fbf31dd1cd87b033e030517f14476730c2c78786d00881549b1c8d05",
+      "bytes": 5746
+    },
+    {
+      "path": "evidence/cache/diagnosis/probe-fixtures.json",
+      "source_path": "output/cache-diagnosis-20260909/probe-fixtures.json",
+      "sha256": "9cbad6913eb053c5da86bbb2e2ac3a114a9b56181ef1cff36557f04ae35127ec",
+      "bytes": 158079
+    },
+    {
+      "path": "evidence/cache/diagnosis/probe-results.json",
+      "source_path": "output/cache-diagnosis-20260909/probe-results.json",
+      "sha256": "13ec8866fcef6ce8de45e312c1ed4b8ff73ff5359c2d820b2fd1f1d75a03e468",
+      "bytes": 11236
+    },
+    {
+      "path": "evidence/cache/diagnosis/combined.json",
+      "source_path": "output/cache-diagnosis-20260909/combined.json",
+      "sha256": "309827aaf8e8736866ba055488a7970b47b178720ab959fde21c526e7e219f23",
+      "bytes": 2579
+    },
+    {
+      "path": "evidence/cache/diagnosis/summary.json",
+      "source_path": "output/cache-diagnosis-20260909/summary.json",
+      "sha256": "7670571938f24bee5d387a698c1e90adfe6994fa8b7e92a0a23a53dbb4f2ef64",
+      "bytes": 104425
+    },
+    {
+      "path": "evidence/cache/diagnosis/analyze.py",
+      "source_path": "output/cache-diagnosis-20260909/analyze.py",
+      "sha256": "498d301a5e642b6e4c22e96fa9a4b13232d1cac2fefbdaa4fe4afd74175cf067",
+      "bytes": 5878
+    },
+    {
+      "path": "evidence/cache/diagnosis/summarize.py",
+      "source_path": "output/cache-diagnosis-20260909/summarize.py",
+      "sha256": "89c9a5f4b2128129bcff56feeab5752ee7ba86f94772b8580ca402c794750129",
+      "bytes": 3390
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-00.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-00.json",
+      "sha256": "bed4f9da6aacbe3b65dbdd2e7aeba65e1788022a33fa87ea8f26739a219606ee",
+      "bytes": 37494
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-01.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-01.json",
+      "sha256": "092c71f2496f314021c3481f56c1a0adf39b1cb7208018613ec09ceee2c6dba7",
+      "bytes": 89154
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-02.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-02.json",
+      "sha256": "f4a87f575f773b0dce9690db02244a3bfbae204fe32f49c0cc32d91367ecf697",
+      "bytes": 45849
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-03.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-03.json",
+      "sha256": "83849126a9790c28bd3cc441357034275d845ee76d427f29623f4baf3af11872",
+      "bytes": 50784
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-04.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-04.json",
+      "sha256": "23d263af97088c30c6c58bd9731ec883444febe69c0297516be2718d346e29a9",
+      "bytes": 50794
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-05.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-05.json",
+      "sha256": "bd7304f6649a304836ddcfc57805edc071cde16879c39942fb316cd6d851ab65",
+      "bytes": 45366
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-06.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-06.json",
+      "sha256": "3d1c78d4285dfe29eede716e7a79603cd067fa505cc0ce5e9f3e0fa4de45abce",
+      "bytes": 63969
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-07.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-07.json",
+      "sha256": "3b4bd39c0876dd95a00047e71da61a338620d9197b1db754073732c9c988f1b1",
+      "bytes": 80940
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-08.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-08.json",
+      "sha256": "79244cc5dfa7c27c70113bd339142f18509ffc10577210f1aba3eae3d521ca60",
+      "bytes": 5101
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-09.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-09.json",
+      "sha256": "0d087923808c358d8ac3a2fb4057844471e55f7344a0da51a2a7279df6080f56",
+      "bytes": 63417
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-10.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-10.json",
+      "sha256": "533e578c83a3c35fe059d49965e3106db96a67afa3675a5ab59f9ad69b0013d8",
+      "bytes": 66705
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-11.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-11.json",
+      "sha256": "1086d5002f67a7de69a8f268ec1ea006e22d4122b43d6a7d034ce46a414c5469",
+      "bytes": 57111
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-12.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-12.json",
+      "sha256": "fca92fde3ff0defceaf52a536f2e873271fce528416305faf72dea77140aaf2c",
+      "bytes": 52885
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-13.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-13.json",
+      "sha256": "64da3b1dec781e8ededed1303c4afc3c45d1c3df55650cc60f3344747a676a6e",
+      "bytes": 54433
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-14.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-14.json",
+      "sha256": "a5607e2e2d59ca62fc2ed74af20b8d0769954681056b1a63baf00415a454379d",
+      "bytes": 46452
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-15.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-15.json",
+      "sha256": "faa6e38c1b2b0513eb8be4c8ff7f104026b15472c531a5009db0c9b50cfe0ed7",
+      "bytes": 49966
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-16.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-16.json",
+      "sha256": "42db4461f39c2cdf9a6470cf887e538d8791965dc63096f3bf1eabb15732fddb",
+      "bytes": 43709
+    },
+    {
+      "path": "evidence/cache/diagnosis/requests-17.json",
+      "source_path": "output/cache-diagnosis-20260909/requests-17.json",
+      "sha256": "0917cd6adf8aba720d872c6d712673c60949c6164fa8fd09fa1f83dc44447a16",
+      "bytes": 46414
+    },
+    {
+      "path": "evidence/cache/continuity/CHARTER.md",
+      "source_path": "output/cache-continuity-20260909/CHARTER.md",
+      "sha256": "45a8f08b4bd2822c48bc2310d6889ac2594886372d093be3b1b150ab264428c5",
+      "bytes": 2078
+    },
+    {
+      "path": "evidence/cache/continuity/REPORT.md",
+      "source_path": "output/cache-continuity-20260909/REPORT.md",
+      "sha256": "d130dea7e4bade9d97534bd61837f4f134ed1cabff58b31f74021d451b4fc061",
+      "bytes": 3916
+    },
+    {
+      "path": "evidence/cache/continuity/run.py",
+      "source_path": "output/cache-continuity-20260909/run.py",
+      "sha256": "ba57280eb7ef664246781e728760deea5f6393589008bef167753bd288ddb378",
+      "bytes": 7258
+    },
+    {
+      "path": "evidence/cache/continuity/audit.py",
+      "source_path": "output/cache-continuity-20260909/audit.py",
+      "sha256": "649cd1e6a427b286418aa18035c4616d7de305f7ae92ec8e1f928e8a86361ac9",
+      "bytes": 1555
+    },
+    {
+      "path": "evidence/cache/continuity/requests.jsonl",
+      "source_path": "output/cache-continuity-20260909/requests.jsonl",
+      "sha256": "4085aed0c77516e9eec8914747b466346b0db2955f8c8800ecc93ec765ad8608",
+      "bytes": 6533
+    },
+    {
+      "path": "evidence/cache/continuity/snapshot.json.gz",
+      "source_path": "output/cache-continuity-20260909/snapshot.json.gz",
+      "sha256": "1f987c470368058886cadbd87e3a212ff5f92222120f90ff166811b8f183c95a",
+      "bytes": 146222
+    },
+    {
+      "path": "evidence/cache/continuity/summary.json",
+      "source_path": "output/cache-continuity-20260909/summary.json",
+      "sha256": "a328f3c709299af4542de77dd244c29e50afe77624f56330a2b63501eddd7506",
+      "bytes": 719
+    },
+    {
+      "path": "evidence/cache/continuity/retry-8192/CHARTER.md",
+      "source_path": "output/cache-continuity-20260909/retry-8192/CHARTER.md",
+      "sha256": "e846cce60e2fb33d0e2da3afb27e00fa7712c705b6338ddfcceac431f509cbc5",
+      "bytes": 762
+    },
+    {
+      "path": "evidence/cache/continuity/retry-8192/config.json",
+      "source_path": "output/cache-continuity-20260909/retry-8192/config.json",
+      "sha256": "14e6288c601c2c27b0a8bf6f9925294ba072f423863fdf01ae3d105eab2fc729",
+      "bytes": 116
+    },
+    {
+      "path": "evidence/cache/continuity/retry-8192/projection-audit.json",
+      "source_path": "output/cache-continuity-20260909/retry-8192/projection-audit.json",
+      "sha256": "4f20619adfae6e69e310e3cf8497aecf0a01f84e4b1cafe40e6291adb096fbd1",
+      "bytes": 436
+    },
+    {
+      "path": "evidence/cache/continuity/retry-8192/requests.jsonl",
+      "source_path": "output/cache-continuity-20260909/retry-8192/requests.jsonl",
+      "sha256": "f79c69d863f67e3a4e9521eb61e560042f497e41caf1f0ba84d9cb5cce37f1c8",
+      "bytes": 16764
+    },
+    {
+      "path": "evidence/cache/continuity/retry-8192/snapshot.json.gz",
+      "source_path": "output/cache-continuity-20260909/retry-8192/snapshot.json.gz",
+      "sha256": "bc1c738cc8f6fedc50666fc998f6320d6e40bef8fecb4e3b08c8e49dc91399f7",
+      "bytes": 353177
+    },
+    {
+      "path": "evidence/cache/continuity/retry-8192/summary.json",
+      "source_path": "output/cache-continuity-20260909/retry-8192/summary.json",
+      "sha256": "a2ba030cebed22ebb29ea91c8e68c059a123df7698134fb518deee768aa91c31",
+      "bytes": 1438
+    }
+  ]
+}

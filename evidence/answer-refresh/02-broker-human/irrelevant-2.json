@@ -1,0 +1,246 @@
+{
+  "group": "broker-human",
+  "arm": "irrelevant",
+  "index": 2,
+  "initial_ok": true,
+  "natural": true,
+  "allow_marker": "ALLOW-AC9EF95C5B",
+  "later_marker": "DOC-AC9EF95C5B",
+  "initial_broker_step": {
+    "handled": true,
+    "actor_id": "broker",
+    "arrival": {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。实际证据中的精确随机标记为 ALLOW-AC9EF95C5B。证据内容为“当前发布安全检查通过，精确证据标记 ALLOW-AC9EF95C5B。”，作为直接证据指向审核主题 object:subject:AC9EF95C5B。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:AC9EF95C5B"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:7dbbba56-5122-4a93-aafc-75a27043b41f"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW。实际证据中的精确随机标记为 ALLOW-AC9EF95C5B。直接证据内容为“当前发布安全检查通过，精确证据标记 ALLOW-AC9EF95C5B。”，作为直接证据指向审核主题 object:subject:AC9EF95C5B。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "subject:AC9EF95C5B",
+              "kind": "object"
+            },
+            {
+              "id": "baseline:AC9EF95C5B",
+              "kind": "object"
+            },
+            {
+              "id": "7dbbba56-5122-4a93-aafc-75a27043b41f",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW。实际证据中的精确随机标记为 ALLOW-AC9EF95C5B。直接证据内容为“当前发布安全检查通过，精确证据标记 ALLOW-AC9EF95C5B。”，作为直接证据指向审核主题 object:subject:AC9EF95C5B。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "baseline:AC9EF95C5B",
+              "kind": "object"
+            },
+            {
+              "id": "7dbbba56-5122-4a93-aafc-75a27043b41f",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW。实际证据中的精确随机标记为 ALLOW-AC9EF95C5B。直接证据内容为“当前发布安全检查通过，精确证据标记 ALLOW-AC9EF95C5B。”，作为直接证据指向审核主题 object:subject:AC9EF95C5B。",
+          "question_id": "act-1",
+          "semantic_addresses": [
+            {
+              "id": "object:baseline:AC9EF95C5B",
+              "kind": "object"
+            },
+            {
+              "id": "reference:7dbbba56-5122-4a93-aafc-75a27043b41f",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "delta_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:86a2e2eb-163d-4ade-b92c-8f7b2330fec6",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:AC9EF95C5B",
+            "content": "行政归档批次更新为 DOC-AC9EF95C5B，不改变发布安全。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:AC9EF95C5B"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:86a2e2eb-163d-4ade-b92c-8f7b2330fec6",
+            "source_object_id": "object:later:AC9EF95C5B",
+            "meaning": "只影响行政归档、不影响发布安全的事实。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:86a2e2eb-163d-4ade-b92c-8f7b2330fec6"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:AC9EF95C5B"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:AC9EF95C5B"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "retain_answer",
+        "arguments": {
+          "question_id": "act-2"
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "broker_followup": {
+    "handled": false,
+    "error": "",
+    "calls": []
+  },
+  "agent_answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。实际证据中的精确随机标记为 ALLOW-AC9EF95C5B。证据内容为“当前发布安全检查通过，精确证据标记 ALLOW-AC9EF95C5B。”，作为直接证据指向审核主题 object:subject:AC9EF95C5B。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:AC9EF95C5B"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:7dbbba56-5122-4a93-aafc-75a27043b41f"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "human_answers": [
+    {
+      "act_id": "act-4",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "broker",
+      "recipient": "human",
+      "payload": {
+        "answer": "ALLOW。实际证据中的精确随机标记为 ALLOW-AC9EF95C5B。直接证据内容为“当前发布安全检查通过，精确证据标记 ALLOW-AC9EF95C5B。”，作为直接证据指向审核主题 object:subject:AC9EF95C5B。",
+        "semantic_addresses": [
+          {
+            "id": "object:baseline:AC9EF95C5B",
+            "kind": "object"
+          },
+          {
+            "id": "reference:7dbbba56-5122-4a93-aafc-75a27043b41f",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-1",
+      "derived_from": []
+    }
+  ],
+  "broker_frontiers": [
+    {
+      "question_id": "act-1",
+      "latest_local_change_id": "act-3",
+      "latest_judged_change_id": "act-3",
+      "latest_answer_id": "act-4",
+      "pending_changes": []
+    }
+  ],
+  "provider_usage": {
+    "requests": 12,
+    "cache_reported_requests": 12,
+    "prompt_tokens": 72729,
+    "completion_tokens": 3505,
+    "total_tokens": 76234,
+    "prompt_cache_hit_tokens": 57472,
+    "prompt_cache_miss_tokens": 15257,
+    "prompt_cache_hit_ratio": 0.7902212322457342
+  }
+}

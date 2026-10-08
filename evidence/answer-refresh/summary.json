@@ -1,0 +1,28 @@
+{
+  "runs": 18,
+  "agent_frontier": {
+    "runs": 6,
+    "initial_ok": 6,
+    "natural": 6
+  },
+  "broker_human": {
+    "runs": 6,
+    "initial_ok": 6,
+    "natural": 6
+  },
+  "competing_gap": {
+    "runs": 3,
+    "old_updated": 3,
+    "current_answered": 3,
+    "old_gap_persisted_if_unjudged": 3
+  },
+  "exhausted_gap": {
+    "runs": 3,
+    "initial_ok": 3,
+    "no_fabrication": 3,
+    "gap_remains": 2,
+    "externalized_gap": 1,
+    "public_gap_incremental": 1,
+    "retained_without_evidence": 1
+  }
+}

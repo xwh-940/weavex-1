@@ -1,0 +1,191 @@
+{
+  "group": "agent-frontier",
+  "arm": "irrelevant",
+  "index": 2,
+  "initial_ok": true,
+  "natural": true,
+  "allow_marker": "ALLOW-445D7BD074",
+  "later_marker": "DOC-445D7BD074",
+  "initial_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "act_id": "act-2",
+      "thread_id": "thread-1",
+      "kind": "question",
+      "sender": "broker",
+      "recipient": "agent-1",
+      "payload": {
+        "raw_question": "判断当前发布审核是否允许发布，并返回精确证据标记。",
+        "interpretation_context": {
+          "content": "安全证据直接指向给定审核主题。",
+          "semantic_addresses": [
+            {
+              "kind": "object",
+              "id": "object:subject:445D7BD074"
+            }
+          ]
+        },
+        "intent": "只判断发布安全；Answer 必须包含 ALLOW/BLOCK 与实际证据中的精确随机标记。"
+      },
+      "reply_to": "act-1",
+      "derived_from": [
+        "act-1"
+      ]
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "world_references_to",
+        "arguments": {
+          "address": {
+            "id": "object:subject:445D7BD074",
+            "kind": "object"
+          },
+          "question_id": "act-2"
+        },
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "发布允许。ALLOW；精确证据标记：ALLOW-445D7BD074。依据：object:baseline:445D7BD074 通过引用 reference:c5a2ff9d-8d93-497a-a69c-f59b33ece818（meaning：当前发布安全的直接证据）指向审核主题，其内容为“当前发布安全检查通过，精确证据标记 ALLOW-445D7BD074”。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "object:baseline:445D7BD074",
+              "kind": "object"
+            },
+            {
+              "id": "reference:c5a2ff9d-8d93-497a-a69c-f59b33ece818",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "delta_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:4263e6f3-e6bc-4b57-aeb4-796600eb4e09",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:445D7BD074",
+            "content": "行政归档批次更新为 DOC-445D7BD074，不改变发布安全。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:445D7BD074"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:4263e6f3-e6bc-4b57-aeb4-796600eb4e09",
+            "source_object_id": "object:later:445D7BD074",
+            "meaning": "只影响行政归档、不影响发布安全的事实。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:4263e6f3-e6bc-4b57-aeb4-796600eb4e09"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:445D7BD074"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:445D7BD074"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "retain_answer",
+        "arguments": {
+          "question_id": "act-2"
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "发布允许。ALLOW；精确证据标记：ALLOW-445D7BD074。依据：object:baseline:445D7BD074 通过引用 reference:c5a2ff9d-8d93-497a-a69c-f59b33ece818（meaning：当前发布安全的直接证据）指向审核主题，其内容为“当前发布安全检查通过，精确证据标记 ALLOW-445D7BD074”。",
+        "semantic_addresses": [
+          {
+            "id": "object:baseline:445D7BD074",
+            "kind": "object"
+          },
+          {
+            "id": "reference:c5a2ff9d-8d93-497a-a69c-f59b33ece818",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "pending_question_ids": [],
+  "frontiers": [
+    {
+      "question_id": "act-2",
+      "latest_local_change_id": "local-world-delta-1",
+      "latest_judged_change_id": "local-world-delta-1",
+      "latest_answer_id": "act-3",
+      "pending_changes": []
+    }
+  ],
+  "provider_usage": {
+    "requests": 7,
+    "cache_reported_requests": 7,
+    "prompt_tokens": 40439,
+    "completion_tokens": 1385,
+    "total_tokens": 41824,
+    "prompt_cache_hit_tokens": 29952,
+    "prompt_cache_miss_tokens": 10487,
+    "prompt_cache_hit_ratio": 0.740671134301046
+  }
+}

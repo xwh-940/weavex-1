@@ -1,0 +1,263 @@
+{
+  "group": "exhausted-gap",
+  "index": 3,
+  "initial_ok": true,
+  "hidden_marker": "BLOCK-6DB381C639",
+  "did_not_fabricate_hidden_marker": true,
+  "retained_without_evidence": true,
+  "gap_remains": false,
+  "externalized_gap": false,
+  "public_gap_incremental": false,
+  "initial_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "act_id": "act-2",
+      "thread_id": "thread-1",
+      "kind": "question",
+      "sender": "broker",
+      "recipient": "agent-1",
+      "payload": {
+        "raw_question": "判断是否允许发布并返回决定性精确标记。",
+        "interpretation_context": {
+          "content": "",
+          "semantic_addresses": [
+            {
+              "kind": "object",
+              "id": "object:anchor:6DB381C639"
+            }
+          ]
+        },
+        "intent": "只能依据实际取得的证据；Answer 必须包含 ALLOW/BLOCK 与精确随机标记。"
+      },
+      "reply_to": "act-1",
+      "derived_from": [
+        "act-1"
+      ]
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "ALLOW-6DB381C639。依据当前实际取得的直接证据（证据对象 ffab3ad1-f858-413c-aca1-6cccc7078495，内容为“当前直接证据允许发布，标记 ALLOW-6DB381C639”，经 reference:4d51c1ff-affd-4637-9d48-ad8a88594862 指向发布审核主题 anchor:6DB381C639），发布判断为 ALLOW，决定性精确随机标记为 6DB381C639。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "object:ffab3ad1-f858-413c-aca1-6cccc7078495",
+              "kind": "object"
+            },
+            {
+              "id": "reference:4d51c1ff-affd-4637-9d48-ad8a88594862",
+              "kind": "reference"
+            },
+            {
+              "id": "object:anchor:6DB381C639",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "prepared_watch": {
+    "source": "world_references_to",
+    "ok": true,
+    "value": {
+      "references": [
+        {
+          "reference_id": "reference:4d51c1ff-affd-4637-9d48-ad8a88594862",
+          "source_object_id": "object:ffab3ad1-f858-413c-aca1-6cccc7078495",
+          "meaning": "当前发布判断的直接证据。",
+          "semantic_address": {
+            "kind": "reference",
+            "id": "reference:4d51c1ff-affd-4637-9d48-ad8a88594862"
+          },
+          "target": {
+            "kind": "object",
+            "id": "object:anchor:6DB381C639"
+          }
+        }
+      ],
+      "next_offset": null,
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:ffab3ad1-f858-413c-aca1-6cccc7078495",
+            "content": "当前直接证据允许发布，标记 ALLOW-6DB381C639。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:ffab3ad1-f858-413c-aca1-6cccc7078495"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:4d51c1ff-affd-4637-9d48-ad8a88594862",
+            "source_object_id": "object:ffab3ad1-f858-413c-aca1-6cccc7078495",
+            "meaning": "当前发布判断的直接证据。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:4d51c1ff-affd-4637-9d48-ad8a88594862"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:anchor:6DB381C639"
+            }
+          }
+        ]
+      }
+    },
+    "error": "",
+    "capability_boundary_change": {
+      "question_id": "act-2",
+      "semantic_world_operations": {
+        "before": 1,
+        "after": 0
+      }
+    }
+  },
+  "writer": {
+    "source": "world_add_reference",
+    "ok": true,
+    "value": {
+      "reference_id": "reference:c9e4e248-10eb-4962-830e-1fe9642e817e",
+      "source_object_id": "object:fd80b9d1-211a-4ae2-97f0-c7ebc1c5fe1e",
+      "meaning": "新增决定性证据入口。",
+      "semantic_address": {
+        "kind": "reference",
+        "id": "reference:c9e4e248-10eb-4962-830e-1fe9642e817e"
+      },
+      "target": {
+        "kind": "object",
+        "id": "object:anchor:6DB381C639"
+      }
+    },
+    "error": "",
+    "capability_boundary_change": {
+      "question_id": "act-5",
+      "semantic_world_operations": {
+        "before": 1,
+        "after": 0
+      }
+    }
+  },
+  "delta_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:c9e4e248-10eb-4962-830e-1fe9642e817e",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:fd80b9d1-211a-4ae2-97f0-c7ebc1c5fe1e",
+            "content": "出现新的决定性证据入口；完整结论只位于该入口的直接出向邻域，入口文本本身不足以判断。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:fd80b9d1-211a-4ae2-97f0-c7ebc1c5fe1e"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:c9e4e248-10eb-4962-830e-1fe9642e817e",
+            "source_object_id": "object:fd80b9d1-211a-4ae2-97f0-c7ebc1c5fe1e",
+            "meaning": "新增决定性证据入口。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:c9e4e248-10eb-4962-830e-1fe9642e817e"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:anchor:6DB381C639"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:anchor:6DB381C639"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "retain_answer",
+        "arguments": {
+          "question_id": "act-2"
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW-6DB381C639。依据当前实际取得的直接证据（证据对象 ffab3ad1-f858-413c-aca1-6cccc7078495，内容为“当前直接证据允许发布，标记 ALLOW-6DB381C639”，经 reference:4d51c1ff-affd-4637-9d48-ad8a88594862 指向发布审核主题 anchor:6DB381C639），发布判断为 ALLOW，决定性精确随机标记为 6DB381C639。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:ffab3ad1-f858-413c-aca1-6cccc7078495"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:4d51c1ff-affd-4637-9d48-ad8a88594862"
+          },
+          {
+            "kind": "object",
+            "id": "object:anchor:6DB381C639"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "pending_question_ids": [],
+  "provider_usage": {
+    "requests": 6,
+    "cache_reported_requests": 6,
+    "prompt_tokens": 37372,
+    "completion_tokens": 5192,
+    "total_tokens": 42564,
+    "prompt_cache_hit_tokens": 24448,
+    "prompt_cache_miss_tokens": 12924,
+    "prompt_cache_hit_ratio": 0.6541795997003104
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "error": "ValueError: provider must return at least one decision tool call",
+  "handled": 3,
+  "actors": 3,
+  "requests": 13,
+  "provider_usage": {
+    "requests": 13,
+    "cache_reported_requests": 13,
+    "prompt_tokens": 106926,
+    "completion_tokens": 4199,
+    "total_tokens": 111125,
+    "prompt_cache_hit_tokens": 88576,
+    "prompt_cache_miss_tokens": 18350,
+    "prompt_cache_hit_ratio": 0.8283859865701513
+  },
+  "schema_variants_by_actor": {
+    "broker": 1,
+    "agent-1": 1,
+    "agent-2": 1
+  },
+  "changed_history_prefixes": 0,
+  "human_answers": [
+    []
+  ],
+  "open_responsibilities": {
+    "broker": 1,
+    "agent-1": 0,
+    "agent-2": 0
+  },
+  "tool_failures": 0
+}

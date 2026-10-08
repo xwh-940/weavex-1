@@ -1,0 +1,247 @@
+{
+  "group": "competing-gap",
+  "index": 1,
+  "initial_ok": true,
+  "both_judged": true,
+  "old_updated": true,
+  "current_answered": true,
+  "old_gap_persisted_if_unjudged": true,
+  "risk_marker": "BLOCK-5604466483",
+  "current_marker": "CURRENT-9F557BBBF7",
+  "writer": {
+    "source": "world_add_reference",
+    "ok": true,
+    "value": {
+      "reference_id": "reference:913ab2c0-0a08-43d4-a062-71abd858144b",
+      "source_object_id": "object:later:5604466483",
+      "meaning": "直接改变发布安全结论的新增证据。",
+      "semantic_address": {
+        "kind": "reference",
+        "id": "reference:913ab2c0-0a08-43d4-a062-71abd858144b"
+      },
+      "target": {
+        "kind": "object",
+        "id": "object:subject:5604466483"
+      }
+    },
+    "error": "",
+    "capability_boundary_change": {
+      "question_id": "act-5",
+      "semantic_world_operations": {
+        "before": 1,
+        "after": 0
+      }
+    }
+  },
+  "first_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "delta_id": "local-world-delta-1",
+      "kind": "semantic_neighborhood_change",
+      "reference_id": "reference:913ab2c0-0a08-43d4-a062-71abd858144b",
+      "local_world_change": {
+        "objects_added": [
+          {
+            "object_id": "object:later:5604466483",
+            "content": "发现未隔离的高危故障，精确阻断标记 BLOCK-5604466483。",
+            "semantic_address": {
+              "kind": "object",
+              "id": "object:later:5604466483"
+            }
+          }
+        ],
+        "references_added": [
+          {
+            "reference_id": "reference:913ab2c0-0a08-43d4-a062-71abd858144b",
+            "source_object_id": "object:later:5604466483",
+            "meaning": "直接改变发布安全结论的新增证据。",
+            "semantic_address": {
+              "kind": "reference",
+              "id": "reference:913ab2c0-0a08-43d4-a062-71abd858144b"
+            },
+            "target": {
+              "kind": "object",
+              "id": "object:subject:5604466483"
+            }
+          }
+        ]
+      },
+      "observation_relations": [
+        {
+          "observed_address": {
+            "kind": "object",
+            "id": "object:subject:5604466483"
+          },
+          "direction": "incoming",
+          "established_for_question_id": "act-2",
+          "last_answer_id": "act-3"
+        }
+      ],
+      "recipient": "agent-1"
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "BLOCK。新增证据（reference:913ab2c0-0a08-43d4-a062-71abd858144b，源 object:later:5604466483）直接指向审核主题 object:subject:5604466483，内容为“发现未隔离的高危故障，精确阻断标记 BLOCK-5604466483”，直接改变发布安全结论，当前发布审核不允许发布。精确随机标记：BLOCK-5604466483。",
+          "question_id": "act-2",
+          "semantic_addresses": [
+            {
+              "id": "object:later:5604466483",
+              "kind": "object"
+            },
+            {
+              "id": "reference:913ab2c0-0a08-43d4-a062-71abd858144b",
+              "kind": "reference"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "answer_question",
+        "arguments": {
+          "answer": "给定 Object（object:750078a7-ac8e-4235-9e55-53b0c253676d）content 中的精确结果标记为：CURRENT-9F557BBBF7。",
+          "question_id": "act-7",
+          "semantic_addresses": [
+            {
+              "id": "object:750078a7-ac8e-4235-9e55-53b0c253676d",
+              "kind": "object"
+            }
+          ]
+        },
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": ""
+      }
+    ],
+    "error": ""
+  },
+  "second_step": {
+    "handled": true,
+    "actor_id": "agent-1",
+    "arrival": {
+      "act_id": "act-7",
+      "thread_id": "thread-3",
+      "kind": "question",
+      "sender": "broker",
+      "recipient": "agent-1",
+      "payload": {
+        "raw_question": "返回给定 Object content 中的精确结果标记。",
+        "interpretation_context": {
+          "content": "",
+          "semantic_addresses": [
+            {
+              "kind": "object",
+              "id": "object:750078a7-ac8e-4235-9e55-53b0c253676d"
+            }
+          ]
+        },
+        "intent": "Answer 必须包含给定 Object content 中的精确随机标记。"
+      },
+      "reply_to": "act-6",
+      "derived_from": [
+        "act-6"
+      ]
+    },
+    "calls": [
+      {
+        "name": "receive_input",
+        "arguments": {},
+        "content": ""
+      },
+      {
+        "name": "yield_turn",
+        "arguments": {},
+        "content": "当前没有待推进的 Answer 责任；arrival 是已由 act-9 回答的 act-7，无新变化需要判断。"
+      }
+    ],
+    "error": ""
+  },
+  "old_answers": [
+    {
+      "act_id": "act-3",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "ALLOW。直接证据（reference:b5541fc7-f351-4fbc-bb12-0615d1af2e44，源 object:baseline:5604466483）指向审核主题 object:subject:5604466483，其内容为“当前发布安全检查通过，精确证据标记 ALLOW-5604466483”，即当前发布审核允许发布。精确随机标记：ALLOW-5604466483。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:baseline:5604466483"
+          },
+          {
+            "kind": "reference",
+            "id": "reference:b5541fc7-f351-4fbc-bb12-0615d1af2e44"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    },
+    {
+      "act_id": "act-8",
+      "thread_id": "thread-1",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "BLOCK。新增证据（reference:913ab2c0-0a08-43d4-a062-71abd858144b，源 object:later:5604466483）直接指向审核主题 object:subject:5604466483，内容为“发现未隔离的高危故障，精确阻断标记 BLOCK-5604466483”，直接改变发布安全结论，当前发布审核不允许发布。精确随机标记：BLOCK-5604466483。",
+        "semantic_addresses": [
+          {
+            "id": "object:later:5604466483",
+            "kind": "object"
+          },
+          {
+            "id": "reference:913ab2c0-0a08-43d4-a062-71abd858144b",
+            "kind": "reference"
+          }
+        ]
+      },
+      "reply_to": "act-2",
+      "derived_from": []
+    }
+  ],
+  "current_answers": [
+    {
+      "act_id": "act-9",
+      "thread_id": "thread-3",
+      "kind": "answer",
+      "sender": "agent-1",
+      "recipient": "broker",
+      "payload": {
+        "answer": "给定 Object（object:750078a7-ac8e-4235-9e55-53b0c253676d）content 中的精确结果标记为：CURRENT-9F557BBBF7。",
+        "semantic_addresses": [
+          {
+            "id": "object:750078a7-ac8e-4235-9e55-53b0c253676d",
+            "kind": "object"
+          }
+        ]
+      },
+      "reply_to": "act-7",
+      "derived_from": []
+    }
+  ],
+  "pending_question_ids": [],
+  "provider_usage": {
+    "requests": 10,
+    "cache_reported_requests": 10,
+    "prompt_tokens": 66135,
+    "completion_tokens": 2406,
+    "total_tokens": 68541,
+    "prompt_cache_hit_tokens": 40320,
+    "prompt_cache_miss_tokens": 25815,
+    "prompt_cache_hit_ratio": 0.6096620548877296
+  }
+}
