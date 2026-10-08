@@ -33,6 +33,9 @@ python3 -m venv .venv
 ```bash
 python scripts/verify_evidence.py
 python scripts/replay.py --case relevant
+python scripts/replay.py --case collaboration
+python scripts/replay.py --case shared-record
+python scripts/replay.py --case stale-record
 python examples/answer_refresh.py --arm relevant
 python examples/answer_refresh.py --arm irrelevant
 ```
@@ -44,6 +47,8 @@ python examples/answer_refresh.py --arm relevant --output output/scripted-releva
 ```
 
 输出目录必须位于 `output/` 下且尚不存在；不会覆盖历史证据。记录包含模式、源码指纹、实际回答、检查结果和 snapshot。
+
+动态协作和共享记录回放读取冻结工件，可用 `--full` 显示完整消息，用 `--json` 导出结构化视图。它们不执行冻结的历史脚本，也没有把历史步骤改写成当前运行时的固定策略。`scripts/verify_extended.py` 可单独检查这组工件，综合核验也包含它。
 
 ## 真实模型运行
 
@@ -79,7 +84,7 @@ python -m weavex.debug_server
 ```bash
 python -m pytest -q
 python scripts/verify_evidence.py
-python -m ruff check scripts examples/answer_refresh.py tests/test_showcase.py
+python -m ruff check scripts examples/answer_refresh.py tests/test_showcase.py tests/test_extended_evidence.py
 ```
 
 `src/weavex/`、原有测试与提示词在本副本中保持来源字节一致；展示脚本和新增测试独立存放。原有机制测试使用 ScriptedModel 或人工 provider 响应，不能当作真实模型的行为成功率。

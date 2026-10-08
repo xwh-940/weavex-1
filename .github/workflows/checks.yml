@@ -25,4 +25,4 @@ jobs:
       - run: python scripts/verify_evidence.py
       - run: python examples/answer_refresh.py --arm relevant
       - run: python examples/answer_refresh.py --arm irrelevant
-      - run: python -m ruff check scripts examples/answer_refresh.py tests/test_showcase.py
+      - run: python -m ruff check scripts examples/answer_refresh.py tests/test_showcase.py tests/test_extended_evidence.py

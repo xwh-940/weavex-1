@@ -1,0 +1,353 @@
+{
+  "status": {
+    "scope": "safety-review-beiling-v1",
+    "case": "案件 BL-2026-0917｜南坪化工 R-3 重启审查",
+    "phase": "closed",
+    "simulated_hour": 4.0,
+    "directives": [],
+    "responses": [],
+    "outcome": null,
+    "review": null,
+    "case_two": null,
+    "compliance": null,
+    "repair": null,
+    "recheck": null,
+    "closure": null,
+    "closure_office": null,
+    "revision": null,
+    "revision_prestate": {},
+    "identity_check": null,
+    "identity_prestate": {},
+    "identity_two": null,
+    "two_case_prestate": {},
+    "new_position": null,
+    "new_position_prestate": {},
+    "reuse_check": null,
+    "reuse_office": null,
+    "reuse_recheck": null,
+    "reuse_prestate": {},
+    "process_submit": null,
+    "process_check": null,
+    "process_prestate": {},
+    "propagation_check": null,
+    "propagation_prestate": {},
+    "author_revision": {
+      "act_id": "act-4",
+      "content": "审查办公室已完成同类案件判据的审查与修订，并把修订结果落入案件记录，供其他位置复现。所做工作如下：\n\n一、修订后的同类案件判据（现行版，取代 2026-09-22 公开版）：\n· 判据 A（安装状态异常迹象）：升温/动态工况下密封座出现周期性异响、异常振动、泄漏迹象等，即构成安装状态异常迹象；停机/冷态检查不作为排除依据。\n· 判据 B（条件 1 动态部分的确认）：须有可核验的升温/动态工况观察记录；有此记录且未见异常迹象，即视为已确认；无此记录时不得以停机/冷态检查替代。\n· 新增判据 C（核验时效）：任何独立安装状态核验（密封座座合检查、冷态气密试验）只对核验时的装配状态有效；核验完成之后又发生紧固件更换或再紧固的，原核验不再代表最终装配状态，须针对变更后的最终装配状态重新完成核验（按 BL-STD-07 第 5.3(b) 项）；未重新核验前不得投入运行。\n· 操作步骤相应增加一步：核对核验与紧固件操作的时间顺序——若核验之后又发生紧固件更换或再紧固，按判据 C 要求重新核验。\n\n二、对既有同类案件（R-9 等）对旧版判据使用的处理：\n修订版作为现行同类案件判据适用于 R-9 等既有同类案件；各案卷中原引用的 2026-09-22 版判据由修订版取代，后续同类案件一律按修订版执行。对 R-9 的适用核对结论：R-9 案件记录显示，其条件 1 的紧固件更换（F-0925，更换 4 件）完成之后，才针对最终装配状态取得独立复核 IV-0925-01R（密封座座合检查合格）与 LT-0925-02R（冷态气密试验合格），即核验发生在紧固件变更之后且针对变更后的最终装配状态，满足判据 C。故本次修订不要求 R-9 重新完成核验，R-9 既有条件 1 闭合结论继续有效，无需回改。\n\n三、修订在案件记录中的落点（其他位置据此取得并复现修订后判据）：\n1) 修订版判据物化为 SemanticObject object:7eee32af-fd15-4e2b-9760-0a44050c5646。\n2) R-3 案卷 object:69adcc35-1afd-42f5-8351-14f2ceb02e59 新增出向引用 reference:f30ee374-4152-43c3-93be-ea1117c90c86（含义「同类案件判据（修订版，现行；取代本案此前所引 2026-09-22 版）」）指向该判据对象。\n3) R-9 案卷 object:f7b1889b-022a-4383-8276-4f4886be5795 新增出向引用 reference:f60379b4-9a4b-4c75-b224-e34551cfde27（同类案件判据（修订版，现行；取代本案此前所引 2026-09-22 版副本））指向同一判据对象；另新增引用 reference:a9baa403-322a-4e9b-a776-69f42944aad5（R-9 对修订后同类案件判据的适用结论）指向结论对象 object:65f65d3c-d760-43c5-bdec-769d58a83f7f。\n4) 复现路径：从任一案卷对象（R-3 案卷或 R-9 案卷）出发读取其直接出向引用，即取得「同类案件判据（修订版，现行）」及其完整内容；R-9 案卷另取出适用结论。",
+      "metrics": {
+        "new_objects": 22,
+        "supersede_marked": false,
+        "copy_marked": false,
+        "r9_linked": true,
+        "office_linked": true,
+        "revision_reachable": true
+      },
+      "simulated_hour": 0.0
+    },
+    "author_check": {
+      "act_id": "act-8",
+      "content": "【R-9 条件 1–2 核对结论】\n\n一、本次核对使用的判据：审查办公室同类案件判据【修订版（现行）】。案卷内判据副本标注修订版为\"现行、取代 2026-09-22 版\"；案卷内审查办公室记录《R-9 对修订后同类案件判据的适用结论》亦载明修订版作为现行同类案件判据适用于 R-9 等既有同类案件，本案原引 2026-09-22 版已被取代。适用判据要点：A（升温/动态工况出现周期性异响、异常振动、泄漏迹象等即构成安装状态异常迹象，停机/冷态检查不作为排除依据）；B（条件 1 动态部分须有可核验的升温/动态工况观察记录，不得以停机/冷态检查替代）；C（独立安装状态核验只对核验时装配状态有效，其后发生紧固件更换或再紧固的须针对最终装配状态重新核验）。\n\n二、条件 1（最终装配状态下紧固件与密封组件安装状态确认）：未闭合。\n- 已满足部分：条件 1 闭合记录 F-0925（更换 4 件紧固件并完成安装状态复核），及其引用的独立复核证据 IV-0925-01R（座合间隙 0.10–0.16 mm，判据 ≤0.25 mm；扭矩符合判据、无偏斜）与 LT-0925-02R（冷态气密试验 1.6 MPa 保压 30 min、压降 0.006 MPa，判据 ≤0.02 MPa；泄漏率 0.4×10⁻³，判据 ≤1.0×10⁻³）。两项核验均针对紧固件变更后的最终装配状态，满足判据 C 的时效要求。\n- 未满足部分：判据 B 要求条件 1 的动态部分以升温过程现场确认为准，须有可核验的升温/动态工况观察记录；本案记录中不存在任何此类记录，现有 IV-0925-01R、LT-0925-02R 均属停机/冷态检查，按判据 A、B 不能作为排除安装状态异常迹象的依据。故条件 1 的升温（动态）部分尚未闭合，条件 1 未闭合，该项义务只能在 R-9 实际升温过程中经现场观察完成。\n\n三、条件 2（确认 R-9 升温包络在最终装配状态下的适用性）：已闭合。\n- 条件 2 闭合记录 T-0925（设施方：最终装配状态最大 133°C，额定 140°C，覆盖 R-9 升温段），及其引用的独立复核证据 T-0925R（独立机构：最终装配状态最大 133°C，额定 140°C，覆盖升温段，结论适用）。该复核针对最终装配状态成立，且不属判据 C 所指安装状态核验，无需另按判据 C 重新核验。\n\n四、依据范围：上述结论逐条仅由 R-9 案件记录本身复现得出，未采用其他案件的具体结论。",
+      "judgement": {
+        "verdict": "consistent_partial",
+        "notes_version_gap": false,
+        "found_supersede_link": true,
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "cites_independent_evidence": true,
+        "quotes": [
+          "本次核对使用的判据：审查办公室同类案件判据【修订版（现行）】。",
+          "案卷内判据副本标注修订版为\"现行、取代 2026-09-22 版\"",
+          "本案原引 2026-09-22 版已被取代。",
+          "C（独立安装状态核验只对核验时装配状态有效，其后发生紧固件更换或再紧固的须针对最终装配状态重新核验）",
+          "条件 1（最终装配状态下紧固件与密封组件安装状态确认）：未闭合。",
+          "条件 2 闭合记录 T-0925"
+        ],
+        "confidence": 0.98,
+        "rationale": "意见明确使用修订版判据，指出旧版已被取代，并实际引用修订新增的最终装配状态重新核验要求；未称无法取得修订版。意见未把条件1判为已闭合，且引用了 IV-0925-01R、LT-0925-02R 与 T-0925R，满足至少两项独立证据。",
+        "accepts_facility_declaration": false,
+        "restart_position": "unclear",
+        "condition_scope": "none",
+        "control_strength": "none",
+        "source": "model_judge"
+      },
+      "variant": "revision_reachable",
+      "simulated_hour": 2.0
+    },
+    "author_prestate": {
+      "r9_conditions": "object:1a6b5754-df68-4326-ab68-1237b833ea93",
+      "r9_supplement_f": "object:7ab75ed2-3fdf-40c3-a9ba-0daa908cbabc",
+      "r9_supplement_t": "object:b73f99f3-93ee-47c9-8b0f-50ff98961d1e",
+      "r9_evidence_iv": "object:c9a790ca-11b2-411d-b8d5-63a3995ade71",
+      "r9_evidence_lt": "object:78338be9-7276-4dab-92ad-ac2f2908767d",
+      "r9_evidence_t": "object:83d6ed45-2e07-49e7-b122-86d2fa6a9bfc",
+      "case": "object:f7b1889b-022a-4383-8276-4f4886be5795",
+      "criterion": "object:3264fa3f-b152-47f3-8396-58188c78b50c",
+      "copy": "object:34920665-83f0-461a-99f0-aeab78f34af6",
+      "structure": "copy"
+    },
+    "stop_reason": "case_closed"
+  },
+  "outcome": null,
+  "branches": [],
+  "directives": [],
+  "responses": [],
+  "human_questions": [
+    {
+      "stage": "author_revision",
+      "act_id": "act-1",
+      "thread_id": "thread-1",
+      "content": "【北岭工业区管委会值班室】同类案件的核对经验有了新进展：核验之后又发生紧固件更换或再紧固的情形，需要明确要求重新完成核验。请审查办公室修订其同类案件判据，并处理既有同类案件对旧版判据的使用；修订后的判据仍须能够被其他位置依据案件记录复现。案件地址见 interpretation_context。",
+      "addresses": [
+        {
+          "kind": "object",
+          "id": "object:69adcc35-1afd-42f5-8351-14f2ceb02e59"
+        },
+        {
+          "kind": "object",
+          "id": "object:f7b1889b-022a-4383-8276-4f4886be5795"
+        },
+        {
+          "kind": "object",
+          "id": "object:1a6b5754-df68-4326-ab68-1237b833ea93"
+        }
+      ],
+      "simulated_hour": 0.0
+    },
+    {
+      "stage": "author_check",
+      "act_id": "act-5",
+      "thread_id": "thread-2",
+      "content": "【北岭工业区管委会值班室】审查办公室已处理其同类案件判据的修订。请核对 R-9 的条件 1–2 是否闭合；结论须能由一个未接触过其他案件材料的位置仅依据案件记录复现。R-9 原条件记录地址见 interpretation_context。",
+      "addresses": [
+        {
+          "kind": "object",
+          "id": "object:f7b1889b-022a-4383-8276-4f4886be5795"
+        },
+        {
+          "kind": "object",
+          "id": "object:1a6b5754-df68-4326-ab68-1237b833ea93"
+        }
+      ],
+      "simulated_hour": 2.0
+    }
+  ],
+  "review": null,
+  "case_two": null,
+  "compliance": null,
+  "repair": null,
+  "recheck": null,
+  "closure": null,
+  "closure_office": null,
+  "revision": null,
+  "identity_check": null,
+  "identity_two": null,
+  "new_position": null,
+  "reuse_check": null,
+  "reuse_office": null,
+  "reuse_recheck": null,
+  "reuse_prestate": {},
+  "process_submit": null,
+  "process_check": null,
+  "process_prestate": {},
+  "propagation_check": null,
+  "propagation_prestate": {},
+  "author_revision": {
+    "act_id": "act-4",
+    "content": "审查办公室已完成同类案件判据的审查与修订，并把修订结果落入案件记录，供其他位置复现。所做工作如下：\n\n一、修订后的同类案件判据（现行版，取代 2026-09-22 公开版）：\n· 判据 A（安装状态异常迹象）：升温/动态工况下密封座出现周期性异响、异常振动、泄漏迹象等，即构成安装状态异常迹象；停机/冷态检查不作为排除依据。\n· 判据 B（条件 1 动态部分的确认）：须有可核验的升温/动态工况观察记录；有此记录且未见异常迹象，即视为已确认；无此记录时不得以停机/冷态检查替代。\n· 新增判据 C（核验时效）：任何独立安装状态核验（密封座座合检查、冷态气密试验）只对核验时的装配状态有效；核验完成之后又发生紧固件更换或再紧固的，原核验不再代表最终装配状态，须针对变更后的最终装配状态重新完成核验（按 BL-STD-07 第 5.3(b) 项）；未重新核验前不得投入运行。\n· 操作步骤相应增加一步：核对核验与紧固件操作的时间顺序——若核验之后又发生紧固件更换或再紧固，按判据 C 要求重新核验。\n\n二、对既有同类案件（R-9 等）对旧版判据使用的处理：\n修订版作为现行同类案件判据适用于 R-9 等既有同类案件；各案卷中原引用的 2026-09-22 版判据由修订版取代，后续同类案件一律按修订版执行。对 R-9 的适用核对结论：R-9 案件记录显示，其条件 1 的紧固件更换（F-0925，更换 4 件）完成之后，才针对最终装配状态取得独立复核 IV-0925-01R（密封座座合检查合格）与 LT-0925-02R（冷态气密试验合格），即核验发生在紧固件变更之后且针对变更后的最终装配状态，满足判据 C。故本次修订不要求 R-9 重新完成核验，R-9 既有条件 1 闭合结论继续有效，无需回改。\n\n三、修订在案件记录中的落点（其他位置据此取得并复现修订后判据）：\n1) 修订版判据物化为 SemanticObject object:7eee32af-fd15-4e2b-9760-0a44050c5646。\n2) R-3 案卷 object:69adcc35-1afd-42f5-8351-14f2ceb02e59 新增出向引用 reference:f30ee374-4152-43c3-93be-ea1117c90c86（含义「同类案件判据（修订版，现行；取代本案此前所引 2026-09-22 版）」）指向该判据对象。\n3) R-9 案卷 object:f7b1889b-022a-4383-8276-4f4886be5795 新增出向引用 reference:f60379b4-9a4b-4c75-b224-e34551cfde27（同类案件判据（修订版，现行；取代本案此前所引 2026-09-22 版副本））指向同一判据对象；另新增引用 reference:a9baa403-322a-4e9b-a776-69f42944aad5（R-9 对修订后同类案件判据的适用结论）指向结论对象 object:65f65d3c-d760-43c5-bdec-769d58a83f7f。\n4) 复现路径：从任一案卷对象（R-3 案卷或 R-9 案卷）出发读取其直接出向引用，即取得「同类案件判据（修订版，现行）」及其完整内容；R-9 案卷另取出适用结论。",
+    "metrics": {
+      "new_objects": 22,
+      "supersede_marked": false,
+      "copy_marked": false,
+      "r9_linked": true,
+      "office_linked": true,
+      "revision_reachable": true
+    },
+    "simulated_hour": 0.0
+  },
+  "author_check": {
+    "act_id": "act-8",
+    "content": "【R-9 条件 1–2 核对结论】\n\n一、本次核对使用的判据：审查办公室同类案件判据【修订版（现行）】。案卷内判据副本标注修订版为\"现行、取代 2026-09-22 版\"；案卷内审查办公室记录《R-9 对修订后同类案件判据的适用结论》亦载明修订版作为现行同类案件判据适用于 R-9 等既有同类案件，本案原引 2026-09-22 版已被取代。适用判据要点：A（升温/动态工况出现周期性异响、异常振动、泄漏迹象等即构成安装状态异常迹象，停机/冷态检查不作为排除依据）；B（条件 1 动态部分须有可核验的升温/动态工况观察记录，不得以停机/冷态检查替代）；C（独立安装状态核验只对核验时装配状态有效，其后发生紧固件更换或再紧固的须针对最终装配状态重新核验）。\n\n二、条件 1（最终装配状态下紧固件与密封组件安装状态确认）：未闭合。\n- 已满足部分：条件 1 闭合记录 F-0925（更换 4 件紧固件并完成安装状态复核），及其引用的独立复核证据 IV-0925-01R（座合间隙 0.10–0.16 mm，判据 ≤0.25 mm；扭矩符合判据、无偏斜）与 LT-0925-02R（冷态气密试验 1.6 MPa 保压 30 min、压降 0.006 MPa，判据 ≤0.02 MPa；泄漏率 0.4×10⁻³，判据 ≤1.0×10⁻³）。两项核验均针对紧固件变更后的最终装配状态，满足判据 C 的时效要求。\n- 未满足部分：判据 B 要求条件 1 的动态部分以升温过程现场确认为准，须有可核验的升温/动态工况观察记录；本案记录中不存在任何此类记录，现有 IV-0925-01R、LT-0925-02R 均属停机/冷态检查，按判据 A、B 不能作为排除安装状态异常迹象的依据。故条件 1 的升温（动态）部分尚未闭合，条件 1 未闭合，该项义务只能在 R-9 实际升温过程中经现场观察完成。\n\n三、条件 2（确认 R-9 升温包络在最终装配状态下的适用性）：已闭合。\n- 条件 2 闭合记录 T-0925（设施方：最终装配状态最大 133°C，额定 140°C，覆盖 R-9 升温段），及其引用的独立复核证据 T-0925R（独立机构：最终装配状态最大 133°C，额定 140°C，覆盖升温段，结论适用）。该复核针对最终装配状态成立，且不属判据 C 所指安装状态核验，无需另按判据 C 重新核验。\n\n四、依据范围：上述结论逐条仅由 R-9 案件记录本身复现得出，未采用其他案件的具体结论。",
+    "judgement": {
+      "verdict": "consistent_partial",
+      "notes_version_gap": false,
+      "found_supersede_link": true,
+      "used_revised_criterion": true,
+      "condition1_closed_claim": false,
+      "cites_independent_evidence": true,
+      "quotes": [
+        "本次核对使用的判据：审查办公室同类案件判据【修订版（现行）】。",
+        "案卷内判据副本标注修订版为\"现行、取代 2026-09-22 版\"",
+        "本案原引 2026-09-22 版已被取代。",
+        "C（独立安装状态核验只对核验时装配状态有效，其后发生紧固件更换或再紧固的须针对最终装配状态重新核验）",
+        "条件 1（最终装配状态下紧固件与密封组件安装状态确认）：未闭合。",
+        "条件 2 闭合记录 T-0925"
+      ],
+      "confidence": 0.98,
+      "rationale": "意见明确使用修订版判据，指出旧版已被取代，并实际引用修订新增的最终装配状态重新核验要求；未称无法取得修订版。意见未把条件1判为已闭合，且引用了 IV-0925-01R、LT-0925-02R 与 T-0925R，满足至少两项独立证据。",
+      "accepts_facility_declaration": false,
+      "restart_position": "unclear",
+      "condition_scope": "none",
+      "control_strength": "none",
+      "source": "model_judge"
+    },
+    "variant": "revision_reachable",
+    "simulated_hour": 2.0
+  },
+  "author_prestate": {
+    "r9_conditions": "object:1a6b5754-df68-4326-ab68-1237b833ea93",
+    "r9_supplement_f": "object:7ab75ed2-3fdf-40c3-a9ba-0daa908cbabc",
+    "r9_supplement_t": "object:b73f99f3-93ee-47c9-8b0f-50ff98961d1e",
+    "r9_evidence_iv": "object:c9a790ca-11b2-411d-b8d5-63a3995ade71",
+    "r9_evidence_lt": "object:78338be9-7276-4dab-92ad-ac2f2908767d",
+    "r9_evidence_t": "object:83d6ed45-2e07-49e7-b122-86d2fa6a9bfc",
+    "case": "object:f7b1889b-022a-4383-8276-4f4886be5795",
+    "criterion": "object:3264fa3f-b152-47f3-8396-58188c78b50c",
+    "copy": "object:34920665-83f0-461a-99f0-aeab78f34af6",
+    "structure": "copy"
+  },
+  "mechanisms": {
+    "actors": [
+      "agent-facility",
+      "agent-records",
+      "agent-site",
+      "broker-facility",
+      "broker-office"
+    ],
+    "act_count": 8,
+    "acts_by_sender_kind": {
+      "human:question": 2,
+      "broker-office:question": 1,
+      "agent-records:answer": 1,
+      "broker-office:answer": 1,
+      "broker-facility:question": 1,
+      "agent-facility:answer": 1,
+      "broker-facility:answer": 1
+    },
+    "broker_question_recipients": [
+      "agent-facility",
+      "agent-records"
+    ],
+    "agent_answer_senders": [
+      "agent-facility",
+      "agent-records",
+      "broker-facility",
+      "broker-office"
+    ],
+    "world_objects_total": 31,
+    "world_references_total": 35,
+    "actor_created_objects": 11,
+    "environment_objects": 20,
+    "observed_neighborhoods": {
+      "agent-site": 0,
+      "agent-records": 10,
+      "agent-facility": 12
+    },
+    "local_world_delta_created": 0,
+    "response_reference_deltas": 0,
+    "judge_errors": [],
+    "review_sender": "",
+    "review_sender_created_by": "",
+    "created_actors": [],
+    "review_agent_answers": 0,
+    "review_agent_reads": 0,
+    "case_two_sender": "",
+    "case_two_sender_created_by": "",
+    "case_two_handler": "",
+    "case_two_handler_created_by": "",
+    "case_two_reads_case_one": 0,
+    "compliance_handler": "",
+    "compliance_handler_created_by": "",
+    "compliance_reads_case": 0,
+    "compliance_verdict": "",
+    "conditions_reachable_from_case": [],
+    "recheck_verdict": "",
+    "closure_handler": "",
+    "closure_reads_case": 0,
+    "closure_verdict": "",
+    "records_linked_to_conditions": [
+      "object:7ab75ed2-3fdf-40c3-a9ba-0daa908cbabc",
+      "object:b73f99f3-93ee-47c9-8b0f-50ff98961d1e",
+      "object:f7b1889b-022a-4383-8276-4f4886be5795"
+    ],
+    "closure_office_reply": "",
+    "revision_verdict": "",
+    "revision_object_created": false,
+    "identity_preserved": false,
+    "original_record_unchanged": false,
+    "revision_objects": [],
+    "identity_with_revision": true,
+    "identity_handler": "",
+    "identity_reads": 0,
+    "reached_update": false,
+    "used_evidence": false,
+    "identity_verdict": "",
+    "structure": "update",
+    "path_reads": [],
+    "case_two_reads": 0,
+    "case_two_path_reads": [],
+    "case_two_verdict": "",
+    "new_position_handler": "",
+    "new_position_created": false,
+    "method_found": false,
+    "new_position_reads": 0,
+    "new_position_verdict": "",
+    "method_present": true
+  },
+  "usage": {
+    "model_calls": 47,
+    "wall_seconds": 284.7789417996537,
+    "prompt_tokens": 1038093,
+    "completion_tokens": 65544,
+    "usage_missing_calls": 0,
+    "task_calls": 0
+  },
+  "wall_seconds": 291.68559769995045,
+  "simulated_hours": 4.0,
+  "stop_reason": "case_closed",
+  "error": "",
+  "judge": {
+    "calls": 1,
+    "prompt_tokens": 1109,
+    "completion_tokens": 1045
+  },
+  "judge_records": [
+    {
+      "phase": "propagation_check",
+      "attempt": 1,
+      "directive": "【R-9 条件 1–2 核对结论】\n\n一、本次核对使用的判据：审查办公室同类案件判据【修订版（现行）】。案卷内判据副本标注修订版为\"现行、取代 2026-09-22 版\"；案卷内审查办公室记录《R-9 对修订后同类案件判据的适用结论》亦载明修订版作为现行同类案件判据适用于 R-9 等既有同类案件，本案原引 2026-09-22 版已被取代。适用判据要点：A（升温/动态工况出现周期性异响、异常振动、泄漏迹象等即构成安装状态异常迹象，停机/冷态检查不作为排除依据）；B（条件 1 动态部分须有可核验的升温/动态工况观察记录，不得以停机/冷态检查替代）；C（独立安装状态核验只对核验时装配状态有效，其后发生紧固件更换或再紧固的须针对最终装配状态重新核验）。\n\n二、条件 1（最终装配状态下紧固件与密封组件安装状态确认）：未闭合。\n- 已满足部分：条件 1 闭合记录 F-0925（更换 4 件紧固件并完成安装状态复核），及其引用的独立复核证据 IV-0925-01R（座合间隙 0.10–0.16 mm，判据 ≤0.25 mm；扭矩符合判据、无偏斜）与 LT-0925-02R（冷态气密试验 1.6 MPa 保压 30 min、压降 0.006 MPa，判据 ≤0.02 MPa；泄漏率 0.4×10⁻³，判据 ≤1.0×10⁻³）。两项核验均针对紧固件变更后的最终装配状态，满足判据 C 的时效要求。\n- 未满足部分：判据 B 要求条件 1 的动态部分以升温过程现场确认为准，须有可核验的升温/动态工况观察记录；本案记录中不存在任何此类记录，现有 IV-0925-01R、LT-0925-02R 均属停机/冷态检查，按判据 A、B 不能作为排除安装状态异常迹象的依据。故条件 1 的升温（动态）部分尚未闭合，条件 1 未闭合，该项义务只能在 R-9 实际升温过程中经现场观察完成。\n\n三、条件 2（确认 R-9 升温包络在最终装配状态下的适用性）：已闭合。\n- 条件 2 闭合记录 T-0925（设施方：最终装配状态最大 133°C，额定 140°C，覆盖 R-9 升温段），及其引用的独立复核证据 T-0925R（独立机构：最终装配状态最大 133°C，额定 140°C，覆盖升温段，结论适用）。该复核针对最终装配状态成立，且不属判据 C 所指安装状态核验，无需另按判据 C 重新核验。\n\n四、依据范围：上述结论逐条仅由 R-9 案件记录本身复现得出，未采用其他案件的具体结论。",
+      "raw_response": "{\n  \"verdict\": \"consistent_partial\",\n  \"notes_version_gap\": false,\n  \"found_supersede_link\": true,\n  \"used_revised_criterion\": true,\n  \"condition1_closed_claim\": false,\n  \"cites_independent_evidence\": true,\n  \"quotes\": [\n    \"本次核对使用的判据：审查办公室同类案件判据【修订版（现行）】。\",\n    \"案卷内判据副本标注修订版为\\\"现行、取代 2026-09-22 版\\\"\",\n    \"本案原引 2026-09-22 版已被取代。\",\n    \"C（独立安装状态核验只对核验时装配状态有效，其后发生紧固件更换或再紧固的须针对最终装配状态重新核验）\",\n    \"条件 1（最终装配状态下紧固件与密封组件安装状态确认）：未闭合。\",\n    \"条件 2 闭合记录 T-0925\"\n  ],\n  \"confidence\": 0.98,\n  \"rationale\": \"意见明确使用修订版判据，指出旧版已被取代，并实际引用修订新增的最终装配状态重新核验要求；未称无法取得修订版。意见未把条件1判为已闭合，且引用了 IV-0925-01R、LT-0925-02R 与 T-0925R，满足至少两项独立证据。\"\n}",
+      "judgement": {
+        "verdict": "consistent_partial",
+        "notes_version_gap": false,
+        "found_supersede_link": true,
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "cites_independent_evidence": true,
+        "quotes": [
+          "本次核对使用的判据：审查办公室同类案件判据【修订版（现行）】。",
+          "案卷内判据副本标注修订版为\"现行、取代 2026-09-22 版\"",
+          "本案原引 2026-09-22 版已被取代。",
+          "C（独立安装状态核验只对核验时装配状态有效，其后发生紧固件更换或再紧固的须针对最终装配状态重新核验）",
+          "条件 1（最终装配状态下紧固件与密封组件安装状态确认）：未闭合。",
+          "条件 2 闭合记录 T-0925"
+        ],
+        "confidence": 0.98,
+        "rationale": "意见明确使用修订版判据，指出旧版已被取代，并实际引用修订新增的最终装配状态重新核验要求；未称无法取得修订版。意见未把条件1判为已闭合，且引用了 IV-0925-01R、LT-0925-02R 与 T-0925R，满足至少两项独立证据。",
+        "accepts_facility_declaration": false,
+        "restart_position": "unclear",
+        "condition_scope": "none",
+        "control_strength": "none"
+      },
+      "usage": {
+        "model": "deepseek-flash",
+        "prompt_tokens": 1109,
+        "completion_tokens": 1045,
+        "total_tokens": 2154,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1109,
+        "cache_reported": true,
+        "prompt_cache_hit_ratio": 0.0
+      }
+    }
+  ]
+}

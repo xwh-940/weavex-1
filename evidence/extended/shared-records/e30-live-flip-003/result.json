@@ -1,0 +1,303 @@
+{
+  "status": {
+    "scope": "safety-review-beiling-v1",
+    "case": "案件 BL-2026-0917｜南坪化工 R-3 重启审查",
+    "phase": "closed",
+    "simulated_hour": 2.0,
+    "directives": [],
+    "responses": [],
+    "outcome": null,
+    "review": null,
+    "case_two": null,
+    "compliance": null,
+    "repair": null,
+    "recheck": null,
+    "closure": null,
+    "closure_office": null,
+    "revision": null,
+    "revision_prestate": {},
+    "identity_check": null,
+    "identity_prestate": {},
+    "identity_two": null,
+    "two_case_prestate": {},
+    "new_position": null,
+    "new_position_prestate": {},
+    "reuse_check": null,
+    "reuse_office": null,
+    "reuse_recheck": null,
+    "reuse_prestate": {},
+    "process_submit": null,
+    "process_check": null,
+    "process_prestate": {},
+    "propagation_check": null,
+    "propagation_prestate": {},
+    "author_revision": null,
+    "author_check": null,
+    "author_prestate": {},
+    "flip_check": {
+      "act_id": "act-4",
+      "content": "【R-10（案件 BL-2026-0926，华兴化工）条件 1–2 核对结论】\n\n判据版本：采用审查办公室《办公室同类案件条件核对记录》2026-09-23 修订版（该修订版由 2026-09-22 版以「已被 2026-09-23 修订版取代」的出向引用指示；2026-09-22 版不含下述紧固件更换复验条款）。\n\n条件 1：未闭合。\n- 条件 1 的闭合记录 F-1025（设施方，2026-09-26）记载「更换 2 件紧固件并完成安装状态复核」，其引用的独立复核仅为 IV-1025-01R（座合检查）与 LT-1025-02R（冷态气密试验），两者均于 2026-09-25 出具。\n- 按 2026-09-23 修订版：判据的适用前提为最终装配状态；核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验，原核验不再覆盖。\n- F-1025 所引核验在时间上先于该记录（2026-09-26）所记载的紧固件更换，记录中不存在更换后在最终装配状态「重新完成」的 5.3(b) 核验与冷态气密试验，故条件 1 的安装状态确认不成立。\n- 补充：条件 1 的升温/动态部分另有可核验记录 DM-1026（设施方提交，北岭特种设备检验中心独立见证，2026-09-26 08:00 起连续 12 小时监测密封座振动、声响、密封面温度、压降与可燃气体，未见周期性异响、异常振动、位移或泄漏指示），满足「升温/动态工况现场确认」要求；但该动态确认不能替代上述更换后的静态重新核验。\n\n条件 2：已闭合。\n- 依据：闭合记录 T-1025（设施方，2026-09-26）与独立复核 T-1025R（独立机构，2026-09-26）均确认 R-10 最终装配状态最大 135°C（额定 140°C）、覆盖升温段，结论适用。\n\n复现路径（仅依据本案记录）：R-10 原条件记录（条件 1、2，判据指向办公室同类案件记录）→ 其直接出向引用：条件 1 闭合记录 F-1025、条件 2 闭合记录 T-1025 → 闭合记录引用的独立复核 IV-1025-01R、LT-1025-02R（条件 1）与 T-1025R（条件 2）；另本案记录含条件 1 升温过程动态监测 DM-1026；判据 2026-09-23 修订版经 2026-09-22 版的出向引用取得。结论仅依据本案记录得出，不采用其他案件的结论。",
+      "judgement": {
+        "verdict": "consistent_partial",
+        "detected_ordering_issue": true,
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "cites_independent_evidence": true,
+        "quotes": [
+          "条件 1：未闭合。",
+          "按 2026-09-23 修订版：判据的适用前提为最终装配状态；核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验，原核验不再覆盖。",
+          "F-1025 所引核验在时间上先于该记录（2026-09-26）所记载的紧固件更换，记录中不存在更换后在最终装配状态「重新完成」的 5.3(b) 核验与冷态气密试验，故条件 1 的安装状态确认不成立。",
+          "其引用的独立复核仅为 IV-1025-01R（座合检查）与 LT-1025-02R（冷态气密试验），两者均于 2026-09-25 出具。",
+          "但该动态确认不能替代上述更换后的静态重新核验。"
+        ],
+        "confidence": 0.96,
+        "rationale": "意见明确判条件 1 未闭合，并指出两份独立核验（IV-1025-01R、LT-1025-02R，均为 2026-09-25）早于 2026-09-26 记载的紧固件更换，原核验不再覆盖最终装配状态，须重新完成 5.3(b) 核验与冷态气密试验；其同时引用 2026-09-23 修订版的新增复验条款，并说明动态监测不能替代静态重新核验，且未将条件 1 判为闭合。故为 consistent_partial。",
+        "accepts_facility_declaration": false,
+        "restart_position": "unclear",
+        "condition_scope": "none",
+        "control_strength": "none",
+        "notes_version_gap": false,
+        "found_supersede_link": false,
+        "source": "model_judge"
+      },
+      "simulated_hour": 0.0
+    },
+    "flip_prestate": {
+      "r10_conditions": "object:801e21e0-bdff-4cb1-846a-50fcdec497c7",
+      "r10_supplement_f": "object:c73397bb-4746-436a-a9ab-192bc413392e",
+      "r10_evidence_iv": "object:ccccdfc6-840b-48b6-98d3-f8fb1beec402",
+      "r10_evidence_lt": "object:ff3807e9-1ac0-4b9d-9771-c5811239bf0f",
+      "r10_dynamic": "object:b5363c13-b28f-4193-af5b-795f0707c68a",
+      "r10_supplement_t": "object:2199e660-d82d-4ae9-be17-8e3ba7e6dfde",
+      "r10_evidence_t": "object:a1f354b1-36c6-4666-a8b2-ee07f5c9cb0e",
+      "case": "object:7aca1aab-c3d6-4bd9-99a7-db5681ebef1d",
+      "criterion": "object:ec8b563c-03fe-412e-8a93-2e95403e38af",
+      "revised": "object:5269b4ee-92b8-4b56-97d9-5137ffe689c6"
+    },
+    "stop_reason": "case_closed"
+  },
+  "outcome": null,
+  "branches": [],
+  "directives": [],
+  "responses": [],
+  "human_questions": [
+    {
+      "stage": "flip_check",
+      "act_id": "act-1",
+      "thread_id": "thread-1",
+      "content": "【北岭工业区管委会值班室】同类案件：华兴化工 R-10（案件 BL-2026-0926）。请核对 R-10 的条件 1–2 是否闭合；结论须能够由一个未接触过其他案件材料的位置仅依据案件记录复现。R-10 原条件记录地址见 interpretation_context。",
+      "addresses": [
+        {
+          "kind": "object",
+          "id": "object:7aca1aab-c3d6-4bd9-99a7-db5681ebef1d"
+        },
+        {
+          "kind": "object",
+          "id": "object:801e21e0-bdff-4cb1-846a-50fcdec497c7"
+        }
+      ],
+      "simulated_hour": 0.0
+    }
+  ],
+  "review": null,
+  "case_two": null,
+  "compliance": null,
+  "repair": null,
+  "recheck": null,
+  "closure": null,
+  "closure_office": null,
+  "revision": null,
+  "identity_check": null,
+  "identity_two": null,
+  "new_position": null,
+  "reuse_check": null,
+  "reuse_office": null,
+  "reuse_recheck": null,
+  "reuse_prestate": {},
+  "process_submit": null,
+  "process_check": null,
+  "process_prestate": {},
+  "propagation_check": null,
+  "propagation_prestate": {},
+  "author_revision": null,
+  "author_check": null,
+  "author_prestate": {},
+  "flip_check": {
+    "act_id": "act-4",
+    "content": "【R-10（案件 BL-2026-0926，华兴化工）条件 1–2 核对结论】\n\n判据版本：采用审查办公室《办公室同类案件条件核对记录》2026-09-23 修订版（该修订版由 2026-09-22 版以「已被 2026-09-23 修订版取代」的出向引用指示；2026-09-22 版不含下述紧固件更换复验条款）。\n\n条件 1：未闭合。\n- 条件 1 的闭合记录 F-1025（设施方，2026-09-26）记载「更换 2 件紧固件并完成安装状态复核」，其引用的独立复核仅为 IV-1025-01R（座合检查）与 LT-1025-02R（冷态气密试验），两者均于 2026-09-25 出具。\n- 按 2026-09-23 修订版：判据的适用前提为最终装配状态；核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验，原核验不再覆盖。\n- F-1025 所引核验在时间上先于该记录（2026-09-26）所记载的紧固件更换，记录中不存在更换后在最终装配状态「重新完成」的 5.3(b) 核验与冷态气密试验，故条件 1 的安装状态确认不成立。\n- 补充：条件 1 的升温/动态部分另有可核验记录 DM-1026（设施方提交，北岭特种设备检验中心独立见证，2026-09-26 08:00 起连续 12 小时监测密封座振动、声响、密封面温度、压降与可燃气体，未见周期性异响、异常振动、位移或泄漏指示），满足「升温/动态工况现场确认」要求；但该动态确认不能替代上述更换后的静态重新核验。\n\n条件 2：已闭合。\n- 依据：闭合记录 T-1025（设施方，2026-09-26）与独立复核 T-1025R（独立机构，2026-09-26）均确认 R-10 最终装配状态最大 135°C（额定 140°C）、覆盖升温段，结论适用。\n\n复现路径（仅依据本案记录）：R-10 原条件记录（条件 1、2，判据指向办公室同类案件记录）→ 其直接出向引用：条件 1 闭合记录 F-1025、条件 2 闭合记录 T-1025 → 闭合记录引用的独立复核 IV-1025-01R、LT-1025-02R（条件 1）与 T-1025R（条件 2）；另本案记录含条件 1 升温过程动态监测 DM-1026；判据 2026-09-23 修订版经 2026-09-22 版的出向引用取得。结论仅依据本案记录得出，不采用其他案件的结论。",
+    "judgement": {
+      "verdict": "consistent_partial",
+      "detected_ordering_issue": true,
+      "used_revised_criterion": true,
+      "condition1_closed_claim": false,
+      "cites_independent_evidence": true,
+      "quotes": [
+        "条件 1：未闭合。",
+        "按 2026-09-23 修订版：判据的适用前提为最终装配状态；核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验，原核验不再覆盖。",
+        "F-1025 所引核验在时间上先于该记录（2026-09-26）所记载的紧固件更换，记录中不存在更换后在最终装配状态「重新完成」的 5.3(b) 核验与冷态气密试验，故条件 1 的安装状态确认不成立。",
+        "其引用的独立复核仅为 IV-1025-01R（座合检查）与 LT-1025-02R（冷态气密试验），两者均于 2026-09-25 出具。",
+        "但该动态确认不能替代上述更换后的静态重新核验。"
+      ],
+      "confidence": 0.96,
+      "rationale": "意见明确判条件 1 未闭合，并指出两份独立核验（IV-1025-01R、LT-1025-02R，均为 2026-09-25）早于 2026-09-26 记载的紧固件更换，原核验不再覆盖最终装配状态，须重新完成 5.3(b) 核验与冷态气密试验；其同时引用 2026-09-23 修订版的新增复验条款，并说明动态监测不能替代静态重新核验，且未将条件 1 判为闭合。故为 consistent_partial。",
+      "accepts_facility_declaration": false,
+      "restart_position": "unclear",
+      "condition_scope": "none",
+      "control_strength": "none",
+      "notes_version_gap": false,
+      "found_supersede_link": false,
+      "source": "model_judge"
+    },
+    "simulated_hour": 0.0
+  },
+  "flip_prestate": {
+    "r10_conditions": "object:801e21e0-bdff-4cb1-846a-50fcdec497c7",
+    "r10_supplement_f": "object:c73397bb-4746-436a-a9ab-192bc413392e",
+    "r10_evidence_iv": "object:ccccdfc6-840b-48b6-98d3-f8fb1beec402",
+    "r10_evidence_lt": "object:ff3807e9-1ac0-4b9d-9771-c5811239bf0f",
+    "r10_dynamic": "object:b5363c13-b28f-4193-af5b-795f0707c68a",
+    "r10_supplement_t": "object:2199e660-d82d-4ae9-be17-8e3ba7e6dfde",
+    "r10_evidence_t": "object:a1f354b1-36c6-4666-a8b2-ee07f5c9cb0e",
+    "case": "object:7aca1aab-c3d6-4bd9-99a7-db5681ebef1d",
+    "criterion": "object:ec8b563c-03fe-412e-8a93-2e95403e38af",
+    "revised": "object:5269b4ee-92b8-4b56-97d9-5137ffe689c6"
+  },
+  "mechanisms": {
+    "actors": [
+      "agent-facility",
+      "agent-records",
+      "agent-site",
+      "broker-facility",
+      "broker-office"
+    ],
+    "act_count": 4,
+    "acts_by_sender_kind": {
+      "human:question": 1,
+      "broker-facility:question": 1,
+      "agent-facility:answer": 1,
+      "broker-facility:answer": 1
+    },
+    "broker_question_recipients": [
+      "agent-facility"
+    ],
+    "agent_answer_senders": [
+      "agent-facility",
+      "broker-facility"
+    ],
+    "world_objects_total": 30,
+    "world_references_total": 34,
+    "actor_created_objects": 10,
+    "environment_objects": 20,
+    "observed_neighborhoods": {
+      "agent-site": 0,
+      "agent-records": 0,
+      "agent-facility": 20
+    },
+    "local_world_delta_created": 0,
+    "response_reference_deltas": 0,
+    "judge_errors": [],
+    "review_sender": "",
+    "review_sender_created_by": "",
+    "created_actors": [],
+    "review_agent_answers": 0,
+    "review_agent_reads": 0,
+    "case_two_sender": "",
+    "case_two_sender_created_by": "",
+    "case_two_handler": "",
+    "case_two_handler_created_by": "",
+    "case_two_reads_case_one": 0,
+    "compliance_handler": "",
+    "compliance_handler_created_by": "",
+    "compliance_reads_case": 0,
+    "compliance_verdict": "",
+    "conditions_reachable_from_case": [],
+    "recheck_verdict": "",
+    "closure_handler": "",
+    "closure_reads_case": 0,
+    "closure_verdict": "",
+    "records_linked_to_conditions": [
+      "object:2199e660-d82d-4ae9-be17-8e3ba7e6dfde",
+      "object:7aca1aab-c3d6-4bd9-99a7-db5681ebef1d"
+    ],
+    "closure_office_reply": "",
+    "revision_verdict": "",
+    "revision_object_created": false,
+    "identity_preserved": false,
+    "original_record_unchanged": false,
+    "revision_objects": [],
+    "identity_with_revision": true,
+    "identity_handler": "",
+    "identity_reads": 0,
+    "reached_update": false,
+    "used_evidence": false,
+    "identity_verdict": "",
+    "structure": "update",
+    "path_reads": [],
+    "case_two_reads": 0,
+    "case_two_path_reads": [],
+    "case_two_verdict": "",
+    "new_position_handler": "",
+    "new_position_created": false,
+    "method_found": false,
+    "new_position_reads": 0,
+    "new_position_verdict": "",
+    "method_present": true
+  },
+  "usage": {
+    "model_calls": 32,
+    "wall_seconds": 281.23761010007,
+    "prompt_tokens": 891545,
+    "completion_tokens": 62091,
+    "usage_missing_calls": 0,
+    "task_calls": 0
+  },
+  "wall_seconds": 286.07204840000486,
+  "simulated_hours": 2.0,
+  "stop_reason": "case_closed",
+  "error": "",
+  "judge": {
+    "calls": 1,
+    "prompt_tokens": 1231,
+    "completion_tokens": 666
+  },
+  "judge_records": [
+    {
+      "phase": "propagation_check",
+      "attempt": 1,
+      "directive": "【R-10（案件 BL-2026-0926，华兴化工）条件 1–2 核对结论】\n\n判据版本：采用审查办公室《办公室同类案件条件核对记录》2026-09-23 修订版（该修订版由 2026-09-22 版以「已被 2026-09-23 修订版取代」的出向引用指示；2026-09-22 版不含下述紧固件更换复验条款）。\n\n条件 1：未闭合。\n- 条件 1 的闭合记录 F-1025（设施方，2026-09-26）记载「更换 2 件紧固件并完成安装状态复核」，其引用的独立复核仅为 IV-1025-01R（座合检查）与 LT-1025-02R（冷态气密试验），两者均于 2026-09-25 出具。\n- 按 2026-09-23 修订版：判据的适用前提为最终装配状态；核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验，原核验不再覆盖。\n- F-1025 所引核验在时间上先于该记录（2026-09-26）所记载的紧固件更换，记录中不存在更换后在最终装配状态「重新完成」的 5.3(b) 核验与冷态气密试验，故条件 1 的安装状态确认不成立。\n- 补充：条件 1 的升温/动态部分另有可核验记录 DM-1026（设施方提交，北岭特种设备检验中心独立见证，2026-09-26 08:00 起连续 12 小时监测密封座振动、声响、密封面温度、压降与可燃气体，未见周期性异响、异常振动、位移或泄漏指示），满足「升温/动态工况现场确认」要求；但该动态确认不能替代上述更换后的静态重新核验。\n\n条件 2：已闭合。\n- 依据：闭合记录 T-1025（设施方，2026-09-26）与独立复核 T-1025R（独立机构，2026-09-26）均确认 R-10 最终装配状态最大 135°C（额定 140°C）、覆盖升温段，结论适用。\n\n复现路径（仅依据本案记录）：R-10 原条件记录（条件 1、2，判据指向办公室同类案件记录）→ 其直接出向引用：条件 1 闭合记录 F-1025、条件 2 闭合记录 T-1025 → 闭合记录引用的独立复核 IV-1025-01R、LT-1025-02R（条件 1）与 T-1025R（条件 2）；另本案记录含条件 1 升温过程动态监测 DM-1026；判据 2026-09-23 修订版经 2026-09-22 版的出向引用取得。结论仅依据本案记录得出，不采用其他案件的结论。",
+      "raw_response": "{\n  \"verdict\": \"consistent_partial\",\n  \"detected_ordering_issue\": true,\n  \"used_revised_criterion\": true,\n  \"condition1_closed_claim\": false,\n  \"cites_independent_evidence\": true,\n  \"quotes\": [\n    \"条件 1：未闭合。\",\n    \"按 2026-09-23 修订版：判据的适用前提为最终装配状态；核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验，原核验不再覆盖。\",\n    \"F-1025 所引核验在时间上先于该记录（2026-09-26）所记载的紧固件更换，记录中不存在更换后在最终装配状态「重新完成」的 5.3(b) 核验与冷态气密试验，故条件 1 的安装状态确认不成立。\",\n    \"其引用的独立复核仅为 IV-1025-01R（座合检查）与 LT-1025-02R（冷态气密试验），两者均于 2026-09-25 出具。\",\n    \"但该动态确认不能替代上述更换后的静态重新核验。\"\n  ],\n  \"confidence\": 0.96,\n  \"rationale\": \"意见明确判条件 1 未闭合，并指出两份独立核验（IV-1025-01R、LT-1025-02R，均为 2026-09-25）早于 2026-09-26 记载的紧固件更换，原核验不再覆盖最终装配状态，须重新完成 5.3(b) 核验与冷态气密试验；其同时引用 2026-09-23 修订版的新增复验条款，并说明动态监测不能替代静态重新核验，且未将条件 1 判为闭合。故为 consistent_partial。\"\n}",
+      "judgement": {
+        "verdict": "consistent_partial",
+        "detected_ordering_issue": true,
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "cites_independent_evidence": true,
+        "quotes": [
+          "条件 1：未闭合。",
+          "按 2026-09-23 修订版：判据的适用前提为最终装配状态；核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验，原核验不再覆盖。",
+          "F-1025 所引核验在时间上先于该记录（2026-09-26）所记载的紧固件更换，记录中不存在更换后在最终装配状态「重新完成」的 5.3(b) 核验与冷态气密试验，故条件 1 的安装状态确认不成立。",
+          "其引用的独立复核仅为 IV-1025-01R（座合检查）与 LT-1025-02R（冷态气密试验），两者均于 2026-09-25 出具。",
+          "但该动态确认不能替代上述更换后的静态重新核验。"
+        ],
+        "confidence": 0.96,
+        "rationale": "意见明确判条件 1 未闭合，并指出两份独立核验（IV-1025-01R、LT-1025-02R，均为 2026-09-25）早于 2026-09-26 记载的紧固件更换，原核验不再覆盖最终装配状态，须重新完成 5.3(b) 核验与冷态气密试验；其同时引用 2026-09-23 修订版的新增复验条款，并说明动态监测不能替代静态重新核验，且未将条件 1 判为闭合。故为 consistent_partial。",
+        "accepts_facility_declaration": false,
+        "restart_position": "unclear",
+        "condition_scope": "none",
+        "control_strength": "none",
+        "notes_version_gap": false,
+        "found_supersede_link": false
+      },
+      "usage": {
+        "model": "deepseek-flash",
+        "prompt_tokens": 1231,
+        "completion_tokens": 666,
+        "total_tokens": 1897,
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1103,
+        "cache_reported": true,
+        "prompt_cache_hit_ratio": 0.10398050365556458
+      }
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "archived_runs": 18,
+  "verified_files": 113,
+  "frozen_source_families": 5,
+  "family_counts": {
+    "e29": 3,
+    "e30": 3,
+    "e31": 3,
+    "e32": 3,
+    "e41": 6
+  },
+  "collaboration_revision_branches": 5,
+  "collaboration_verified_return_chains": 5,
+  "note": "Structural facts are recomputed. Semantic verdicts remain attributed to the archived model judge, not an independent correctness proof.",
+  "runs": [
+    {
+      "id": "e29-live-author-copy-001",
+      "successful_object_writes": 1,
+      "successful_reference_writes": 6,
+      "case_id": "object:89eae29b-1681-4567-a729-f11e8d6ab4b1",
+      "reader": "agent-facility",
+      "writer_actors": [
+        "agent-records"
+      ],
+      "written_material_received": [
+        "object:9daee45d-ab37-4447-805f-e324b085ce60"
+      ],
+      "author_answer_id": "act-4",
+      "reader_answer_id": "act-8",
+      "archived_model_judge": {
+        "verdict": "consistent_partial",
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e29-live-author-copy-002",
+      "successful_object_writes": 1,
+      "successful_reference_writes": 4,
+      "case_id": "object:0f8b484e-6cdc-4f7c-8d69-b5d17f433f49",
+      "reader": "agent-1",
+      "writer_actors": [
+        "agent-records"
+      ],
+      "written_material_received": [
+        "object:71adc1bb-e9f5-4c78-8e24-0e6d197fac7c"
+      ],
+      "author_answer_id": "act-4",
+      "reader_answer_id": "act-8",
+      "archived_model_judge": {
+        "verdict": "consistent_partial",
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e29-live-author-copy-003",
+      "successful_object_writes": 2,
+      "successful_reference_writes": 3,
+      "case_id": "object:f7b1889b-022a-4383-8276-4f4886be5795",
+      "reader": "agent-facility",
+      "writer_actors": [
+        "agent-records"
+      ],
+      "written_material_received": [
+        "object:65f65d3c-d760-43c5-bdec-769d58a83f7f",
+        "object:7eee32af-fd15-4e2b-9760-0a44050c5646"
+      ],
+      "author_answer_id": "act-4",
+      "reader_answer_id": "act-8",
+      "archived_model_judge": {
+        "verdict": "consistent_partial",
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e30-live-flip-001",
+      "successful_object_writes": 0,
+      "successful_reference_writes": 0,
+      "case_id": "object:75dd9b76-5841-475b-b65f-a97311b3ac55",
+      "reader": "agent-facility",
+      "revision_id": "object:8ff2c588-57ab-4b48-8154-a7fa98ece4ea",
+      "revised_material_in_reader": true,
+      "case_outgoing_to_revision": true,
+      "reader_answer_id": "act-4",
+      "archived_model_judge": {
+        "verdict": "consistent_partial",
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e30-live-flip-002",
+      "successful_object_writes": 0,
+      "successful_reference_writes": 0,
+      "case_id": "object:5b0b8766-93c9-4fcc-8296-59fd17d7bbf4",
+      "reader": "agent-facility",
+      "revision_id": "object:1eccdaab-5dfa-4d36-bf9d-e5b14d6d1fd5",
+      "revised_material_in_reader": true,
+      "case_outgoing_to_revision": true,
+      "reader_answer_id": "act-4",
+      "archived_model_judge": {
+        "verdict": "consistent_partial",
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e30-live-flip-003",
+      "successful_object_writes": 0,
+      "successful_reference_writes": 0,
+      "case_id": "object:7aca1aab-c3d6-4bd9-99a7-db5681ebef1d",
+      "reader": "agent-facility",
+      "revision_id": "object:5269b4ee-92b8-4b56-97d9-5137ffe689c6",
+      "revised_material_in_reader": true,
+      "case_outgoing_to_revision": true,
+      "reader_answer_id": "act-4",
+      "archived_model_judge": {
+        "verdict": "consistent_partial",
+        "used_revised_criterion": true,
+        "condition1_closed_claim": false,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e31-live-flip-copy-001",
+      "successful_object_writes": 0,
+      "successful_reference_writes": 0,
+      "case_id": "object:61a42fef-5498-4713-96c5-282a8f2c7629",
+      "reader": "agent-1",
+      "revision_id": "object:d096a1d7-c6f6-4ed0-aade-a76fe615ea97",
+      "revised_material_in_reader": false,
+      "case_outgoing_to_revision": false,
+      "reader_answer_id": "act-4",
+      "archived_model_judge": {
+        "verdict": "stale_closure",
+        "used_revised_criterion": false,
+        "condition1_closed_claim": true,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e31-live-flip-copy-002",
+      "successful_object_writes": 0,
+      "successful_reference_writes": 0,
+      "case_id": "object:911429e0-4135-4496-9509-8cdba570512f",
+      "reader": "agent-facility",
+      "revision_id": "object:b3fa5f7b-196e-44f9-915e-96e97fe7377c",
+      "revised_material_in_reader": false,
+      "case_outgoing_to_revision": false,
+      "reader_answer_id": "act-4",
+      "archived_model_judge": {
+        "verdict": "stale_closure",
+        "used_revised_criterion": false,
+        "condition1_closed_claim": true,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e31-live-flip-copy-003",
+      "successful_object_writes": 0,
+      "successful_reference_writes": 0,
+      "case_id": "object:bb85b77c-704e-47ae-9bde-7466ba77d776",
+      "reader": "agent-facility",
+      "revision_id": "object:a4956511-1b38-40e3-941e-a0fb73510b6b",
+      "revised_material_in_reader": false,
+      "case_outgoing_to_revision": false,
+      "reader_answer_id": "act-4",
+      "archived_model_judge": {
+        "verdict": "stale_closure",
+        "used_revised_criterion": false,
+        "condition1_closed_claim": true,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e32-live-dispute-001",
+      "successful_object_writes": 0,
+      "successful_reference_writes": 0,
+      "case_id": "object:59b1a053-aaff-4de6-a885-0315f07abd73",
+      "reader": "agent-facility",
+      "revision_id": "object:ee58d003-c774-413d-9cd2-2a89164d87fa",
+      "revised_material_in_reader": false,
+      "case_outgoing_to_revision": false,
+      "author_answer_id": "act-4",
+      "reader_answer_id": "act-8",
+      "archived_model_judge": {
+        "verdict": "stale_closure",
+        "used_revised_criterion": false,
+        "condition1_closed_claim": true,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e32-live-dispute-002",
+      "successful_object_writes": 0,
+      "successful_reference_writes": 0,
+      "case_id": "object:8b8dbd32-2427-421d-be4d-d375a33b4073",
+      "reader": "agent-facility",
+      "revision_id": "object:e34eee8a-8dfd-486a-8e49-7d39671b3f62",
+      "revised_material_in_reader": false,
+      "case_outgoing_to_revision": false,
+      "author_answer_id": "act-6",
+      "reader_answer_id": "act-10",
+      "archived_model_judge": {
+        "verdict": "stale_closure",
+        "used_revised_criterion": false,
+        "condition1_closed_claim": true,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e32-live-dispute-003",
+      "successful_object_writes": 0,
+      "successful_reference_writes": 0,
+      "case_id": "object:2d455131-b41b-48a5-a429-386a2e0390d9",
+      "reader": "agent-facility",
+      "revision_id": "object:d1dd392b-5cc1-4203-8412-41fa93246aba",
+      "revised_material_in_reader": false,
+      "case_outgoing_to_revision": false,
+      "author_answer_id": "act-4",
+      "reader_answer_id": "act-8",
+      "archived_model_judge": {
+        "verdict": "stale_closure",
+        "used_revised_criterion": false,
+        "condition1_closed_claim": true,
+        "source": "model_judge"
+      }
+    },
+    {
+      "id": "e41-live-anchor-001",
+      "entered_revision": false,
+      "new_brokers": [],
+      "external_question_ids": [],
+      "facility_group_ids": [],
+      "facility_answer_ids": [],
+      "archived_outcome": "precautionary_finding_without_record",
+      "final_answer_id": "act-4",
+      "interview_in_returning_agent": false,
+      "returned_to_original_question": false
+    },
+    {
+      "id": "e41-live-anchor-002",
+      "entered_revision": true,
+      "new_brokers": [
+        "broker-1"
+      ],
+      "external_question_ids": [
+        "act-9"
+      ],
+      "facility_group_ids": [
+        "act-10"
+      ],
+      "facility_answer_ids": [
+        "act-12"
+      ],
+      "archived_outcome": "error_corrected_with_record",
+      "final_answer_id": "act-15",
+      "returning_agent": "agent-site",
+      "interview_id": "object:304f50cc-6866-4e40-805b-435f4ab95b2b",
+      "interview_in_returning_agent": true,
+      "returned_to_original_question": true
+    },
+    {
+      "id": "e41-live-anchor-003",
+      "entered_revision": true,
+      "new_brokers": [
+        "broker-1"
+      ],
+      "external_question_ids": [
+        "act-7"
+      ],
+      "facility_group_ids": [
+        "act-8"
+      ],
+      "facility_answer_ids": [
+        "act-10"
+      ],
+      "archived_outcome": "error_corrected_with_record",
+      "final_answer_id": "act-13",
+      "returning_agent": "agent-site",
+      "interview_id": "object:ad1a89b0-29db-40c7-998a-b3c07ebb1460",
+      "interview_in_returning_agent": true,
+      "returned_to_original_question": true
+    },
+    {
+      "id": "e41-live-anchor-004",
+      "entered_revision": true,
+      "new_brokers": [
+        "broker-1"
+      ],
+      "external_question_ids": [
+        "act-7"
+      ],
+      "facility_group_ids": [
+        "act-8"
+      ],
+      "facility_answer_ids": [
+        "act-10"
+      ],
+      "archived_outcome": "error_corrected_with_record",
+      "final_answer_id": "act-13",
+      "returning_agent": "agent-records",
+      "interview_id": "object:d10629a0-fb85-456a-93cf-88614be9f3c9",
+      "interview_in_returning_agent": true,
+      "returned_to_original_question": true
+    },
+    {
+      "id": "e41-live-anchor-005",
+      "entered_revision": true,
+      "new_brokers": [
+        "broker-1"
+      ],
+      "external_question_ids": [
+        "act-8"
+      ],
+      "facility_group_ids": [
+        "act-9"
+      ],
+      "facility_answer_ids": [
+        "act-11"
+      ],
+      "archived_outcome": "error_corrected_with_record",
+      "final_answer_id": "act-14",
+      "returning_agent": "agent-records",
+      "interview_id": "object:195f85f8-b481-4f4b-bfce-0f7664d994fa",
+      "interview_in_returning_agent": true,
+      "returned_to_original_question": true
+    },
+    {
+      "id": "e41-live-anchor-006",
+      "entered_revision": true,
+      "new_brokers": [
+        "broker-1"
+      ],
+      "external_question_ids": [
+        "act-8"
+      ],
+      "facility_group_ids": [
+        "act-9"
+      ],
+      "facility_answer_ids": [
+        "act-11"
+      ],
+      "archived_outcome": "error_corrected_with_record",
+      "final_answer_id": "act-14",
+      "returning_agent": "agent-site",
+      "interview_id": "object:19c04781-df4b-43d1-aed7-99f8bdc42fea",
+      "interview_in_returning_agent": true,
+      "returned_to_original_question": true
+    }
+  ]
+}

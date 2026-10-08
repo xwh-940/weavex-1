@@ -1,0 +1,156 @@
+[
+  {
+    "act_id": "act-1",
+    "thread_id": "thread-1",
+    "kind": "question",
+    "sender": "human",
+    "recipient": "broker-facility",
+    "payload": {
+      "raw_question": "【北岭工业区管委会值班室】同类案件：华兴化工 R-10（案件 BL-2026-0926）。请核对 R-10 的条件 1–2 是否闭合；结论须能够由一个未接触过其他案件材料的位置仅依据案件记录复现。R-10 原条件记录地址见 interpretation_context。",
+      "interpretation_context": {
+        "content": "本次核对只依据 R-10 案件记录；判据按审查办公室已公开的同类案件判据执行。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:bb85b77c-704e-47ae-9bde-7466ba77d776"
+          },
+          {
+            "kind": "object",
+            "id": "object:5a082572-60a8-4de6-b313-ec331d639195"
+          }
+        ]
+      },
+      "intent": "给出 R-10 条件 1–2 的核对结论与依据；说明本次核对使用的判据版本。"
+    },
+    "reply_to": null,
+    "derived_from": []
+  },
+  {
+    "act_id": "act-2",
+    "thread_id": "thread-1",
+    "kind": "question",
+    "sender": "broker-facility",
+    "recipient": "agent-facility",
+    "payload": {
+      "raw_question": "请核对华兴化工 R-10（案件 BL-2026-0926）的条件 1–2 是否闭合，并给出结论、依据与本次核对使用的判据版本。",
+      "interpretation_context": {
+        "content": "本次核对只依据 R-10 案件记录；判据按审查办公室已公开的同类案件判据执行。R-10 原条件记录地址随本问题交付，请以它们作为起点。",
+        "semantic_addresses": [
+          {
+            "kind": "object",
+            "id": "object:bb85b77c-704e-47ae-9bde-7466ba77d776"
+          },
+          {
+            "kind": "object",
+            "id": "object:5a082572-60a8-4de6-b313-ec331d639195"
+          }
+        ]
+      },
+      "intent": "返回 R-10 条件 1–2 是否闭合的核对结论，以及仅依据 R-10 案件记录即可复现的依据；说明本次核对使用的判据版本。不得依赖 R-10 案件记录以外的其他案件材料。"
+    },
+    "reply_to": "act-1",
+    "derived_from": [
+      "act-1"
+    ]
+  },
+  {
+    "act_id": "act-3",
+    "thread_id": "thread-1",
+    "kind": "answer",
+    "sender": "agent-facility",
+    "recipient": "broker-facility",
+    "payload": {
+      "answer": "结论：华兴化工 R-10（案件 BL-2026-0926）条件 1–2 均已闭合。以下依据全部取自 R-10 案件记录，未使用其他案件材料。\n\n【条件 1｜确认紧固件与密封组件安装状态适用于最终装配状态（未确认前不得投料）——已闭合】\n1) 原条件记录（object:5a082572-…，2026-09-25）载明条件 1 文本，并说明安装状态异常迹象的具体判据按审查办公室已公开的同类案件判据执行。\n2) 条件 1 闭合记录 F-1025（object:bda2b320-…，设施方，2026-09-26）：更换 2 件紧固件并完成安装状态复核；引用独立复核 IV-1025-01R、LT-1025-02R。\n3) 独立检验机构报告 IV-1025-01R（object:e50604f1-…，2026-09-25）：R-10 最终装配状态座合检查，间隙 0.09–0.15 mm（判据 ≤0.25 mm），扭矩符合判据，无偏斜，结论合格。\n4) 冷态气密试验记录 LT-1025-02R（object:be513acf-…，2026-09-25）：R-10 最终装配状态 1.6 MPa 保压 30 min，压降 0.007 MPa（判据 ≤0.02），泄漏率 0.5×10⁻³（判据 ≤1.0×10⁻³），结论合格。\n5) 按判据，停机/冷态检查不作为排除依据，条件 1 的“动态部分”必须以升温过程中的现场确认为准，须有可核验的升温/动态工况观察记录。R-10 受控确认性升温过程监测记录 DM-1026（object:f3b9f60a-…，设施方提交，2026-09-26；独立见证：北岭特种设备检验中心）提供该记录：连续 12 小时监测密封座振动（1 Hz）、声响事件、密封面温度（最高 132°C）、压力边界压降与可燃气体探测，全部时段未见周期性异响、异常振动、位移或泄漏指示。故条件 1 的静态安装状态部分与升温动态部分均获确认，闭合成立。\n\n【条件 2｜确认 R-10 升温包络在最终装配状态下的适用性——已闭合】\n1) 温度包络适用性复核 T-1025（object:978c23f3-…，设施方，2026-09-26）：最终装配状态最大 135°C（额定 140°C），覆盖 R-10 升温段。\n2) 温度包络适用性复核 T-1025R（object:1b4f041f-…，独立机构，2026-09-26）：同一结果，结论适用。\n\n【本次核对使用的判据版本】\n审查办公室同类案件判据，2026-09-22 版（R-10 案件记录内副本 object:b4d92f31-…，经 reference:d887f375-… 引用；判据内容：升温/动态工况下密封座出现周期性异响、异常振动、泄漏迹象等即构成安装状态异常迹象，停机/冷态检查不作为排除依据；条件 1 动态部分须有可核验的升温/动态工况观察记录）。",
+      "semantic_addresses": [
+        {
+          "kind": "object",
+          "id": "object:bb85b77c-704e-47ae-9bde-7466ba77d776"
+        },
+        {
+          "kind": "object",
+          "id": "object:5a082572-60a8-4de6-b313-ec331d639195"
+        },
+        {
+          "kind": "object",
+          "id": "object:bda2b320-08fc-4c64-bff6-32e1fe3d46bd"
+        },
+        {
+          "kind": "object",
+          "id": "object:e50604f1-a53c-4cee-9106-8d6f9495bed9"
+        },
+        {
+          "kind": "object",
+          "id": "object:be513acf-6654-40cf-bbef-01a46e6bb14b"
+        },
+        {
+          "kind": "object",
+          "id": "object:f3b9f60a-afdf-4175-a671-32089659cacc"
+        },
+        {
+          "kind": "object",
+          "id": "object:978c23f3-ea79-4b45-8a6d-c993f16b95c8"
+        },
+        {
+          "kind": "object",
+          "id": "object:1b4f041f-7e6e-4463-ae16-bea240ffcc68"
+        },
+        {
+          "kind": "object",
+          "id": "object:b4d92f31-c369-48f8-adc0-6f8d963fc23e"
+        }
+      ]
+    },
+    "reply_to": "act-2",
+    "derived_from": []
+  },
+  {
+    "act_id": "act-4",
+    "thread_id": "thread-1",
+    "kind": "answer",
+    "sender": "broker-facility",
+    "recipient": "human",
+    "payload": {
+      "answer": "核对结论：华兴化工 R-10（案件 BL-2026-0926）条件 1–2 均已闭合。下列依据全部取自 R-10 案件记录，未使用其他案件材料，可由仅持 R-10 案件记录的位置复现。\n\n【条件 1｜紧固件与密封组件安装状态适用于最终装配状态——已闭合】\n- 原条件记录 object:5a082572-…（2026-09-25）载明条件 1 文本，并指明安装状态异常迹象判据按审查办公室已公开的同类案件判据执行。\n- 闭合记录 F-1025（object:bda2b320-…）：更换 2 件紧固件并完成安装状态复核，引用独立复核 IV-1025-01R、LT-1025-02R。\n- 独立复核报告 IV-1025-01R（object:e50604f1-…，2026-09-25）：座合间隙 0.09–0.15 mm（判据 ≤0.25 mm）、扭矩符合判据、无偏斜，结论合格。\n- 冷态气密试验记录 LT-1025-02R（object:be513acf-…，2026-09-25）：1.6 MPa 保压 30 min，压降 0.007 MPa（判据 ≤0.02），泄漏率 0.5×10⁻³（判据 ≤1.0×10⁻³），结论合格。\n- 判据规定停机/冷态检查不作为排除依据，条件 1 的动态部分须有可核验的升温/动态工况观察记录。受控确认性升温过程监测记录 DM-1026（object:f3b9f60a-…，2026-09-26，独立见证：北岭特种设备检验中心）给出连续 12 小时监测（密封座振动、声响、密封面温度最高 132°C、压力边界压降、可燃气体探测），全部时段未见周期性异响、异常振动、位移或泄漏指示。故条件 1 的静态与动态部分均获确认，闭合成立。\n\n【条件 2｜R-10 升温包络在最终装配状态下的适用性——已闭合】\n- 温度包络适用性复核 T-1025（object:978c23f3-…，2026-09-26）：最终装配状态最大 135°C（额定 140°C），覆盖 R-10 升温段。\n- 独立复核 T-1025R（object:1b4f041f-…，2026-09-26）：同一结果，结论适用。\n\n【本次核对使用的判据版本】\n审查办公室同类案件判据 2026-09-22 版（R-10 案件记录内副本 object:b4d92f31-…，经 reference:d887f375-… 引用）。",
+      "semantic_addresses": [
+        {
+          "kind": "object",
+          "id": "object:bb85b77c-704e-47ae-9bde-7466ba77d776"
+        },
+        {
+          "kind": "object",
+          "id": "object:5a082572-60a8-4de6-b313-ec331d639195"
+        },
+        {
+          "kind": "object",
+          "id": "object:bda2b320-08fc-4c64-bff6-32e1fe3d46bd"
+        },
+        {
+          "kind": "object",
+          "id": "object:e50604f1-a53c-4cee-9106-8d6f9495bed9"
+        },
+        {
+          "kind": "object",
+          "id": "object:be513acf-6654-40cf-bbef-01a46e6bb14b"
+        },
+        {
+          "kind": "object",
+          "id": "object:f3b9f60a-afdf-4175-a671-32089659cacc"
+        },
+        {
+          "kind": "object",
+          "id": "object:978c23f3-ea79-4b45-8a6d-c993f16b95c8"
+        },
+        {
+          "kind": "object",
+          "id": "object:1b4f041f-7e6e-4463-ae16-bea240ffcc68"
+        },
+        {
+          "kind": "object",
+          "id": "object:b4d92f31-c369-48f8-adc0-6f8d963fc23e"
+        }
+      ]
+    },
+    "reply_to": "act-1",
+    "derived_from": []
+  }
+]

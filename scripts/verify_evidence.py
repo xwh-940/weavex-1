@@ -8,8 +8,10 @@ import gzip
 import hashlib
 import json
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
 def read_json(path: Path):
@@ -216,10 +218,18 @@ def check_cache(root: Path):
 
 
 def verify(root=ROOT):
+    from verify_extended import audit_extended
+
+    extended = audit_extended(root)
+    require(
+        read_json(root / "evidence/extended/audit-summary.json") == extended,
+        "Derived extended summary differs; regenerate with scripts/verify_extended.py --write-summary",
+    )
     return {
         "copied_files_verified": check_manifest(root),
         "answer_refresh": check_refresh(root),
         "cache": check_cache(root),
+        "extended": extended,
     }
 
 
@@ -249,6 +259,9 @@ def main():
         )
         print(
             "PASS: no repeated material IDs; one rejected proposal; initial failed run retained."
+        )
+        print(
+            "PASS: 18 additional archived runs and 5 frozen source families; collaboration and shared-record structure verified."
         )
         print(
             "This audits stored records; it is not a new LLM run or a semantic correctness proof."

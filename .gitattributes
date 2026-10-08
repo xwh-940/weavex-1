@@ -1,0 +1,3 @@
+# Copied evidence and source hashes refer to exact bytes, including line endings.
+# Disable automatic EOL conversion on checkout; normal text diffs remain enabled.
+* -text

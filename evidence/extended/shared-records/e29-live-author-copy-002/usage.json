@@ -1,0 +1,8 @@
+{
+  "model_calls": 45,
+  "wall_seconds": 447.5024680997594,
+  "prompt_tokens": 1096154,
+  "completion_tokens": 101675,
+  "usage_missing_calls": 0,
+  "task_calls": 0
+}

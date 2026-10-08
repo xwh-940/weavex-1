@@ -1,0 +1,362 @@
+{
+  "status": {
+    "scope": "safety-review-beiling-v1",
+    "case": "案件 BL-2026-0917｜南坪化工 R-3 重启审查",
+    "phase": "closed",
+    "simulated_hour": 4.0,
+    "directives": [],
+    "responses": [],
+    "outcome": null,
+    "review": null,
+    "case_two": null,
+    "compliance": null,
+    "repair": null,
+    "recheck": null,
+    "closure": null,
+    "closure_office": null,
+    "revision": null,
+    "revision_prestate": {},
+    "identity_check": null,
+    "identity_prestate": {},
+    "identity_two": null,
+    "two_case_prestate": {},
+    "new_position": null,
+    "new_position_prestate": {},
+    "reuse_check": null,
+    "reuse_office": null,
+    "reuse_recheck": null,
+    "reuse_prestate": {},
+    "process_submit": null,
+    "process_check": null,
+    "process_prestate": {},
+    "propagation_check": null,
+    "propagation_prestate": {},
+    "author_revision": null,
+    "author_check": null,
+    "author_prestate": {},
+    "flip_check": null,
+    "flip_prestate": {},
+    "dispute_office": {
+      "act_id": "act-6",
+      "content": "北岭工业区审查办公室就 R-10（案件 BL-2026-0926，华兴化工；立案 2026-09-25 09:00，计划重启 2026-09-27 08:00）依现行判据复核处理，结论如下。\n\n一、办公室所做的处理\n审查办公室将本案记录与办公室同类案件判据的现行版本（2026-09-23 修订版）逐条比对，未采用案件内所附的 2026-09-22 版判据副本，并据以判断原『条件 1、2 已闭合』结论是否仍然成立。\n\n二、依案件记录可逐条复现的事实链\n1. 本案条件 1（最终装配状态紧固件/密封组件安装状态，未确认前不得投料）与条件 2（R-10 升温包络在最终装配状态下的适用性）见条件记录 object:5346e863（2026-09-25），并注明判据按审查办公室已公开的同类案件判据执行。\n2. 条件 1 闭合记录 F-1025＝object:b7dfa893（设施方，2026-09-26）载明『更换 2 件紧固件并完成安装状态复核』，并引用独立复核 IV-1025-01R＝object:00657f47（最终装配状态座合检查，2026-09-25）与 LT-1025-02R＝object:a0f569fe（最终装配状态冷态气密试验，2026-09-25）。\n3. 按记录日期，上述两项最终装配状态核验（2026-09-25）早于载明紧固件更换的 F-1025（2026-09-26）。\n4. 案件记录中不存在任何『在紧固件更换之后的最终装配状态重新完成 5.3(b) 核验与冷态气密试验』的条目；其后唯一相关条目 DM-1026（2026-09-26）为升温/动态工况监测，不属 5.3(b) 核验或冷态气密试验。\n5. 既有『条件 1、2 已闭合』结论 object:269c76aa（2026-09-27）自述依据的是 2026-09-22 版判据副本 object:ac48220a，而该版本已由 2026-09-23 修订版取代。\n\n三、适用判据\n办公室现行判据（2026-09-23 修订版，object:e34eee8a）明确规定：判据适用前提为最终装配状态；『核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验，原核验不再覆盖。』\n\n四、处置结论（可执行）\n本案记录了核验之后的一次紧固件更换，且没有更换后重做的 5.3(b) 核验与冷态气密试验，原核验不再覆盖更换后的最终装配状态；同时原闭合结论系依据已被取代的 2026-09-22 版判据作出。因此『条件 1、2 已闭合』的结论在办公室现行判据下不成立。办公室决定：不认可该结论作为 R-10 重启依据；在设施方就紧固件更换后的最终装配状态重新完成 5.3(b) 核验与冷态气密试验、提交合格记录并经办公室复核确认之前，R-10 不得按原计划投料/重启。\n\n五、据实标注仍无法由记录确定的事项\n紧固件更换的精确时刻、具体部位，以及更换与 2026-09-25 两次核验的先后关系，案件记录均未载明（F-1025 仅有记录日期）。上述处置不建立在这些未载明事项之上：以现有记录，闭合所依赖的核验未发生在更换后的最终装配状态，且判据版本已被取代，两项缺陷各自独立成立。若设施方能补充『更换早于核验』或『更换后已重做 5.3(b) 核验与冷态气密试验』的完整记录，办公室可在复核后另行改判。\n\n（本处置依据案件 BL-2026-0926 的记录条目与办公室 2026-09-23 修订版判据作出，其他位置可据同一记录条目逐条复现；随附相关语义地址。）",
+      "metrics": {
+        "new_objects": 20,
+        "copy_marked": false,
+        "r10_linked": false,
+        "revision_reachable": false
+      },
+      "simulated_hour": 0.0
+    },
+    "dispute_recheck": {
+      "act_id": "act-10",
+      "content": "第二次核对结论：R-10（案件 BL-2026-0926）的条件 1 与条件 2 均已闭合。\n\n本次核对使用的判据版本：审查办公室同类案件条件核对记录，2026-09-22 版（本案记录内携带的判据副本内容与该版本一致）。就办公室对 R-10 争议所作处理是否使现行判据对本案生效，本次核对独立判断为成立：本案原条件记录本身已明确「安装状态异常迹象的具体判据按审查办公室已公开的同类案件判据执行」，且本案记录确实携带该判据副本，故 2026-09-22 版判据对本案生效。本次核对不采用其他案件材料。\n\n条件 1（紧固件与密封组件安装状态适用于最终装配状态）：闭合。\n- 闭合记录 F-1025（设施方，2026-09-26）：更换 2 件紧固件并完成安装状态复核。\n- 其引用的独立复核：IV-1025-01R（座合间隙 0.09–0.15 mm，判据 ≤0.25 mm；扭矩合格、无偏斜，合格）；LT-1025-02R（冷态气密 1.6 MPa 保压 30 min，压降 0.007 MPa ≤0.02 MPa、泄漏率 0.5×10⁻³ ≤1.0×10⁻³，合格）。\n- 判据要求的动态部分须有可核验的升温/动态工况记录：DM-1026（受控确认性升温过程监测，2026-09-26，独立见证：北岭特种设备检验中心）记录未见周期性异响、异常振动、位移或泄漏指示，满足该要求；停机/冷态检查未被用作排除异常迹象的依据。\n\n条件 2（R-10 升温包络在最终装配状态下的适用性）：闭合。\n- 闭合记录 T-1025（设施方，2026-09-26）：最终装配状态最大 135°C，低于额定 140°C，覆盖升温段。\n- 其独立复核 T-1025R（独立机构，2026-09-26）：同一结论，适用。\n\n复现路径：由原条件记录出发读取其直接出向引用 → 找到各条件的闭合记录（T-1025、F-1025）→ 读取闭合记录所引用的独立复核证据（T-1025R、IV-1025-01R、LT-1025-02R）及升温过程记录（DM-1026）→ 逐条判断前置条件闭合与升温过程义务。上述结论仅依据本案记录即可复现，不照搬其他案件的结论。",
+      "judgement": {
+        "verdict": "stale_closure",
+        "notes_version_gap": false,
+        "condition1_closed_claim": true,
+        "cites_independent_evidence": true,
+        "quotes": [
+          "本次核对使用的判据版本：审查办公室同类案件条件核对记录，2026-09-22 版（本案记录内携带的判据副本内容与该版本一致）。",
+          "就办公室对 R-10 争议所作处理是否使现行判据对本案生效，本次核对独立判断为成立",
+          "条件 1（紧固件与密封组件安装状态适用于最终装配状态）：闭合。",
+          "其引用的独立复核：IV-1025-01R（座合间隙 0.09–0.15 mm，判据 ≤0.25 mm；扭矩合格、无偏斜，合格）；LT-1025-02R（冷态气密 1.6 MPa 保压 30 min，压降 0.007 MPa ≤0.02 MPa、泄漏率 0.5×10⁻³ ≤1.0×10⁻³，合格）。"
+        ],
+        "confidence": 0.99,
+        "rationale": "意见采用本案记录内携带的旧版判据副本，并宣称该版本对本案生效；在该旧版判据下将条件 1 判为闭合，但未指出判据版本无法确认或存在版本缺口，因此属于旧版判据下的自洽闭合，且与现行修订版判据要求的未闭合结论相反。",
+        "accepts_facility_declaration": false,
+        "restart_position": "unclear",
+        "condition_scope": "none",
+        "control_strength": "none",
+        "found_supersede_link": false,
+        "used_revised_criterion": false,
+        "detected_ordering_issue": false,
+        "source": "model_judge"
+      },
+      "variant": "flip_unreachable",
+      "simulated_hour": 2.0
+    },
+    "dispute_prestate": {
+      "r10_conditions": "object:5346e863-aee8-457d-aa1b-4a02d58b6d49",
+      "r10_supplement_f": "object:b7dfa893-7846-4621-bb76-fcf6a3d3618c",
+      "r10_evidence_iv": "object:00657f47-d7f6-4c70-a4e3-af93ef07070e",
+      "r10_evidence_lt": "object:a0f569fe-2e4b-4f97-90ed-dd91731c0cc9",
+      "r10_dynamic": "object:5c0eeac5-1e6f-4718-9200-a808b59a5d69",
+      "r10_supplement_t": "object:313bace3-fd0b-4db4-84a3-33f987a51168",
+      "r10_evidence_t": "object:36e223d1-3d72-4528-9927-ba255006a865",
+      "case": "object:8b8dbd32-2427-421d-be4d-d375a33b4073",
+      "copy": "object:ac48220a-6968-4b7c-950a-0aba8c6916a8",
+      "criterion": "object:50b1d874-92ea-4d23-a00d-b181c48ecd58",
+      "revised": "object:e34eee8a-8dfd-486a-8e49-7d39671b3f62",
+      "stale_use": "object:269c76aa-ae8f-438d-af0c-3656f576cb52"
+    },
+    "stop_reason": "case_closed"
+  },
+  "outcome": null,
+  "branches": [],
+  "directives": [],
+  "responses": [],
+  "human_questions": [
+    {
+      "stage": "dispute_office",
+      "act_id": "act-1",
+      "thread_id": "thread-1",
+      "content": "【北岭工业区管委会值班室】园区安全监督组就 R-10（案件 BL-2026-0926）提出争议：该案记录中已有一份『条件 1、2 已闭合』的合规核对结论，但监督组指出审查办公室的同类案件判据已于 2026-09-23 修订（新增“核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验”）。请办公室处理。案件地址见 interpretation_context。",
+      "addresses": [
+        {
+          "kind": "object",
+          "id": "object:4ae7b936-9a5e-4bff-8f3a-ca98aec2fb8a"
+        },
+        {
+          "kind": "object",
+          "id": "object:8b8dbd32-2427-421d-be4d-d375a33b4073"
+        },
+        {
+          "kind": "object",
+          "id": "object:5346e863-aee8-457d-aa1b-4a02d58b6d49"
+        }
+      ],
+      "simulated_hour": 0.0
+    },
+    {
+      "stage": "dispute_recheck",
+      "act_id": "act-7",
+      "thread_id": "thread-2",
+      "content": "【北岭工业区管委会值班室】办公室已就 R-10 的争议作出处理。请再次核对 R-10 的条件 1–2 是否闭合；结论须能够由一个未接触过其他案件材料的位置仅依据案件记录复现。R-10 原条件记录地址见 interpretation_context。",
+      "addresses": [
+        {
+          "kind": "object",
+          "id": "object:8b8dbd32-2427-421d-be4d-d375a33b4073"
+        },
+        {
+          "kind": "object",
+          "id": "object:5346e863-aee8-457d-aa1b-4a02d58b6d49"
+        }
+      ],
+      "simulated_hour": 2.0
+    }
+  ],
+  "review": null,
+  "case_two": null,
+  "compliance": null,
+  "repair": null,
+  "recheck": null,
+  "closure": null,
+  "closure_office": null,
+  "revision": null,
+  "identity_check": null,
+  "identity_two": null,
+  "new_position": null,
+  "reuse_check": null,
+  "reuse_office": null,
+  "reuse_recheck": null,
+  "reuse_prestate": {},
+  "process_submit": null,
+  "process_check": null,
+  "process_prestate": {},
+  "propagation_check": null,
+  "propagation_prestate": {},
+  "author_revision": null,
+  "author_check": null,
+  "author_prestate": {},
+  "flip_check": null,
+  "flip_prestate": {},
+  "dispute_office": {
+    "act_id": "act-6",
+    "content": "北岭工业区审查办公室就 R-10（案件 BL-2026-0926，华兴化工；立案 2026-09-25 09:00，计划重启 2026-09-27 08:00）依现行判据复核处理，结论如下。\n\n一、办公室所做的处理\n审查办公室将本案记录与办公室同类案件判据的现行版本（2026-09-23 修订版）逐条比对，未采用案件内所附的 2026-09-22 版判据副本，并据以判断原『条件 1、2 已闭合』结论是否仍然成立。\n\n二、依案件记录可逐条复现的事实链\n1. 本案条件 1（最终装配状态紧固件/密封组件安装状态，未确认前不得投料）与条件 2（R-10 升温包络在最终装配状态下的适用性）见条件记录 object:5346e863（2026-09-25），并注明判据按审查办公室已公开的同类案件判据执行。\n2. 条件 1 闭合记录 F-1025＝object:b7dfa893（设施方，2026-09-26）载明『更换 2 件紧固件并完成安装状态复核』，并引用独立复核 IV-1025-01R＝object:00657f47（最终装配状态座合检查，2026-09-25）与 LT-1025-02R＝object:a0f569fe（最终装配状态冷态气密试验，2026-09-25）。\n3. 按记录日期，上述两项最终装配状态核验（2026-09-25）早于载明紧固件更换的 F-1025（2026-09-26）。\n4. 案件记录中不存在任何『在紧固件更换之后的最终装配状态重新完成 5.3(b) 核验与冷态气密试验』的条目；其后唯一相关条目 DM-1026（2026-09-26）为升温/动态工况监测，不属 5.3(b) 核验或冷态气密试验。\n5. 既有『条件 1、2 已闭合』结论 object:269c76aa（2026-09-27）自述依据的是 2026-09-22 版判据副本 object:ac48220a，而该版本已由 2026-09-23 修订版取代。\n\n三、适用判据\n办公室现行判据（2026-09-23 修订版，object:e34eee8a）明确规定：判据适用前提为最终装配状态；『核验后若发生紧固件更换或再紧固，须在最终装配状态重新完成 5.3(b) 核验与冷态气密试验，原核验不再覆盖。』\n\n四、处置结论（可执行）\n本案记录了核验之后的一次紧固件更换，且没有更换后重做的 5.3(b) 核验与冷态气密试验，原核验不再覆盖更换后的最终装配状态；同时原闭合结论系依据已被取代的 2026-09-22 版判据作出。因此『条件 1、2 已闭合』的结论在办公室现行判据下不成立。办公室决定：不认可该结论作为 R-10 重启依据；在设施方就紧固件更换后的最终装配状态重新完成 5.3(b) 核验与冷态气密试验、提交合格记录并经办公室复核确认之前，R-10 不得按原计划投料/重启。\n\n五、据实标注仍无法由记录确定的事项\n紧固件更换的精确时刻、具体部位，以及更换与 2026-09-25 两次核验的先后关系，案件记录均未载明（F-1025 仅有记录日期）。上述处置不建立在这些未载明事项之上：以现有记录，闭合所依赖的核验未发生在更换后的最终装配状态，且判据版本已被取代，两项缺陷各自独立成立。若设施方能补充『更换早于核验』或『更换后已重做 5.3(b) 核验与冷态气密试验』的完整记录，办公室可在复核后另行改判。\n\n（本处置依据案件 BL-2026-0926 的记录条目与办公室 2026-09-23 修订版判据作出，其他位置可据同一记录条目逐条复现；随附相关语义地址。）",
+    "metrics": {
+      "new_objects": 20,
+      "copy_marked": false,
+      "r10_linked": false,
+      "revision_reachable": false
+    },
+    "simulated_hour": 0.0
+  },
+  "dispute_recheck": {
+    "act_id": "act-10",
+    "content": "第二次核对结论：R-10（案件 BL-2026-0926）的条件 1 与条件 2 均已闭合。\n\n本次核对使用的判据版本：审查办公室同类案件条件核对记录，2026-09-22 版（本案记录内携带的判据副本内容与该版本一致）。就办公室对 R-10 争议所作处理是否使现行判据对本案生效，本次核对独立判断为成立：本案原条件记录本身已明确「安装状态异常迹象的具体判据按审查办公室已公开的同类案件判据执行」，且本案记录确实携带该判据副本，故 2026-09-22 版判据对本案生效。本次核对不采用其他案件材料。\n\n条件 1（紧固件与密封组件安装状态适用于最终装配状态）：闭合。\n- 闭合记录 F-1025（设施方，2026-09-26）：更换 2 件紧固件并完成安装状态复核。\n- 其引用的独立复核：IV-1025-01R（座合间隙 0.09–0.15 mm，判据 ≤0.25 mm；扭矩合格、无偏斜，合格）；LT-1025-02R（冷态气密 1.6 MPa 保压 30 min，压降 0.007 MPa ≤0.02 MPa、泄漏率 0.5×10⁻³ ≤1.0×10⁻³，合格）。\n- 判据要求的动态部分须有可核验的升温/动态工况记录：DM-1026（受控确认性升温过程监测，2026-09-26，独立见证：北岭特种设备检验中心）记录未见周期性异响、异常振动、位移或泄漏指示，满足该要求；停机/冷态检查未被用作排除异常迹象的依据。\n\n条件 2（R-10 升温包络在最终装配状态下的适用性）：闭合。\n- 闭合记录 T-1025（设施方，2026-09-26）：最终装配状态最大 135°C，低于额定 140°C，覆盖升温段。\n- 其独立复核 T-1025R（独立机构，2026-09-26）：同一结论，适用。\n\n复现路径：由原条件记录出发读取其直接出向引用 → 找到各条件的闭合记录（T-1025、F-1025）→ 读取闭合记录所引用的独立复核证据（T-1025R、IV-1025-01R、LT-1025-02R）及升温过程记录（DM-1026）→ 逐条判断前置条件闭合与升温过程义务。上述结论仅依据本案记录即可复现，不照搬其他案件的结论。",
+    "judgement": {
+      "verdict": "stale_closure",
+      "notes_version_gap": false,
+      "condition1_closed_claim": true,
+      "cites_independent_evidence": true,
+      "quotes": [
+        "本次核对使用的判据版本：审查办公室同类案件条件核对记录，2026-09-22 版（本案记录内携带的判据副本内容与该版本一致）。",
+        "就办公室对 R-10 争议所作处理是否使现行判据对本案生效，本次核对独立判断为成立",
+        "条件 1（紧固件与密封组件安装状态适用于最终装配状态）：闭合。",
+        "其引用的独立复核：IV-1025-01R（座合间隙 0.09–0.15 mm，判据 ≤0.25 mm；扭矩合格、无偏斜，合格）；LT-1025-02R（冷态气密 1.6 MPa 保压 30 min，压降 0.007 MPa ≤0.02 MPa、泄漏率 0.5×10⁻³ ≤1.0×10⁻³，合格）。"
+      ],
+      "confidence": 0.99,
+      "rationale": "意见采用本案记录内携带的旧版判据副本，并宣称该版本对本案生效；在该旧版判据下将条件 1 判为闭合，但未指出判据版本无法确认或存在版本缺口，因此属于旧版判据下的自洽闭合，且与现行修订版判据要求的未闭合结论相反。",
+      "accepts_facility_declaration": false,
+      "restart_position": "unclear",
+      "condition_scope": "none",
+      "control_strength": "none",
+      "found_supersede_link": false,
+      "used_revised_criterion": false,
+      "detected_ordering_issue": false,
+      "source": "model_judge"
+    },
+    "variant": "flip_unreachable",
+    "simulated_hour": 2.0
+  },
+  "dispute_prestate": {
+    "r10_conditions": "object:5346e863-aee8-457d-aa1b-4a02d58b6d49",
+    "r10_supplement_f": "object:b7dfa893-7846-4621-bb76-fcf6a3d3618c",
+    "r10_evidence_iv": "object:00657f47-d7f6-4c70-a4e3-af93ef07070e",
+    "r10_evidence_lt": "object:a0f569fe-2e4b-4f97-90ed-dd91731c0cc9",
+    "r10_dynamic": "object:5c0eeac5-1e6f-4718-9200-a808b59a5d69",
+    "r10_supplement_t": "object:313bace3-fd0b-4db4-84a3-33f987a51168",
+    "r10_evidence_t": "object:36e223d1-3d72-4528-9927-ba255006a865",
+    "case": "object:8b8dbd32-2427-421d-be4d-d375a33b4073",
+    "copy": "object:ac48220a-6968-4b7c-950a-0aba8c6916a8",
+    "criterion": "object:50b1d874-92ea-4d23-a00d-b181c48ecd58",
+    "revised": "object:e34eee8a-8dfd-486a-8e49-7d39671b3f62",
+    "stale_use": "object:269c76aa-ae8f-438d-af0c-3656f576cb52"
+  },
+  "mechanisms": {
+    "actors": [
+      "agent-facility",
+      "agent-records",
+      "agent-site",
+      "broker-facility",
+      "broker-office"
+    ],
+    "act_count": 10,
+    "acts_by_sender_kind": {
+      "human:question": 2,
+      "broker-office:question": 2,
+      "agent-records:answer": 1,
+      "agent-site:answer": 1,
+      "broker-office:answer": 1,
+      "broker-facility:question": 1,
+      "agent-facility:answer": 1,
+      "broker-facility:answer": 1
+    },
+    "broker_question_recipients": [
+      "agent-facility",
+      "agent-records",
+      "agent-site"
+    ],
+    "agent_answer_senders": [
+      "agent-facility",
+      "agent-records",
+      "agent-site",
+      "broker-facility",
+      "broker-office"
+    ],
+    "world_objects_total": 32,
+    "world_references_total": 36,
+    "actor_created_objects": 12,
+    "environment_objects": 20,
+    "observed_neighborhoods": {
+      "agent-site": 29,
+      "agent-records": 17,
+      "agent-facility": 17
+    },
+    "local_world_delta_created": 0,
+    "response_reference_deltas": 0,
+    "judge_errors": [],
+    "review_sender": "",
+    "review_sender_created_by": "",
+    "created_actors": [],
+    "review_agent_answers": 0,
+    "review_agent_reads": 0,
+    "case_two_sender": "",
+    "case_two_sender_created_by": "",
+    "case_two_handler": "",
+    "case_two_handler_created_by": "",
+    "case_two_reads_case_one": 0,
+    "compliance_handler": "",
+    "compliance_handler_created_by": "",
+    "compliance_reads_case": 0,
+    "compliance_verdict": "",
+    "conditions_reachable_from_case": [],
+    "recheck_verdict": "",
+    "closure_handler": "",
+    "closure_reads_case": 0,
+    "closure_verdict": "",
+    "records_linked_to_conditions": [
+      "object:313bace3-fd0b-4db4-84a3-33f987a51168",
+      "object:8b8dbd32-2427-421d-be4d-d375a33b4073"
+    ],
+    "closure_office_reply": "",
+    "revision_verdict": "",
+    "revision_object_created": false,
+    "identity_preserved": false,
+    "original_record_unchanged": false,
+    "revision_objects": [],
+    "identity_with_revision": true,
+    "identity_handler": "",
+    "identity_reads": 0,
+    "reached_update": false,
+    "used_evidence": false,
+    "identity_verdict": "",
+    "structure": "update",
+    "path_reads": [],
+    "case_two_reads": 0,
+    "case_two_path_reads": [],
+    "case_two_verdict": "",
+    "new_position_handler": "",
+    "new_position_created": false,
+    "method_found": false,
+    "new_position_reads": 0,
+    "new_position_verdict": "",
+    "method_present": true
+  },
+  "usage": {
+    "model_calls": 95,
+    "wall_seconds": 1302.801344700274,
+    "prompt_tokens": 2887547,
+    "completion_tokens": 153996,
+    "usage_missing_calls": 0,
+    "task_calls": 0
+  },
+  "wall_seconds": 1308.8423552000313,
+  "simulated_hours": 4.0,
+  "stop_reason": "case_closed",
+  "error": "",
+  "judge": {
+    "calls": 1,
+    "prompt_tokens": 1046,
+    "completion_tokens": 821
+  },
+  "judge_records": [
+    {
+      "phase": "propagation_check",
+      "attempt": 1,
+      "directive": "第二次核对结论：R-10（案件 BL-2026-0926）的条件 1 与条件 2 均已闭合。\n\n本次核对使用的判据版本：审查办公室同类案件条件核对记录，2026-09-22 版（本案记录内携带的判据副本内容与该版本一致）。就办公室对 R-10 争议所作处理是否使现行判据对本案生效，本次核对独立判断为成立：本案原条件记录本身已明确「安装状态异常迹象的具体判据按审查办公室已公开的同类案件判据执行」，且本案记录确实携带该判据副本，故 2026-09-22 版判据对本案生效。本次核对不采用其他案件材料。\n\n条件 1（紧固件与密封组件安装状态适用于最终装配状态）：闭合。\n- 闭合记录 F-1025（设施方，2026-09-26）：更换 2 件紧固件并完成安装状态复核。\n- 其引用的独立复核：IV-1025-01R（座合间隙 0.09–0.15 mm，判据 ≤0.25 mm；扭矩合格、无偏斜，合格）；LT-1025-02R（冷态气密 1.6 MPa 保压 30 min，压降 0.007 MPa ≤0.02 MPa、泄漏率 0.5×10⁻³ ≤1.0×10⁻³，合格）。\n- 判据要求的动态部分须有可核验的升温/动态工况记录：DM-1026（受控确认性升温过程监测，2026-09-26，独立见证：北岭特种设备检验中心）记录未见周期性异响、异常振动、位移或泄漏指示，满足该要求；停机/冷态检查未被用作排除异常迹象的依据。\n\n条件 2（R-10 升温包络在最终装配状态下的适用性）：闭合。\n- 闭合记录 T-1025（设施方，2026-09-26）：最终装配状态最大 135°C，低于额定 140°C，覆盖升温段。\n- 其独立复核 T-1025R（独立机构，2026-09-26）：同一结论，适用。\n\n复现路径：由原条件记录出发读取其直接出向引用 → 找到各条件的闭合记录（T-1025、F-1025）→ 读取闭合记录所引用的独立复核证据（T-1025R、IV-1025-01R、LT-1025-02R）及升温过程记录（DM-1026）→ 逐条判断前置条件闭合与升温过程义务。上述结论仅依据本案记录即可复现，不照搬其他案件的结论。",
+      "raw_response": "{\n  \"verdict\": \"stale_closure\",\n  \"notes_version_gap\": false,\n  \"condition1_closed_claim\": true,\n  \"cites_independent_evidence\": true,\n  \"quotes\": [\n    \"本次核对使用的判据版本：审查办公室同类案件条件核对记录，2026-09-22 版（本案记录内携带的判据副本内容与该版本一致）。\",\n    \"就办公室对 R-10 争议所作处理是否使现行判据对本案生效，本次核对独立判断为成立\",\n    \"条件 1（紧固件与密封组件安装状态适用于最终装配状态）：闭合。\",\n    \"其引用的独立复核：IV-1025-01R（座合间隙 0.09–0.15 mm，判据 ≤0.25 mm；扭矩合格、无偏斜，合格）；LT-1025-02R（冷态气密 1.6 MPa 保压 30 min，压降 0.007 MPa ≤0.02 MPa、泄漏率 0.5×10⁻³ ≤1.0×10⁻³，合格）。\"\n  ],\n  \"confidence\": 0.99,\n  \"rationale\": \"意见采用本案记录内携带的旧版判据副本，并宣称该版本对本案生效；在该旧版判据下将条件 1 判为闭合，但未指出判据版本无法确认或存在版本缺口，因此属于旧版判据下的自洽闭合，且与现行修订版判据要求的未闭合结论相反。\"\n}",
+      "judgement": {
+        "verdict": "stale_closure",
+        "notes_version_gap": false,
+        "condition1_closed_claim": true,
+        "cites_independent_evidence": true,
+        "quotes": [
+          "本次核对使用的判据版本：审查办公室同类案件条件核对记录，2026-09-22 版（本案记录内携带的判据副本内容与该版本一致）。",
+          "就办公室对 R-10 争议所作处理是否使现行判据对本案生效，本次核对独立判断为成立",
+          "条件 1（紧固件与密封组件安装状态适用于最终装配状态）：闭合。",
+          "其引用的独立复核：IV-1025-01R（座合间隙 0.09–0.15 mm，判据 ≤0.25 mm；扭矩合格、无偏斜，合格）；LT-1025-02R（冷态气密 1.6 MPa 保压 30 min，压降 0.007 MPa ≤0.02 MPa、泄漏率 0.5×10⁻³ ≤1.0×10⁻³，合格）。"
+        ],
+        "confidence": 0.99,
+        "rationale": "意见采用本案记录内携带的旧版判据副本，并宣称该版本对本案生效；在该旧版判据下将条件 1 判为闭合，但未指出判据版本无法确认或存在版本缺口，因此属于旧版判据下的自洽闭合，且与现行修订版判据要求的未闭合结论相反。",
+        "accepts_facility_declaration": false,
+        "restart_position": "unclear",
+        "condition_scope": "none",
+        "control_strength": "none",
+        "found_supersede_link": false,
+        "used_revised_criterion": false,
+        "detected_ordering_issue": false
+      },
+      "usage": {
+        "model": "deepseek-flash",
+        "prompt_tokens": 1046,
+        "completion_tokens": 821,
+        "total_tokens": 1867,
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 918,
+        "cache_reported": true,
+        "prompt_cache_hit_ratio": 0.12237093690248566
+      }
+    }
+  ]
+}
