@@ -12,8 +12,8 @@ import asyncio
 import hashlib
 import json
 import os
-from pathlib import Path
 import sys
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
@@ -162,7 +162,7 @@ async def run_case(arm: str, model):
         # This is an external fixture action, not a claimed model-created relation.
         runtime.publish_reference_change("external-fixture", reference.reference_id)
         await runtime.run_until_idle(max_steps=20)
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001 - Archive backend failures and return a failed result.
         error = f"{type(exc).__name__}: {exc}"
     answers = list(runtime.inquiry.direct_answers(root))
     retained = [
@@ -232,6 +232,7 @@ async def main(args):
     try:
         if args.live:
             from openai import AsyncOpenAI
+
             from weavex.provider import OpenAICompatibleModel
 
             api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()

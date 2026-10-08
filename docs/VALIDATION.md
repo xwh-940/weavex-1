@@ -1,4 +1,4 @@
-# 本地验证记录
+# 验证记录
 
 验证日期：2026-10-08。平台：Windows，Python 3.12.3（Conda 环境）。所有执行均在独立副本中完成，没有运行真实模型调用。
 
@@ -54,8 +54,12 @@ setuptools==75.1.0
 
 以上是本地验证环境记录，不是包含全部传递依赖的锁文件。
 
+## 云端检查
+
+首次上传已在 Ubuntu / Windows、Python 3.11 / 3.12 四个组合中通过测试、证据核验和两个确定性示例。代码风格规则由仓库的 `ruff.toml` 明确指定，避免依赖不同工具版本的默认选项。
+
+完整检查状态见 [GitHub Actions](https://github.com/xwh-940/weavex-1/actions/workflows/checks.yml)，检查配置见 [checks.yml](../.github/workflows/checks.yml)。
+
 ## 未验证范围
 
-未执行当前源码的真实模型重跑；历史 12 次结果与当前示例分别报告。未声称在 Linux 或 Python 3.11 上已经实测。
-
-仓库包含面向 Ubuntu/Windows、Python 3.11/3.12 的 [GitHub Actions 配置](../.github/workflows/checks.yml)，本地整理时未上传，也未触发云端 CI。其结果应以上传后的实际工作流为准。
+未执行当前源码的真实模型重跑；历史模型结果与当前确定性示例分别报告。云端检查不会调用付费模型。

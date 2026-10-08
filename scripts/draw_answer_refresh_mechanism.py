@@ -5,8 +5,8 @@ from __future__ import annotations
 import argparse
 import xml.etree.ElementTree as ET
 
-from draw_answer_refresh import BLUE, INK, MUTED, ROOT, TEAL, WARM, choose_font
 import matplotlib.pyplot as plt
+from draw_answer_refresh import BLUE, INK, MUTED, ROOT, TEAL, WARM, choose_font
 from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch
 
 
